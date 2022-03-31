@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerIdleState : PlayerBaseState{
+public class PlayerIdleState : BaseState{
    
     public override void EnterState(PlayerStateManager player) {
         
