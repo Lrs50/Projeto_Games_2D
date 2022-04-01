@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static BaseStateScenes nextState = null;
     static HubState hubState = new HubState();
     static MenuState menuState = new MenuState();
     static BaseStateScenes currentState = menuState;
@@ -54,27 +53,6 @@ public class GameManager : MonoBehaviour
     {
         currentState.OnCollisionEnter(this);
     }
-    // Start is called before the first frame update
-
-    // static GameManager gameManager;
-    // void Awake()
-    // {
-        
-    //     if(gameManager==null){
-    //         gameManager = this;
-    //     }else{
-    //         Destroy(gameObject);
-    //     }
-
-    //     DontDestroyOnLoad(gameObject);
-    // }
-
-    // private void Update()
-    // {
-    //     if(Input.GetKeyDown("space")){
-    //         Loader.Load(Loader.Scene.MainMenu);
-    //     }
-    // }
 
     public void MenuToHub(){
         currentState = hubState;
