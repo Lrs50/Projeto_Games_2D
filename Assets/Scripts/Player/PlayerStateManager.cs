@@ -18,7 +18,7 @@ public class PlayerStateManager : MonoBehaviour
     [SerializeField]
     public float smoothInputSpeed = .05f;
 
-    BaseState currentState;
+    BaseStatePlayer currentState;
 
     public PlayerIdleState idleState = new PlayerIdleState();
     public PlayerMoveState moveState = new PlayerMoveState();
@@ -48,7 +48,7 @@ public class PlayerStateManager : MonoBehaviour
         currentState.FixedUpdateState(this);
     }
 
-    public void SwitchState(BaseState state){
+    public void SwitchState(BaseStatePlayer state){
         currentState = state;
         currentState.EnterState(this);
     }

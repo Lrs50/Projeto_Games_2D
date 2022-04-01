@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class BaseState
+public abstract class BaseStatePlayer
 {
    
    public abstract void EnterState(PlayerStateManager player);

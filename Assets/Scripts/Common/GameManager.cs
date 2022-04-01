@@ -4,30 +4,81 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-
+    static BaseStateScenes nextState = null;
+    static HubState hubState = new HubState();
+    static MenuState menuState = new MenuState();
+    static BaseStateScenes currentState = menuState;
     static GameManager gameManager;
-    void Awake()
+
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    void Start()
     {
-        
         if(gameManager==null){
             gameManager = this;
-        }else{
+        }else{            
             Destroy(gameObject);
         }
 
         DontDestroyOnLoad(gameObject);
     }
 
-    private void Update()
+    /// <summary>
+    /// Update is called every frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void Update()
     {
+        currentState.UpdateState(this);
         if(Input.GetKeyDown("space")){
-            Loader.Load(Loader.Scene.MainMenu);
+            currentState = menuState;
+            currentState.EnterState(this);
         }
     }
 
+    /// <summary>
+    /// This function is called every fixed framerate frame, if the MonoBehaviour is enabled.
+    /// </summary>
+    void FixedUpdate()
+    {
+        currentState.FixedUpdateState(this);
+    }
+
+    /// <summary>
+    /// Sent when an incoming collider makes contact with this object's
+    /// collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        currentState.OnCollisionEnter(this);
+    }
+    // Start is called before the first frame update
+
+    // static GameManager gameManager;
+    // void Awake()
+    // {
+        
+    //     if(gameManager==null){
+    //         gameManager = this;
+    //     }else{
+    //         Destroy(gameObject);
+    //     }
+
+    //     DontDestroyOnLoad(gameObject);
+    // }
+
+    // private void Update()
+    // {
+    //     if(Input.GetKeyDown("space")){
+    //         Loader.Load(Loader.Scene.MainMenu);
+    //     }
+    // }
+
     public void MenuToHub(){
-        Loader.Load(Loader.Scene.MainHub);
+        currentState = hubState;
+        currentState.EnterState(this);
     }
 
 }
