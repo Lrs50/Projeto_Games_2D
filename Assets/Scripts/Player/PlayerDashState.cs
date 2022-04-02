@@ -22,7 +22,7 @@ public class PlayerDashState: BaseStatePlayer {
     private IEnumerator Dash(PlayerStateManager player){
         Vector2 direction = player.walkInput;
         player.rb.AddForce(direction*player.dashMag,ForceMode2D.Impulse);
-
+        player.transform.rotation = Quaternion.LookRotation(Vector3.forward,direction);
         yield return new WaitForSeconds(player.dashTimer);
         player.SwitchState(player.moveState);
     } 

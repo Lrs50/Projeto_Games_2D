@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if(Input.GetKeyDown("space")){
+        if(Input.GetKeyDown("escape")){
             currentState = menuState;
             currentState.EnterState(this);
         }
