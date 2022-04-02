@@ -12,7 +12,12 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         startTime = Time.time;
-        rb.velocity = transform.right*speed;
+
+        Vector2 direction = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        direction = new Vector2(direction.x - transform.position.x,direction.y-transform.position.y);
+        
+        direction = direction.normalized;
+        rb.velocity = direction*speed;
     }
 
     // Update is called once per frame

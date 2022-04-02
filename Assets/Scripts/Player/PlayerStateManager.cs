@@ -93,10 +93,9 @@ public class PlayerStateManager : MonoBehaviour
     }
     
     public void OnShoot(InputAction.CallbackContext context) {
-        Vector2 direction = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        direction = direction.normalized;
+        
 
-        Instantiate(bullet,shootingOrigin.position,Quaternion.Euler(0,0,Vector2.SignedAngle(Vector2.right,direction)));
+        Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
     }
 
    
