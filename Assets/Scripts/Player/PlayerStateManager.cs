@@ -7,21 +7,24 @@ public class PlayerStateManager : MonoBehaviour
 {
 
     [SerializeField]
-    public float baseSpeed = 15f;
+    public float baseSpeed = 5f;
+    [SerializeField]
+    public float maxSpeed = 5f;
+    [SerializeField]
+    public float sprintSpeed = 0.5f;
 
     [SerializeField]
-    public float sprintSpeed = 15f;
+    public float rotationSpeed = 8f;
 
     [SerializeField]
-    public float dashSpeed = 5f;
-
-    [SerializeField]
-    public float smoothInputSpeed = .05f;
+    public float dashMag = 10f;
+    public float dashTimer = 0.3f;
 
     BaseStatePlayer currentState;
 
     public PlayerIdleState idleState = new PlayerIdleState();
     public PlayerMoveState moveState = new PlayerMoveState();
+    public PlayerDashState dashState = new PlayerDashState();
 
     public Rigidbody2D rb;
 
@@ -61,9 +64,9 @@ public class PlayerStateManager : MonoBehaviour
         sprintInput = context.ReadValue<float>();
     }
 
-    /* TODO: Player dash state
+    //TODO: Player dash state
     public void OnDash(InputAction.CallbackContext context) {
         dashInput = context.ReadValue<float>();
     }
-    */
+    
 }

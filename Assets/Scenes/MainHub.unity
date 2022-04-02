@@ -259,9 +259,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 5
-  sprintSpeed: 5
-  dashSpeed: 2
-  smoothInputSpeed: 0.1
+  maxSpeed: 5
+  sprintSpeed: 0.5
+  rotationSpeed: 8
+  dashMag: 20
+  dashTimer: 0.2
   rb: {fileID: 820314290}
   walkInput: {x: 0, y: 0}
   sprintInput: 0
@@ -278,6 +280,22 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 2761481155689115776, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
   m_PrefabInstance: {fileID: 2761481155410522160}
   m_PrefabAsset: {fileID: 0}
+--- !u!70 &820314291
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820314287}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00530684}
+  m_Size: {x: 1, y: 1.9764516}
+  m_Direction: 0
 --- !u!1 &923166636
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +670,24 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2761481155689115776, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761481155689115776, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761481155689115777, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0, type: 3}
     - target: {fileID: 2761481155689115778, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2761481155689115778, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
+      propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2761481155689115778, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
