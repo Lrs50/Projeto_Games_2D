@@ -1,22 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.InputSystem;
+using System;
 
 public class PlayerStateManager : MonoBehaviour
 {
 
-    [SerializeField]
+
     public float baseSpeed = 5f;
-    [SerializeField]
     public float maxSpeed = 5f;
-    [SerializeField]
     public float sprintSpeed = 0.5f;
-
-    [SerializeField]
     public float rotationSpeed = 8f;
-
-    [SerializeField]
     public float dashMag = 10f;
     public float dashTimer = 0.3f;
 
@@ -28,6 +24,14 @@ public class PlayerStateManager : MonoBehaviour
 
     public Rigidbody2D rb;
 
+
+    //UI
+    public GameObject playerUI;
+    [NonSerialized]
+    public Text staminaUI;
+    public float stamina = 100f;
+
+
     public Vector2 walkInput;
     public float sprintInput;
     public float dashInput;
@@ -35,8 +39,17 @@ public class PlayerStateManager : MonoBehaviour
     public Vector2 currentInputVector;
     public Vector2 smoothInputVelocity;
 
+
+    private void Awake()
+    {
+        staminaUI = playerUI.transform.GetChild(1).gameObject.GetComponent<Text>();
+    }
     // Start is called before the first frame update
     void Start() {
+
+       
+        
+
         currentState = idleState;
 
         currentState.EnterState(this);
@@ -45,6 +58,13 @@ public class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update() {
         currentState.UpdateState(this);
+        staminaUI.text = "Estâmina: " + Math.Round(stamina,1).ToString();
+        
+        stamina+= 2f*Time.deltaTime;
+        if(stamina>=100f){
+            stamina=100f;
+        }
+        
     }
 
     void FixedUpdate() {

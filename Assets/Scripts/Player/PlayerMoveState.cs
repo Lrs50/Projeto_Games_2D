@@ -1,15 +1,26 @@
 using UnityEngine;
-
+using UnityEngine.UI;
+using System;
 public class PlayerMoveState : BaseStatePlayer {
+
+    float canRun = 1f;
 
     public override void EnterState(PlayerStateManager player) {
     	//player.rb.MovePosition(player.rb.position + player.walkInput * (player.baseSpeed + (player.sprintInput * player.sprintSpeed)) * Time.fixedDeltaTime);
     }
 
     public override void UpdateState(PlayerStateManager player) {
-        if(player.dashInput!=0f){
+        if(player.dashInput!=0f && player.stamina>=10f){
+            player.stamina -= 10f;
             player.SwitchState(player.dashState);
-            return;
+        }
+
+        if(player.sprintInput!=0f && player.stamina>0){
+            canRun = 1;
+            player.stamina-= 2.5f*Time.deltaTime;
+            
+        }else{
+            canRun = 0;
         }
 
     }
@@ -28,9 +39,9 @@ public class PlayerMoveState : BaseStatePlayer {
 
         
 
-        player.rb.AddForce(direction*player.baseSpeed*(1+player.sprintInput));
+        player.rb.AddForce(direction*player.baseSpeed*(1+canRun));
 
-        player.rb.velocity = Vector2.ClampMagnitude(player.rb.velocity,player.maxSpeed*(1+player.sprintInput*player.sprintSpeed));
+        player.rb.velocity = Vector2.ClampMagnitude(player.rb.velocity,player.maxSpeed*(1+canRun*player.sprintSpeed));
         //Debug.Log(player.rb.velocity);
 
         Quaternion toRotation = Quaternion.LookRotation(Vector3.forward,direction);
