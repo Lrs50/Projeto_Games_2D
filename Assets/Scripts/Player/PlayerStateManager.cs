@@ -27,10 +27,13 @@ public class PlayerStateManager : MonoBehaviour
 
     //UI
     public GameObject playerUI;
-    [NonSerialized]
-    public Text staminaUI;
+    [NonSerialized] public Text staminaUI;
     public float stamina = 100f;
 
+
+    //Shooting
+    public Transform shootingOrigin;
+    public GameObject bullet;
 
     public Vector2 walkInput;
     public float sprintInput;
@@ -84,9 +87,17 @@ public class PlayerStateManager : MonoBehaviour
         sprintInput = context.ReadValue<float>();
     }
 
-    //TODO: Player dash state
+    
     public void OnDash(InputAction.CallbackContext context) {
         dashInput = context.ReadValue<float>();
     }
     
+    public void OnShoot(InputAction.CallbackContext context) {
+        Vector2 direction = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        direction = direction.normalized;
+
+        Instantiate(bullet,shootingOrigin.position,Quaternion.Euler(0,0,Vector2.SignedAngle(Vector2.right,direction)));
+    }
+
+   
 }
