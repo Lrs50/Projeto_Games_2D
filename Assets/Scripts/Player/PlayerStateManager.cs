@@ -50,9 +50,6 @@ public class PlayerStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
 
-       
-        
-
         currentState = idleState;
 
         currentState.EnterState(this);
@@ -93,10 +90,16 @@ public class PlayerStateManager : MonoBehaviour
     }
     
     public void OnShoot(InputAction.CallbackContext context) {
-        
 
-        Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
+        if(context.ReadValue<float>()!=0){
+            Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
+        }
     }
 
-   
+   private void OnTriggerEnter2D(Collider2D other)
+   {
+       if(other.gameObject.name=="Door"){
+           Loader.Load(Loader.Scene.Phase1Scene0);
+       }
+   }
 }
