@@ -46,3 +46,6 @@ TagManager:
   - name: Tilemap
     uniqueID: 2021480227
     locked: 0
+  - name: Trees
+    uniqueID: 2746856617
+    locked: 0
