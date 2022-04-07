@@ -29,7 +29,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject playerUI;
     public float stamina = 100f;
     Image[] staminaImages;
-    public Text debug;
+    //public Text debug;
 
     //Sprite references
     public Sprite[] staminaUI;
@@ -133,7 +133,7 @@ public class PlayerStateManager : MonoBehaviour
            }
        }
 
-        debug.text = Math.Round(stamina).ToString();
+        
 
    }
 }
