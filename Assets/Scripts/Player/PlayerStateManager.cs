@@ -27,9 +27,12 @@ public class PlayerStateManager : MonoBehaviour
 
     //UI
     public GameObject playerUI;
-    [NonSerialized] public Text staminaUI;
     public float stamina = 100f;
+    Image[] staminaImages;
+    public Text debug;
 
+    //Sprite references
+    public Sprite[] staminaUI;
 
     //Shooting
     public Transform shootingOrigin;
@@ -45,7 +48,13 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
-        staminaUI = playerUI.transform.GetChild(1).gameObject.GetComponent<Text>();
+        staminaImages = new Image[5];
+        Transform stats = playerUI.transform.GetChild(0);
+        Transform stamina = stats.GetChild(2);
+        for(int i=0;i<5;i++){
+            staminaImages[i] = stamina.GetChild(i+1).gameObject.GetComponent<Image>();
+        }
+        
     }
     // Start is called before the first frame update
     void Start() {
@@ -58,9 +67,11 @@ public class PlayerStateManager : MonoBehaviour
     // Update is called once per frame
     void Update() {
         currentState.UpdateState(this);
-        staminaUI.text = "Estâmina: " + Math.Round(stamina,1).ToString();
         
         stamina+= 2f*Time.deltaTime;
+
+        UpdateStaminaUI();
+
         if(stamina>=100f){
             stamina=100f;
         }
@@ -101,5 +112,28 @@ public class PlayerStateManager : MonoBehaviour
        if(other.gameObject.name=="Door"){
            Loader.Load(Loader.Scene.Phase1Scene0);
        }
+   }
+
+   private void UpdateStaminaUI(){
+
+       Sprite full = staminaUI[2];
+       Sprite half = staminaUI[1];
+       Sprite empty = staminaUI[0];
+
+
+
+       for(int i=0;i<5;i++){
+           if((stamina<(i+1)*20)){
+               if(stamina>i*20 +10) 
+                    staminaImages[i].sprite = half;
+                else
+                    staminaImages[i].sprite = empty;
+           }else{
+               staminaImages[i].sprite = full;
+           }
+       }
+
+        debug.text = Math.Round(stamina).ToString();
+
    }
 }
