@@ -68,7 +68,7 @@ public class PlayerStateManager : MonoBehaviour
     void Update() {
         currentState.UpdateState(this);
         
-        stamina+= 2f*Time.deltaTime;
+        stamina+= 5f*Time.deltaTime;
 
         UpdateStaminaUI();
 
