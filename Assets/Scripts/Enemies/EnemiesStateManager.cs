@@ -17,15 +17,16 @@ public class EnemiesStateManager : MonoBehaviour
 
     BaseStateEnemies currentState;
 
-    public EnemiesSearchState searchState = new EnemiesSearchState();
-    public EnemiesMoveState moveState = new EnemiesMoveState();
-
+    public virtual EnemiesSearchState searchState {get; protected set;} = new EnemiesSearchState();
+    public virtual EnemiesMoveState moveState {get; protected set;} = new EnemiesMoveState();
+    public virtual EnemiesAttackState attackState {get; protected set;} = new EnemiesAttackState();
+    
     public Vector2 walkInput;
     public LayerMask obstacles;
     public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start() {
-
+        //a
         target = GameObject.FindWithTag("Player").transform;
         currentState = searchState;
 

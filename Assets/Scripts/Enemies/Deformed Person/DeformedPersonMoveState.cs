@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System;
-public class EnemiesMoveState : BaseStateEnemies {
+public class DeformedPersonMoveState : EnemiesMoveState {
 
 
     public override void EnterState(EnemiesStateManager enemy) {
@@ -29,16 +29,16 @@ public class EnemiesMoveState : BaseStateEnemies {
 
     }
 
-    public virtual void ExitState(EnemiesStateManager enemy){
+    public override void ExitState(EnemiesStateManager enemy){
         enemy.rb.velocity = Vector2.zero;
         enemy.rb.angularVelocity = 0f;
     }
 
-    public virtual void followPlayer(EnemiesStateManager enemy){        
+    public override void followPlayer(EnemiesStateManager enemy){        
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.baseSpeed *Time.deltaTime);
     }
 
-    public virtual void rotateTowardsPlayer(EnemiesStateManager enemy){
+    public override void rotateTowardsPlayer(EnemiesStateManager enemy){
         var offset = 90f;
         Vector2 direction = enemy.target.position - enemy.transform.position;
         direction.Normalize();
@@ -46,7 +46,7 @@ public class EnemiesMoveState : BaseStateEnemies {
         enemy.transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
     }
 
-    public virtual void checkObstacles(EnemiesStateManager enemy){
+    public override void checkObstacles(EnemiesStateManager enemy){
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position,enemy.transform.forward,20,enemy.obstacles.value);
         if(hit.collider != null && hit.collider.transform != enemy.transform && hit.collider.tag != "Player"){
             Debug.DrawLine(enemy.transform.position, hit.point, Color.red);

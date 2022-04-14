@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-public class EnemiesSearchState: BaseStateEnemies {
+public class EnemiesAttackState: BaseStateEnemies {
     public override void EnterState(EnemiesStateManager enemy){
     }
 
@@ -19,8 +19,8 @@ public class EnemiesSearchState: BaseStateEnemies {
 
     }
 
-    public virtual void foundPlayer(EnemiesStateManager enemy){    
+    public void foundPlayer(EnemiesStateManager enemy){    
         //enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.baseSpeed *Time.deltaTime);    
-        enemy.SwitchState(enemy.moveState);
+        enemy.SwitchState(enemy.attackState);
     }
 }
