@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using System;
 
@@ -17,16 +18,32 @@ public class EnemiesStateManager : MonoBehaviour
 
     BaseStateEnemies currentState;
 
-    public EnemiesSearchState searchState = new EnemiesSearchState();
-    public EnemiesMoveState moveState = new EnemiesMoveState();
-
+    public virtual EnemiesSearchState searchState {get; protected set;} = new EnemiesSearchState();
+    public virtual EnemiesMoveState moveState {get; protected set;} = new EnemiesMoveState();
+    public virtual EnemiesAttackState attackState {get; protected set;} = new EnemiesAttackState();
+    
     public Vector2 walkInput;
     public LayerMask obstacles;
     public Rigidbody2D rb;
+    public NavMeshAgent agent;
+
+    public Boolean isPatrol;
+
+    public float aggro;
+
+    public float waitTime;
+
+    public float startWaitTime;
+
     // Start is called before the first frame update
     void Start() {
-
+        //a
         target = GameObject.FindWithTag("Player").transform;
+        
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        agent.updateUpAxis = false;
+
         currentState = searchState;
 
         currentState.EnterState(this);

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -1798923395539986590}
   - component: {fileID: 1317964225173858215}
   - component: {fileID: -5016419325670800259}
-  - component: {fileID: 6024359788585849050}
+  - component: {fileID: 8378183878821831101}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -122,7 +122,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &6024359788585849050
+--- !u!114 &8378183878821831101
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,13 +131,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 834131583555358241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb45cbfca9fb3aa43b32d2f43989e841, type: 3}
+  m_Script: {fileID: 11500000, guid: 414aa367aa1ee7a4789be1b7749dce9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   baseSpeed: 5
   maxSpeed: 5
   rotationSpeed: 8
-  range: 0
+  maxRange: 0
+  minRange: 0
   walkInput: {x: 0, y: 0}
-  rb: {fileID: 1317964225173858215}
+  obstacles:
+    serializedVersion: 2
+    m_Bits: 0
+  rb: {fileID: 0}
