@@ -110,7 +110,7 @@ public class PlayerStateManager : MonoBehaviour
    private void OnTriggerEnter2D(Collider2D other)
    {
        if(other.gameObject.name=="Door"){
-           Loader.Load(Loader.Scene.Phase1Scene0);
+           Loader.Load(Loader.Scene.Phase1_0);
        }
    }
 

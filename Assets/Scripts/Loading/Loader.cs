@@ -9,7 +9,9 @@ public static class Loader
     public enum Scene{
         MainMenu,
         MainHub,
-        Phase1Scene0,
+        Phase1_0,
+        Phase1_1,
+        Phase1_2,
         Loading,
     }
 
