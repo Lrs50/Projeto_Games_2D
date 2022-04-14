@@ -2,11 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 public class PlayerMoveState : BaseStatePlayer {
-
+    Vector2 previousDirection;
     float canRun = 1f;
 
     public override void EnterState(PlayerStateManager player) {
     	player.numFrames = 4;
+        previousDirection = player.walkInput;
     }
 
     public override void UpdateState(PlayerStateManager player) {
@@ -34,6 +35,12 @@ public class PlayerMoveState : BaseStatePlayer {
         }
     
         Vector2 direction = player.walkInput;
+
+        if(previousDirection!=direction){
+            previousDirection = direction;
+            player.rb.velocity=direction*player.rb.velocity.magnitude;
+        }
+
         if (direction == Vector2.zero){
             ExitState(player);
         	player.SwitchState(player.idleState);
@@ -54,7 +61,6 @@ public class PlayerMoveState : BaseStatePlayer {
 
     public void ExitState(PlayerStateManager player){
         player.rb.velocity = Vector2.zero;
-        player.rb.angularVelocity = 0f;
     }
    
 }
