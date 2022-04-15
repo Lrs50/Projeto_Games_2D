@@ -107,7 +107,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6395776295639276329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +293,10 @@ MonoBehaviour:
   - {fileID: -3551967274139903119, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
   - {fileID: 8113700493152974639, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
   - {fileID: 4819963251569588764, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
+  spriteRenderer: {fileID: 0}
+  animationFrame: 0
+  numFrames: 4
+  animationOrientation: 0
 --- !u!1 &1989262118155671007
 GameObject:
   m_ObjectHideFlags: 0
