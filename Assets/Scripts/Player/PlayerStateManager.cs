@@ -45,9 +45,25 @@ public class PlayerStateManager : MonoBehaviour
     public Vector2 currentInputVector;
     public Vector2 smoothInputVelocity;
 
+    //Sprites
+    public Sprite[] idleAnimation;
+    public Sprite[] walkAnimation;
+    public Sprite[] runAnimation;
+
+    //Animation config
+    public SpriteRenderer spriteRenderer;
+    int animationSpeed = 7;
+    public int animationFrame=0;
+    int animationCount=0;
+    public int numFrames = 4;
+    public int animationOrientation = 0;
+
 
     private void Awake()
     {
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
         staminaImages = new Image[5];
         Transform stats = playerUI.transform.GetChild(0);
         Transform stamina = stats.GetChild(2);
@@ -79,7 +95,35 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     void FixedUpdate() {
+
+
+        if(walkInput.y>0){
+            //UP
+            animationOrientation = 3;
+        }else if (walkInput.y<0){
+            //Down
+            animationOrientation = 0;
+        }else if(walkInput.x>0){
+            //Right
+            animationOrientation = 1;
+        }else if(walkInput.x<0){
+            //left
+            animationOrientation = 2;
+        }
+        
+        
+
+        animationCount++;
+        if(animationCount==animationSpeed){
+            animationCount=0;
+            animationFrame++;
+        }
+        if(animationFrame==numFrames){
+            animationFrame=0;
+        }
+
         currentState.FixedUpdateState(this);
+        
     }
 
     public void SwitchState(BaseStatePlayer state){
