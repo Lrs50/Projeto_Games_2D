@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Target
   - Bullet
+  - Water
+  - Collider
   layers:
   - Default
   - TransparentFX

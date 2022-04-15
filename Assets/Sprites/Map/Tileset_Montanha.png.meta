@@ -344,6 +344,366 @@ TextureImporter:
   - first:
       213: 3068555469967182073
     second: Tileset_Montanha_v1_113
+  - first:
+      213: -5270329630331320205
+    second: Tileset_Montanha_0
+  - first:
+      213: -265661227513822039
+    second: Tileset_Montanha_1
+  - first:
+      213: -3990703156244998818
+    second: Tileset_Montanha_2
+  - first:
+      213: -8042776105150741512
+    second: Tileset_Montanha_3
+  - first:
+      213: 8277036039562718304
+    second: Tileset_Montanha_4
+  - first:
+      213: -3344517549319033943
+    second: Tileset_Montanha_5
+  - first:
+      213: 2308164889251432417
+    second: Tileset_Montanha_6
+  - first:
+      213: -1607899319244494011
+    second: Tileset_Montanha_7
+  - first:
+      213: -6871154566997259379
+    second: Tileset_Montanha_8
+  - first:
+      213: -556707846710528046
+    second: Tileset_Montanha_9
+  - first:
+      213: 3648152915956582009
+    second: Tileset_Montanha_10
+  - first:
+      213: 1577048140487225614
+    second: Tileset_Montanha_11
+  - first:
+      213: -2218037150157517018
+    second: Tileset_Montanha_12
+  - first:
+      213: 3253403511239942619
+    second: Tileset_Montanha_13
+  - first:
+      213: 650019141673861710
+    second: Tileset_Montanha_14
+  - first:
+      213: 2819239994275080804
+    second: Tileset_Montanha_15
+  - first:
+      213: -8363195907403026824
+    second: Tileset_Montanha_16
+  - first:
+      213: 7124892128924475959
+    second: Tileset_Montanha_17
+  - first:
+      213: -7701221252128629262
+    second: Tileset_Montanha_18
+  - first:
+      213: 7537463107051436414
+    second: Tileset_Montanha_19
+  - first:
+      213: 4770773125423727498
+    second: Tileset_Montanha_20
+  - first:
+      213: -5421459545610400931
+    second: Tileset_Montanha_21
+  - first:
+      213: 4156757979425309591
+    second: Tileset_Montanha_22
+  - first:
+      213: -3338748110433420130
+    second: Tileset_Montanha_23
+  - first:
+      213: 6731206880157006226
+    second: Tileset_Montanha_24
+  - first:
+      213: -8359719946291586519
+    second: Tileset_Montanha_25
+  - first:
+      213: -589313081409116408
+    second: Tileset_Montanha_26
+  - first:
+      213: 3976481939076521572
+    second: Tileset_Montanha_27
+  - first:
+      213: -4723578940832783696
+    second: Tileset_Montanha_28
+  - first:
+      213: 6148727686238315940
+    second: Tileset_Montanha_29
+  - first:
+      213: -6016934033964501632
+    second: Tileset_Montanha_30
+  - first:
+      213: 22617629287923650
+    second: Tileset_Montanha_31
+  - first:
+      213: -3607190766191428536
+    second: Tileset_Montanha_32
+  - first:
+      213: 4745254712637590500
+    second: Tileset_Montanha_33
+  - first:
+      213: 9063059077258763126
+    second: Tileset_Montanha_34
+  - first:
+      213: 4940718184654141926
+    second: Tileset_Montanha_35
+  - first:
+      213: -4320315151085179874
+    second: Tileset_Montanha_36
+  - first:
+      213: 4797049190116759905
+    second: Tileset_Montanha_37
+  - first:
+      213: -6612858628225603198
+    second: Tileset_Montanha_38
+  - first:
+      213: 4266836443817564516
+    second: Tileset_Montanha_39
+  - first:
+      213: -6370877289975424686
+    second: Tileset_Montanha_40
+  - first:
+      213: -7003211338993388099
+    second: Tileset_Montanha_41
+  - first:
+      213: 6846903063828390799
+    second: Tileset_Montanha_42
+  - first:
+      213: 6618338814786010858
+    second: Tileset_Montanha_43
+  - first:
+      213: -4703533030023558493
+    second: Tileset_Montanha_44
+  - first:
+      213: 7328501236724735640
+    second: Tileset_Montanha_45
+  - first:
+      213: -4850708426433512464
+    second: Tileset_Montanha_46
+  - first:
+      213: -6733037045521426879
+    second: Tileset_Montanha_47
+  - first:
+      213: 2326867515226563526
+    second: Tileset_Montanha_48
+  - first:
+      213: -641534376532468084
+    second: Tileset_Montanha_49
+  - first:
+      213: 3210767377043310721
+    second: Tileset_Montanha_50
+  - first:
+      213: 1856788358523357222
+    second: Tileset_Montanha_51
+  - first:
+      213: -6604842385946923891
+    second: Tileset_Montanha_52
+  - first:
+      213: 4355679605854351563
+    second: Tileset_Montanha_53
+  - first:
+      213: 3255337249935435413
+    second: Tileset_Montanha_54
+  - first:
+      213: 7178919617835074351
+    second: Tileset_Montanha_55
+  - first:
+      213: 6526271191587590907
+    second: Tileset_Montanha_56
+  - first:
+      213: -7540748210636560828
+    second: Tileset_Montanha_57
+  - first:
+      213: 3504368222073710711
+    second: Tileset_Montanha_58
+  - first:
+      213: 3373953781129620126
+    second: Tileset_Montanha_59
+  - first:
+      213: -6590784501101935344
+    second: Tileset_Montanha_60
+  - first:
+      213: 6279856849610109189
+    second: Tileset_Montanha_61
+  - first:
+      213: -5728817777113740679
+    second: Tileset_Montanha_62
+  - first:
+      213: -4940205039952528958
+    second: Tileset_Montanha_63
+  - first:
+      213: 1993752444109140418
+    second: Tileset_Montanha_64
+  - first:
+      213: -3095088686556314781
+    second: Tileset_Montanha_65
+  - first:
+      213: 5599954098618255743
+    second: Tileset_Montanha_66
+  - first:
+      213: -4761365383958020189
+    second: Tileset_Montanha_67
+  - first:
+      213: 2241547135882403175
+    second: Tileset_Montanha_68
+  - first:
+      213: -7971280526538233637
+    second: Tileset_Montanha_69
+  - first:
+      213: -2472985487517595085
+    second: Tileset_Montanha_70
+  - first:
+      213: 4424632082580746984
+    second: Tileset_Montanha_71
+  - first:
+      213: 4819266121216171355
+    second: Tileset_Montanha_72
+  - first:
+      213: -7403315780138881993
+    second: Tileset_Montanha_73
+  - first:
+      213: -1833183849383313886
+    second: Tileset_Montanha_74
+  - first:
+      213: 6500738494388780190
+    second: Tileset_Montanha_75
+  - first:
+      213: -2808867406400990962
+    second: Tileset_Montanha_76
+  - first:
+      213: 5249169316258553754
+    second: Tileset_Montanha_77
+  - first:
+      213: 4156429235647116746
+    second: Tileset_Montanha_78
+  - first:
+      213: -4979545319635218196
+    second: Tileset_Montanha_79
+  - first:
+      213: 7731664509905546142
+    second: Tileset_Montanha_80
+  - first:
+      213: 583900056635757208
+    second: Tileset_Montanha_81
+  - first:
+      213: -5054680267826208809
+    second: Tileset_Montanha_82
+  - first:
+      213: -4734472280330856974
+    second: Tileset_Montanha_83
+  - first:
+      213: 8645042354642248046
+    second: Tileset_Montanha_84
+  - first:
+      213: -6490532996815045564
+    second: Tileset_Montanha_85
+  - first:
+      213: -1818975654034017672
+    second: Tileset_Montanha_86
+  - first:
+      213: 4881470526883176896
+    second: Tileset_Montanha_87
+  - first:
+      213: 4154809944379415339
+    second: Tileset_Montanha_88
+  - first:
+      213: 5399134153323096526
+    second: Tileset_Montanha_89
+  - first:
+      213: -4337395617067380139
+    second: Tileset_Montanha_90
+  - first:
+      213: 6896751139496046707
+    second: Tileset_Montanha_91
+  - first:
+      213: -2520504392891423244
+    second: Tileset_Montanha_92
+  - first:
+      213: 2580040458322112720
+    second: Tileset_Montanha_93
+  - first:
+      213: -2870478215633793406
+    second: Tileset_Montanha_94
+  - first:
+      213: -3237226461407702946
+    second: Tileset_Montanha_95
+  - first:
+      213: -5824806979480753727
+    second: Tileset_Montanha_96
+  - first:
+      213: 139220940695656602
+    second: Tileset_Montanha_97
+  - first:
+      213: 8421502078259455577
+    second: Tileset_Montanha_98
+  - first:
+      213: 2905313551250225074
+    second: Tileset_Montanha_99
+  - first:
+      213: -6531810395879681036
+    second: Tileset_Montanha_100
+  - first:
+      213: 6446235653323546440
+    second: Tileset_Montanha_101
+  - first:
+      213: -2729681283042417948
+    second: Tileset_Montanha_102
+  - first:
+      213: -8226010437119385971
+    second: Tileset_Montanha_103
+  - first:
+      213: 4520386731667874495
+    second: Tileset_Montanha_104
+  - first:
+      213: -1583151981028110352
+    second: Tileset_Montanha_105
+  - first:
+      213: -4752291091717907141
+    second: Tileset_Montanha_106
+  - first:
+      213: 8546966075544297060
+    second: Tileset_Montanha_107
+  - first:
+      213: 6846802169974458846
+    second: Tileset_Montanha_108
+  - first:
+      213: 7462024535854909917
+    second: Tileset_Montanha_109
+  - first:
+      213: 5950642079325581507
+    second: Tileset_Montanha_110
+  - first:
+      213: -64434939058934517
+    second: Tileset_Montanha_111
+  - first:
+      213: -9040320151935945670
+    second: Tileset_Montanha_112
+  - first:
+      213: -3999905329754966737
+    second: Tileset_Montanha_113
+  - first:
+      213: 2683827423523098634
+    second: Tileset_Montanha_114
+  - first:
+      213: 1745798919330276013
+    second: Tileset_Montanha_115
+  - first:
+      213: -2232789596328462947
+    second: Tileset_Montanha_116
+  - first:
+      213: 6546069582972218666
+    second: Tileset_Montanha_117
+  - first:
+      213: 2257863793656069230
+    second: Tileset_Montanha_118
+  - first:
+      213: 3131923177298365755
+    second: Tileset_Montanha_119
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -445,7 +805,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_0
+      name: Tileset_Montanha_0
       rect:
         serializedVersion: 2
         x: 0
@@ -459,14 +819,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97fd4a0e3a6ab0f40800000000000000
-      internalID: 5695829376518905721
+      spriteID: 378c2e6ef170cd6b0800000000000000
+      internalID: -5270329630331320205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_1
+      name: Tileset_Montanha_1
       rect:
         serializedVersion: 2
         x: 16
@@ -480,14 +840,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a51bce414a1b81c50800000000000000
-      internalID: 6636249369214234970
+      spriteID: 9a4c177658e205cf0800000000000000
+      internalID: -265661227513822039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_2
+      name: Tileset_Montanha_2
       rect:
         serializedVersion: 2
         x: 32
@@ -501,14 +861,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cf3e39e20e8c22e0800000000000000
-      internalID: -2149186779008319544
+      spriteID: e559cff7f9c2e98c0800000000000000
+      internalID: -3990703156244998818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_3
+      name: Tileset_Montanha_3
       rect:
         serializedVersion: 2
         x: 48
@@ -522,14 +882,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3214e3a7d7b9bfa60800000000000000
-      internalID: 7708926150398853411
+      spriteID: 8f38d7caeb1526090800000000000000
+      internalID: -8042776105150741512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_4
+      name: Tileset_Montanha_4
       rect:
         serializedVersion: 2
         x: 64
@@ -543,14 +903,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdfa6c816f4dc6ba0800000000000000
-      internalID: -6094262042296406049
+      spriteID: 06ced33ac60fdd270800000000000000
+      internalID: 8277036039562718304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_5
+      name: Tileset_Montanha_5
       rect:
         serializedVersion: 2
         x: 80
@@ -564,14 +924,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ace681f17f0268b0800000000000000
-      internalID: -5160545240955294553
+      spriteID: 9ab67c74203e591d0800000000000000
+      internalID: -3344517549319033943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_6
+      name: Tileset_Montanha_6
       rect:
         serializedVersion: 2
         x: 96
@@ -585,14 +945,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2632f36d941fd64f0800000000000000
-      internalID: -833745056564305054
+      spriteID: 1e74cd2dcbf380020800000000000000
+      internalID: 2308164889251432417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_7
+      name: Tileset_Montanha_7
       rect:
         serializedVersion: 2
         x: 112
@@ -606,14 +966,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20519a9a04d924d30800000000000000
-      internalID: 4414263485826405634
+      spriteID: 54be6d196189fa9e0800000000000000
+      internalID: -1607899319244494011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_8
+      name: Tileset_Montanha_8
       rect:
         serializedVersion: 2
         x: 128
@@ -627,14 +987,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e10446c533b9b6170800000000000000
-      internalID: 8172796593689608222
+      spriteID: d8b43558351c4a0a0800000000000000
+      internalID: -6871154566997259379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_9
+      name: Tileset_Montanha_9
       rect:
         serializedVersion: 2
         x: 240
@@ -648,14 +1008,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac492151f8869530800000000000000
-      internalID: 3861424300546935980
+      spriteID: 2d77529b92d2648f0800000000000000
+      internalID: -556707846710528046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_10
+      name: Tileset_Montanha_10
       rect:
         serializedVersion: 2
         x: 256
@@ -669,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab4a1eda36939c700800000000000000
-      internalID: 561042728866129082
+      spriteID: 976c5e19fb7d0a230800000000000000
+      internalID: 3648152915956582009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_11
+      name: Tileset_Montanha_11
       rect:
         serializedVersion: 2
         x: 272
@@ -690,14 +1050,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24e22ab96e1ff0420800000000000000
-      internalID: 2598561482771934786
+      spriteID: e017e6f9decc2e510800000000000000
+      internalID: 1577048140487225614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_12
+      name: Tileset_Montanha_12
       rect:
         serializedVersion: 2
         x: 288
@@ -711,14 +1071,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc44fe1e4e2e213f0800000000000000
-      internalID: -931432700241296179
+      spriteID: 62fcd3ea6f2f731e0800000000000000
+      internalID: -2218037150157517018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_13
+      name: Tileset_Montanha_13
       rect:
         serializedVersion: 2
         x: 304
@@ -732,14 +1092,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddbab5044c121df70800000000000000
-      internalID: 9210179839726431197
+      spriteID: bd127769149662d20800000000000000
+      internalID: 3253403511239942619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_14
+      name: Tileset_Montanha_14
       rect:
         serializedVersion: 2
         x: 320
@@ -753,14 +1113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 545322fa0d5b300d0800000000000000
-      internalID: -3457720180994329275
+      spriteID: e42cca427f4550900800000000000000
+      internalID: 650019141673861710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_15
+      name: Tileset_Montanha_15
       rect:
         serializedVersion: 2
         x: 0
@@ -774,14 +1134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7096325961583e0800000000000000
-      internalID: -2052209225397368880
+      spriteID: 46a275b76d3ff1720800000000000000
+      internalID: 2819239994275080804
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_16
+      name: Tileset_Montanha_16
       rect:
         serializedVersion: 2
         x: 16
@@ -795,14 +1155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6161481672404ca20800000000000000
-      internalID: 3081592612214543894
+      spriteID: 87eed30e1a5ffeb80800000000000000
+      internalID: -8363195907403026824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_17
+      name: Tileset_Montanha_17
       rect:
         serializedVersion: 2
         x: 32
@@ -816,14 +1176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76cdb64879032c910800000000000000
-      internalID: 1856099423749921895
+      spriteID: 732258754a3b0e260800000000000000
+      internalID: 7124892128924475959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_18
+      name: Tileset_Montanha_18
       rect:
         serializedVersion: 2
         x: 48
@@ -837,14 +1197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dc8d147696e2c4a0800000000000000
-      internalID: -6574438972139926320
+      spriteID: 2fd1f22f214cf1590800000000000000
+      internalID: -7701221252128629262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_19
+      name: Tileset_Montanha_19
       rect:
         serializedVersion: 2
         x: 64
@@ -858,14 +1218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4943a36d5ef0b7ce0800000000000000
-      internalID: -1406512978807081836
+      spriteID: e79b96bb2c27a9860800000000000000
+      internalID: 7537463107051436414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_20
+      name: Tileset_Montanha_20
       rect:
         serializedVersion: 2
         x: 80
@@ -879,14 +1239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c3c6b21021887e60800000000000000
-      internalID: 7960254316130255813
+      spriteID: a838cd481e0353240800000000000000
+      internalID: 4770773125423727498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_21
+      name: Tileset_Montanha_21
       rect:
         serializedVersion: 2
         x: 96
@@ -900,14 +1260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3657330f01b9f6730800000000000000
-      internalID: 3994581891552605539
+      spriteID: d5bcdb3744b13c4b0800000000000000
+      internalID: -5421459545610400931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_22
+      name: Tileset_Montanha_22
       rect:
         serializedVersion: 2
         x: 112
@@ -921,14 +1281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b435d7e9fdc6f5850800000000000000
-      internalID: 6367928105817690955
+      spriteID: 7938aecdb55cfa930800000000000000
+      internalID: 4156757979425309591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_23
+      name: Tileset_Montanha_23
       rect:
         serializedVersion: 2
         x: 128
@@ -942,14 +1302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fbe06345ec7481d0800000000000000
-      internalID: -3349414898737026058
+      spriteID: e9cfb1378426aa1d0800000000000000
+      internalID: -3338748110433420130
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_24
+      name: Tileset_Montanha_24
       rect:
         serializedVersion: 2
         x: 144
@@ -963,14 +1323,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ad277d3144929bd0800000000000000
-      internalID: -2624872624878572119
+      spriteID: 2997c697efc0a6d50800000000000000
+      internalID: 6731206880157006226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_25
+      name: Tileset_Montanha_25
       rect:
         serializedVersion: 2
         x: 160
@@ -984,14 +1344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fdee23c43886dfd0800000000000000
-      internalID: -2317515198041231881
+      spriteID: 92ada83200f4cfb80800000000000000
+      internalID: -8359719946291586519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_26
+      name: Tileset_Montanha_26
       rect:
         serializedVersion: 2
         x: 176
@@ -1005,14 +1365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7be79c5f225b18520800000000000000
-      internalID: 2702640413156146871
+      spriteID: 8076e11ffd652d7f0800000000000000
+      internalID: -589313081409116408
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_27
+      name: Tileset_Montanha_27
       rect:
         serializedVersion: 2
         x: 192
@@ -1026,14 +1386,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca539eb8030d3b4f0800000000000000
-      internalID: -814078200699603540
+      spriteID: 46e996a514d4f2730800000000000000
+      internalID: 3976481939076521572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_28
+      name: Tileset_Montanha_28
       rect:
         serializedVersion: 2
         x: 208
@@ -1047,14 +1407,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e1e1b24371cbbf60800000000000000
-      internalID: 8051241459639247328
+      spriteID: 0b2652bdaf9727eb0800000000000000
+      internalID: -4723578940832783696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_29
+      name: Tileset_Montanha_29
       rect:
         serializedVersion: 2
         x: 224
@@ -1068,14 +1428,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8acce39ae839bf060800000000000000
-      internalID: 6988341487729560744
+      spriteID: 4a528d6d04ba45550800000000000000
+      internalID: 6148727686238315940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_30
+      name: Tileset_Montanha_30
       rect:
         serializedVersion: 2
         x: 240
@@ -1089,14 +1449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e51f2e7950aa0690800000000000000
-      internalID: -7635113912023706140
+      spriteID: 085769c006e8f7ca0800000000000000
+      internalID: -6016934033964501632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_31
+      name: Tileset_Montanha_31
       rect:
         serializedVersion: 2
         x: 256
@@ -1110,14 +1470,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c837b455dc22e20800000000000000
-      internalID: 3324445241174625291
+      spriteID: 2cf3e5f2d9a505000800000000000000
+      internalID: 22617629287923650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_32
+      name: Tileset_Montanha_32
       rect:
         serializedVersion: 2
         x: 272
@@ -1131,14 +1491,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 924c9d974f6a1ba50800000000000000
-      internalID: 6535188103237846057
+      spriteID: 84c37102c1fa0fdc0800000000000000
+      internalID: -3607190766191428536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_33
+      name: Tileset_Montanha_33
       rect:
         serializedVersion: 2
         x: 288
@@ -1152,14 +1512,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3839a68eb45c044e0800000000000000
-      internalID: -1999381304739982461
+      spriteID: 4eb038b05088ad140800000000000000
+      internalID: 4745254712637590500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_34
+      name: Tileset_Montanha_34
       rect:
         serializedVersion: 2
         x: 304
@@ -1173,14 +1533,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbf1c27df37dc3100800000000000000
-      internalID: 89182761833471933
+      spriteID: 67b536e663476cd70800000000000000
+      internalID: 9063059077258763126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_35
+      name: Tileset_Montanha_35
       rect:
         serializedVersion: 2
         x: 320
@@ -1194,14 +1554,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a685172be7e1b9b30800000000000000
-      internalID: 4295060199136385130
+      spriteID: 6e97f9b0305f09440800000000000000
+      internalID: 4940718184654141926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_36
+      name: Tileset_Montanha_36
       rect:
         serializedVersion: 2
         x: 0
@@ -1215,14 +1575,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef4207a428afb6b00800000000000000
-      internalID: 823026794426803454
+      spriteID: e1c64d592482b04c0800000000000000
+      internalID: -4320315151085179874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_37
+      name: Tileset_Montanha_37
       rect:
         serializedVersion: 2
         x: 16
@@ -1236,14 +1596,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f65f0f6de1d6d9480800000000000000
-      internalID: -8890830110136928913
+      spriteID: 1691cf292da829240800000000000000
+      internalID: 4797049190116759905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_38
+      name: Tileset_Montanha_38
       rect:
         serializedVersion: 2
         x: 32
@@ -1257,14 +1617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79d9bf0e7bd27d530800000000000000
-      internalID: 3879619871779822999
+      spriteID: 2896cb23d186a34a0800000000000000
+      internalID: -6612858628225603198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_39
+      name: Tileset_Montanha_39
       rect:
         serializedVersion: 2
         x: 48
@@ -1278,14 +1638,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9edb77417a8466820800000000000000
-      internalID: 2911094091581734377
+      spriteID: 469df649329d63b30800000000000000
+      internalID: 4266836443817564516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_40
+      name: Tileset_Montanha_40
       rect:
         serializedVersion: 2
         x: 64
@@ -1299,14 +1659,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7e0d24422ce95b10800000000000000
-      internalID: 1970865943868149374
+      spriteID: 259596febd81697a0800000000000000
+      internalID: -6370877289975424686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_41
+      name: Tileset_Montanha_41
       rect:
         serializedVersion: 2
         x: 80
@@ -1320,14 +1680,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 751935e4d10eb0bb0800000000000000
-      internalID: -4968631347400437417
+      spriteID: db5bf4c44689fce90800000000000000
+      internalID: -7003211338993388099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_42
+      name: Tileset_Montanha_42
       rect:
         serializedVersion: 2
         x: 96
@@ -1341,14 +1701,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ec93774d8a4f0650800000000000000
-      internalID: 6201257182562065639
+      spriteID: f8366036f06150f50800000000000000
+      internalID: 6846903063828390799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_43
+      name: Tileset_Montanha_43
       rect:
         serializedVersion: 2
         x: 112
@@ -1362,14 +1722,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4d80256eb34b1a00800000000000000
-      internalID: 728250249769946445
+      spriteID: aeeff7a261019db50800000000000000
+      internalID: 6618338814786010858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_44
+      name: Tileset_Montanha_44
       rect:
         serializedVersion: 2
         x: 128
@@ -1383,14 +1743,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9331af0cc900760800000000000000
-      internalID: 7422104538549795308
+      spriteID: 3aa012c21a1b9beb0800000000000000
+      internalID: -4703533030023558493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_45
+      name: Tileset_Montanha_45
       rect:
         serializedVersion: 2
         x: 144
@@ -1404,14 +1764,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24fd227042cadd610800000000000000
-      internalID: 1647662309425995586
+      spriteID: 89e1df6fb0114b560800000000000000
+      internalID: 7328501236724735640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_46
+      name: Tileset_Montanha_46
       rect:
         serializedVersion: 2
         x: 160
@@ -1425,14 +1785,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94ff954d6feac7360800000000000000
-      internalID: 7168797082014842697
+      spriteID: 0fbbf65e262deacb0800000000000000
+      internalID: -4850708426433512464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_47
+      name: Tileset_Montanha_47
       rect:
         serializedVersion: 2
         x: 176
@@ -1446,14 +1806,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65ddde17f0d77b180800000000000000
-      internalID: -9099667016789402282
+      spriteID: 1465622fa727f82a0800000000000000
+      internalID: -6733037045521426879
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_48
+      name: Tileset_Montanha_48
       rect:
         serializedVersion: 2
         x: 192
@@ -1467,14 +1827,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 388b5b906bf5e9c20800000000000000
-      internalID: 3215112419440703619
+      spriteID: 6c3a9744da1ba4020800000000000000
+      internalID: 2326867515226563526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_49
+      name: Tileset_Montanha_49
       rect:
         serializedVersion: 2
         x: 208
@@ -1488,14 +1848,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5312a5554602877f0800000000000000
-      internalID: -614705733835284171
+      spriteID: c8e949f22efc817f0800000000000000
+      internalID: -641534376532468084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_50
+      name: Tileset_Montanha_50
       rect:
         serializedVersion: 2
         x: 224
@@ -1509,14 +1869,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afe24d560e26fae50800000000000000
-      internalID: 6822780676410191610
+      spriteID: 18844150befee8c20800000000000000
+      internalID: 3210767377043310721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_51
+      name: Tileset_Montanha_51
       rect:
         serializedVersion: 2
         x: 240
@@ -1530,14 +1890,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c94ecaa89a3e0f910800000000000000
-      internalID: 1869244162674320540
+      spriteID: 6288dd4ac23a4c910800000000000000
+      internalID: 1856788358523357222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_52
+      name: Tileset_Montanha_52
       rect:
         serializedVersion: 2
         x: 256
@@ -1551,14 +1911,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887106f043ac5c280800000000000000
-      internalID: -9023583953421854840
+      spriteID: d8ca03c08d2e654a0800000000000000
+      internalID: -6604842385946923891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_53
+      name: Tileset_Montanha_53
       rect:
         serializedVersion: 2
         x: 272
@@ -1572,14 +1932,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e9ed6bec28bc270800000000000000
-      internalID: 8271848964938964639
+      spriteID: bc0bc5e268b727c30800000000000000
+      internalID: 4355679605854351563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_54
+      name: Tileset_Montanha_54
       rect:
         serializedVersion: 2
         x: 288
@@ -1593,14 +1953,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7cf44072c0ba8830800000000000000
-      internalID: 4074263162063748218
+      spriteID: 596af763bf74d2d20800000000000000
+      internalID: 3255337249935435413
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_55
+      name: Tileset_Montanha_55
       rect:
         serializedVersion: 2
         x: 304
@@ -1614,14 +1974,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5adb44689f6cdd50800000000000000
-      internalID: 6763403440712047199
+      spriteID: f23842c5b55a0a360800000000000000
+      internalID: 7178919617835074351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_56
+      name: Tileset_Montanha_56
       rect:
         serializedVersion: 2
         x: 320
@@ -1635,14 +1995,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 847f06c0f090f5990800000000000000
-      internalID: -7395182102882224312
+      spriteID: bf291723219f19a50800000000000000
+      internalID: 6526271191587590907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_57
+      name: Tileset_Montanha_57
       rect:
         serializedVersion: 2
         x: 0
@@ -1656,14 +2016,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b90e3686c789da90800000000000000
-      internalID: -7288645235196950095
+      spriteID: 446685c7471e95790800000000000000
+      internalID: -7540748210636560828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_58
+      name: Tileset_Montanha_58
       rect:
         serializedVersion: 2
         x: 16
@@ -1677,14 +2037,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfff9356450243680800000000000000
-      internalID: -8776354226990612484
+      spriteID: 778eedeb45402a030800000000000000
+      internalID: 3504368222073710711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_59
+      name: Tileset_Montanha_59
       rect:
         serializedVersion: 2
         x: 32
@@ -1698,14 +2058,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de3ab5248bf841300800000000000000
-      internalID: 221960303198053357
+      spriteID: e9a21d48611b2de20800000000000000
+      internalID: 3373953781129620126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_60
+      name: Tileset_Montanha_60
       rect:
         serializedVersion: 2
         x: 48
@@ -1719,14 +2079,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a9af3be2404aed80800000000000000
-      internalID: -8220687513652581978
+      spriteID: 0154bac6a64d884a0800000000000000
+      internalID: -6590784501101935344
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_61
+      name: Tileset_Montanha_61
       rect:
         serializedVersion: 2
         x: 64
@@ -1740,14 +2100,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efe8b732f10ddce30800000000000000
-      internalID: 4525502032735080190
+      spriteID: 50170595888862750800000000000000
+      internalID: 6279856849610109189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_62
+      name: Tileset_Montanha_62
       rect:
         serializedVersion: 2
         x: 80
@@ -1761,14 +2121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1242ce5b9dfbf6d50800000000000000
-      internalID: 6732810909723141153
+      spriteID: 97a413495962f70b0800000000000000
+      internalID: -5728817777113740679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_63
+      name: Tileset_Montanha_63
       rect:
         serializedVersion: 2
         x: 96
@@ -1782,14 +2142,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b1272fac49fb3b0800000000000000
-      internalID: -5494509420996846817
+      spriteID: 2c9f804c0bdd07bb0800000000000000
+      internalID: -4940205039952528958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_64
+      name: Tileset_Montanha_64
       rect:
         serializedVersion: 2
         x: 112
@@ -1803,14 +2163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1eb1855e7a4626660800000000000000
-      internalID: 7377569811856366561
+      spriteID: 2c13139d84b3bab10800000000000000
+      internalID: 1993752444109140418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_65
+      name: Tileset_Montanha_65
       rect:
         serializedVersion: 2
         x: 128
@@ -1824,14 +2184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06e59f4138bb43980800000000000000
-      internalID: -8560010820057473440
+      spriteID: 3630b71fc390c05d0800000000000000
+      internalID: -3095088686556314781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_66
+      name: Tileset_Montanha_66
       rect:
         serializedVersion: 2
         x: 144
@@ -1845,14 +2205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cddab6c98c969fa0800000000000000
-      internalID: -5794271755006976573
+      spriteID: f7942a6359807bd40800000000000000
+      internalID: 5599954098618255743
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_67
+      name: Tileset_Montanha_67
       rect:
         serializedVersion: 2
         x: 160
@@ -1866,14 +2226,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3a72d069be245a60800000000000000
-      internalID: 7661800239792290365
+      spriteID: 3af375bf86b3cedb0800000000000000
+      internalID: -4761365383958020189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_68
+      name: Tileset_Montanha_68
       rect:
         serializedVersion: 2
         x: 176
@@ -1887,14 +2247,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cdce204b624e0970800000000000000
-      internalID: 8722982556668972488
+      spriteID: 76d909d6e339b1f10800000000000000
+      internalID: 2241547135882403175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_69
+      name: Tileset_Montanha_69
       rect:
         serializedVersion: 2
         x: 192
@@ -1908,14 +2268,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77b9f55551c5c8860800000000000000
-      internalID: 7533497523380394871
+      spriteID: bd823b24892506190800000000000000
+      internalID: -7971280526538233637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_70
+      name: Tileset_Montanha_70
       rect:
         serializedVersion: 2
         x: 208
@@ -1929,14 +2289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3a5c74277326b210800000000000000
-      internalID: 1348304133064251962
+      spriteID: 33a41d13dc03eadd0800000000000000
+      internalID: -2472985487517595085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_71
+      name: Tileset_Montanha_71
       rect:
         serializedVersion: 2
         x: 224
@@ -1950,14 +2310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 380432a870e861e90800000000000000
-      internalID: -7055295603195821949
+      spriteID: 8e2b508bf63776d30800000000000000
+      internalID: 4424632082580746984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_72
+      name: Tileset_Montanha_72
       rect:
         serializedVersion: 2
         x: 240
@@ -1971,14 +2331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf6eefab347820d70800000000000000
-      internalID: 9007910929664239355
+      spriteID: b5d1a21f00971e240800000000000000
+      internalID: 4819266121216171355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_73
+      name: Tileset_Montanha_73
       rect:
         serializedVersion: 2
         x: 256
@@ -1992,14 +2352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59697c831312da010800000000000000
-      internalID: 1201653170867508885
+      spriteID: 73c27ccb583224990800000000000000
+      internalID: -7403315780138881993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_74
+      name: Tileset_Montanha_74
       rect:
         serializedVersion: 2
         x: 272
@@ -2013,14 +2373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dab67f45b9472880800000000000000
-      internalID: -8635852717388547370
+      spriteID: 22e368960093f86e0800000000000000
+      internalID: -1833183849383313886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_75
+      name: Tileset_Montanha_75
       rect:
         serializedVersion: 2
         x: 288
@@ -2034,14 +2394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41209df1a4f43e8e0800000000000000
-      internalID: -1665400257416461804
+      spriteID: e9c30cfd733473a50800000000000000
+      internalID: 6500738494388780190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_76
+      name: Tileset_Montanha_76
       rect:
         serializedVersion: 2
         x: 304
@@ -2055,14 +2415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eac8f7ba0fdcf120800000000000000
-      internalID: 2449077534511909600
+      spriteID: e01db44d9f5e409d0800000000000000
+      internalID: -2808867406400990962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_77
+      name: Tileset_Montanha_77
       rect:
         serializedVersion: 2
         x: 320
@@ -2076,14 +2436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d2fa45b6ee506840800000000000000
-      internalID: 5215272713472111320
+      spriteID: a9f987d8eabc8d840800000000000000
+      internalID: 5249169316258553754
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_78
+      name: Tileset_Montanha_78
       rect:
         serializedVersion: 2
         x: 0
@@ -2097,14 +2457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abfa7808cc44c7ae0800000000000000
-      internalID: -1550288526601900102
+      spriteID: ac57bcc3e5a9ea930800000000000000
+      internalID: 4156429235647116746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_79
+      name: Tileset_Montanha_79
       rect:
         serializedVersion: 2
         x: 16
@@ -2118,14 +2478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78cd3ad6cf8c71fd0800000000000000
-      internalID: -2371205692290507641
+      spriteID: ce01f202ae915eab0800000000000000
+      internalID: -4979545319635218196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_80
+      name: Tileset_Montanha_80
       rect:
         serializedVersion: 2
         x: 32
@@ -2139,14 +2499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82161ebb8df77c8b0800000000000000
-      internalID: -5131992681523617496
+      spriteID: e9b2a6b58e36c4b60800000000000000
+      internalID: 7731664509905546142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_81
+      name: Tileset_Montanha_81
       rect:
         serializedVersion: 2
         x: 48
@@ -2160,14 +2520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3286f502c4b635ce0800000000000000
-      internalID: -1417671482986764253
+      spriteID: 892da14020e6a1800800000000000000
+      internalID: 583900056635757208
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_82
+      name: Tileset_Montanha_82
       rect:
         serializedVersion: 2
         x: 64
@@ -2181,14 +2541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4646620f3cc3c90800000000000000
-      internalID: -7188655468986473278
+      spriteID: 7dfda07c31b2ad9b0800000000000000
+      internalID: -5054680267826208809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_83
+      name: Tileset_Montanha_83
       rect:
         serializedVersion: 2
         x: 80
@@ -2202,14 +2562,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 178e83872a3c3cdc0800000000000000
-      internalID: -3619834572906633103
+      spriteID: 2f512fb9b86cb4eb0800000000000000
+      internalID: -4734472280330856974
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_84
+      name: Tileset_Montanha_84
       rect:
         serializedVersion: 2
         x: 96
@@ -2223,14 +2583,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 804d6e6ff7d1a8820800000000000000
-      internalID: 2921179743743562760
+      spriteID: e6168a8d73c59f770800000000000000
+      internalID: 8645042354642248046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_85
+      name: Tileset_Montanha_85
       rect:
         serializedVersion: 2
         x: 112
@@ -2244,14 +2604,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1a03132c8baf8ce0800000000000000
-      internalID: -1400712340716713441
+      spriteID: 44c33e1b0aefce5a0800000000000000
+      internalID: -6490532996815045564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_86
+      name: Tileset_Montanha_86
       rect:
         serializedVersion: 2
         x: 128
@@ -2265,14 +2625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 444f745c3a504a450800000000000000
-      internalID: 6099005996314129476
+      spriteID: 872f73ea743b1c6e0800000000000000
+      internalID: -1818975654034017672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_87
+      name: Tileset_Montanha_87
       rect:
         serializedVersion: 2
         x: 144
@@ -2286,14 +2646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87cba2ea8ceba3e50800000000000000
-      internalID: 6789949157339217016
+      spriteID: 0c12960c4977eb340800000000000000
+      internalID: 4881470526883176896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_88
+      name: Tileset_Montanha_88
       rect:
         serializedVersion: 2
         x: 160
@@ -2307,14 +2667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5339e63dc34b24160800000000000000
-      internalID: 7008362143480189749
+      spriteID: b2bdefb91a9d8a930800000000000000
+      internalID: 4154809944379415339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_89
+      name: Tileset_Montanha_89
       rect:
         serializedVersion: 2
         x: 176
@@ -2328,14 +2688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 643ec873a61362e80800000000000000
-      internalID: -8203815338940505274
+      spriteID: ec9a08718e39dea40800000000000000
+      internalID: 5399134153323096526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_90
+      name: Tileset_Montanha_90
       rect:
         serializedVersion: 2
         x: 192
@@ -2349,14 +2709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d78ea74d286bc510800000000000000
-      internalID: 1570463438754187218
+      spriteID: 552dc52baa97ec3c0800000000000000
+      internalID: -4337395617067380139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_91
+      name: Tileset_Montanha_91
       rect:
         serializedVersion: 2
         x: 208
@@ -2370,14 +2730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ac739b49c35a8e10800000000000000
-      internalID: 2200663491945397413
+      spriteID: 370beedee9e26bf50800000000000000
+      internalID: 6896751139496046707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_92
+      name: Tileset_Montanha_92
       rect:
         serializedVersion: 2
         x: 224
@@ -2391,14 +2751,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5786744b02725d780800000000000000
-      internalID: -8658971687132895115
+      spriteID: 4f525eedb9e550dd0800000000000000
+      internalID: -2520504392891423244
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_93
+      name: Tileset_Montanha_93
       rect:
         serializedVersion: 2
         x: 240
@@ -2412,14 +2772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48d5dedd053ddc970800000000000000
-      internalID: 8776903593089129860
+      spriteID: 0d0fc6090252ec320800000000000000
+      internalID: 2580040458322112720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_94
+      name: Tileset_Montanha_94
       rect:
         serializedVersion: 2
         x: 256
@@ -2433,14 +2793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59c541f4bce2a6c70800000000000000
-      internalID: 8965029458974366869
+      spriteID: 28e86a575430a28d0800000000000000
+      internalID: -2870478215633793406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_95
+      name: Tileset_Montanha_95
       rect:
         serializedVersion: 2
         x: 272
@@ -2454,14 +2814,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34dcbd5c07aab44b0800000000000000
-      internalID: -5455079122296648381
+      spriteID: e509c465faf0313d0800000000000000
+      internalID: -3237226461407702946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_96
+      name: Tileset_Montanha_96
       rect:
         serializedVersion: 2
         x: 288
@@ -2475,14 +2835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8500cfa93a94daa00800000000000000
-      internalID: 769352078378926168
+      spriteID: 1c965dec9e02a2fa0800000000000000
+      internalID: -5824806979480753727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_97
+      name: Tileset_Montanha_97
       rect:
         serializedVersion: 2
         x: 304
@@ -2496,14 +2856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babfd80e8b7bfd590800000000000000
-      internalID: -7647191637582546005
+      spriteID: a98d57b35bc9ee100800000000000000
+      internalID: 139220940695656602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_98
+      name: Tileset_Montanha_98
       rect:
         serializedVersion: 2
         x: 320
@@ -2517,14 +2877,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28bfc5ad6ce899970800000000000000
-      internalID: 8762191534744206210
+      spriteID: 9566ed9658f2fd470800000000000000
+      internalID: 8421502078259455577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_99
+      name: Tileset_Montanha_99
       rect:
         serializedVersion: 2
         x: 0
@@ -2538,14 +2898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fad5a261ef05e1d0800000000000000
-      internalID: -3322231689418777864
+      spriteID: 2b7f567284fb15820800000000000000
+      internalID: 2905313551250225074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_100
+      name: Tileset_Montanha_100
       rect:
         serializedVersion: 2
         x: 16
@@ -2559,14 +2919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbf8c84301d6e2620800000000000000
-      internalID: 2751256338738483135
+      spriteID: 4f3536d4d095a55a0800000000000000
+      internalID: -6531810395879681036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_101
+      name: Tileset_Montanha_101
       rect:
         serializedVersion: 2
         x: 32
@@ -2580,14 +2940,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef523cb2f1f0ffae0800000000000000
-      internalID: -1513474323220584962
+      spriteID: 84fdece4c21a57950800000000000000
+      internalID: 6446235653323546440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_102
+      name: Tileset_Montanha_102
       rect:
         serializedVersion: 2
         x: 48
@@ -2601,14 +2961,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 998978fc25b607490800000000000000
-      internalID: -7750576955291363175
+      spriteID: 4e26936e5593e1ad0800000000000000
+      internalID: -2729681283042417948
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_103
+      name: Tileset_Montanha_103
       rect:
         serializedVersion: 2
         x: 64
@@ -2622,14 +2982,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fad140a635cbaa60800000000000000
-      internalID: 7686454027445459705
+      spriteID: d8ed7d8371757dd80800000000000000
+      internalID: -8226010437119385971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_104
+      name: Tileset_Montanha_104
       rect:
         serializedVersion: 2
         x: 80
@@ -2643,14 +3003,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032a73a8ba1b31c20800000000000000
-      internalID: 3176077512542757424
+      spriteID: fb2e37c48c3abbe30800000000000000
+      internalID: 4520386731667874495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_105
+      name: Tileset_Montanha_105
       rect:
         serializedVersion: 2
         x: 96
@@ -2664,14 +3024,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45fbba276eb12f5e0800000000000000
-      internalID: -1877407418079789228
+      spriteID: 0ff0d5149a3870ae0800000000000000
+      internalID: -1583151981028110352
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_106
+      name: Tileset_Montanha_106
       rect:
         serializedVersion: 2
         x: 112
@@ -2685,14 +3045,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c19a36cc4047363e0800000000000000
-      internalID: -2061676640447780580
+      spriteID: b3d96e84e687c0eb0800000000000000
+      internalID: -4752291091717907141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_107
+      name: Tileset_Montanha_107
       rect:
         serializedVersion: 2
         x: 128
@@ -2706,14 +3066,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 305b56cca099b7a40800000000000000
-      internalID: 5367051652600018179
+      spriteID: 46ed128ac5cec9670800000000000000
+      internalID: 8546966075544297060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_108
+      name: Tileset_Montanha_108
       rect:
         serializedVersion: 2
         x: 144
@@ -2727,14 +3087,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d58b7d7e9192d5250800000000000000
-      internalID: 5934945075184777309
+      spriteID: ed983b43c4ab40f50800000000000000
+      internalID: 6846802169974458846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_109
+      name: Tileset_Montanha_109
       rect:
         serializedVersion: 2
         x: 160
@@ -2748,14 +3108,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 919c6aa8d56820250800000000000000
-      internalID: 5909433397379778841
+      spriteID: dd981e4a7cf6e8760800000000000000
+      internalID: 7462024535854909917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_110
+      name: Tileset_Montanha_110
       rect:
         serializedVersion: 2
         x: 176
@@ -2769,14 +3129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a2662d6e2ac25f60800000000000000
-      internalID: 8021696187048813222
+      spriteID: 3c071bb717de49250800000000000000
+      internalID: 5950642079325581507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_111
+      name: Tileset_Montanha_111
       rect:
         serializedVersion: 2
         x: 192
@@ -2790,14 +3150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac061b26fb3012570800000000000000
-      internalID: 8440031297198448842
+      spriteID: b0da44aa3c41b1ff0800000000000000
+      internalID: -64434939058934517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_112
+      name: Tileset_Montanha_112
       rect:
         serializedVersion: 2
         x: 208
@@ -2811,14 +3171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f122d9379395a3860800000000000000
-      internalID: 7510413431881409055
+      spriteID: a347d0038b45a8280800000000000000
+      internalID: -9040320151935945670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tileset_Montanha_v1_113
+      name: Tileset_Montanha_113
       rect:
         serializedVersion: 2
         x: 224
@@ -2832,8 +3192,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f8c9f821f2b59a20800000000000000
-      internalID: 3068555469967182073
+      spriteID: f2573c48b4b7d78c0800000000000000
+      internalID: -3999905329754966737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_114
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00db8972dede3520800000000000000
+      internalID: 2683827423523098634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_115
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da221f31ed25a3810800000000000000
+      internalID: 1745798919330276013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_116
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9577a421b98301e0800000000000000
+      internalID: -2232789596328462947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_117
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d6c086a9f48da50800000000000000
+      internalID: 6546069582972218666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_118
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6cf51c582b855f10800000000000000
+      internalID: 2257863793656069230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Montanha_119
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d8eae3983d67b20800000000000000
+      internalID: 3131923177298365755
       vertices: []
       indices: 
       edges: []

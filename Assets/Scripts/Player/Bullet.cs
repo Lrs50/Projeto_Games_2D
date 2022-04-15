@@ -8,7 +8,6 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     float startTime;
     float liveTime = 1f;
-    // Start is called before the first frame update
     void Start()
     {
         startTime = Time.time;
@@ -29,7 +28,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name=="Target" || other.gameObject.name=="Collider"){
+        if(other.gameObject.name == "Target" || other.gameObject.tag == "Collider"){
             Destroy(gameObject);
         }
     }
