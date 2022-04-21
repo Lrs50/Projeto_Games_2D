@@ -17,23 +17,9 @@ public class EnemiesSearchState: BaseStateEnemies {
     }
 
     public override void UpdateState(EnemiesStateManager enemy){
-        Debug.Log(enemy.transform.position);
-        Debug.Log(goToPosition);
-        Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
-        if (Vector3.Distance(enemy.transform.position, goToPosition) <= 2f) {
-            if (enemy.waitTime <= 0){
-                enemy.waitTime = enemy.startWaitTime;
-                goToPosition = (Vector2) startPosition + Random.insideUnitCircle * 5f;
-                shouldMove = true;
-                Debug.Log("should move");
-                Debug.Log(goToPosition);
-            }
-            else {
-                enemy.waitTime -= Time.deltaTime;
-                Debug.Log(enemy.waitTime);
-            }
+        if (enemy.isPatrol){
+            doPatrol(enemy);
         }
-
 
         //fazer busca  
         if(Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.maxRange && Vector3.Distance(enemy.target.position, enemy.transform.position) >= enemy.minRange){
@@ -57,6 +43,25 @@ public class EnemiesSearchState: BaseStateEnemies {
         }
     }
 
+    public void doPatrol(EnemiesStateManager enemy){
+        Debug.Log(enemy.transform.position);
+        Debug.Log(goToPosition);
+        Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
+        if (Vector3.Distance(enemy.transform.position, goToPosition) <= 2f) {
+            if (enemy.waitTime <= 0){
+                enemy.waitTime = enemy.startWaitTime;
+                goToPosition = (Vector2) startPosition + Random.insideUnitCircle * 5f;
+                shouldMove = true;
+                Debug.Log("should move");
+                Debug.Log(goToPosition);
+            }
+            else {
+                enemy.waitTime -= Time.deltaTime;
+                Debug.Log(enemy.waitTime);
+            }
+        }
+    }
+
     public void rotateTowardsTarget(EnemiesStateManager enemy){
         var offset = 90f;
         Vector2 direction = goToPosition - enemy.transform.position;
@@ -70,7 +75,6 @@ public class EnemiesSearchState: BaseStateEnemies {
     }
 
     public virtual void foundPlayer(EnemiesStateManager enemy){    
-        //enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.baseSpeed *Time.deltaTime);    
-        enemy.SwitchState(enemy.moveState);
+        enemy.BecomeAggresive();
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 using UnityEngine.InputSystem;
 using System;
 
-public class EnemiesStateManager : MonoBehaviour
+public abstract class EnemiesStateManager : MonoBehaviour
 {
 
     public Transform target;
@@ -19,9 +19,7 @@ public class EnemiesStateManager : MonoBehaviour
     BaseStateEnemies currentState;
 
     public virtual EnemiesSearchState searchState {get; protected set;} = new EnemiesSearchState();
-    public virtual EnemiesMoveState moveState {get; protected set;} = new EnemiesMoveState();
-    public virtual EnemiesAttackState attackState {get; protected set;} = new EnemiesAttackState();
-    
+   
     public Vector2 walkInput;
     public LayerMask obstacles;
     public Rigidbody2D rb;
@@ -72,5 +70,9 @@ public class EnemiesStateManager : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D other)
    {
+   }
+
+   public virtual void BecomeAggresive(){
+       
    }
 }

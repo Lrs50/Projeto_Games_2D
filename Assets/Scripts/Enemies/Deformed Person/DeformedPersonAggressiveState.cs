@@ -1,9 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
-using System;
-public class EnemiesMoveState : BaseStateEnemies {
-
-    public override void EnterState(EnemiesStateManager enemy) {
+using System.Collections;
+public class DeformedPersonAggressiveState: BaseStateEnemies {
+  public override void EnterState(EnemiesStateManager enemy) {
         enemy.agent.isStopped = false;
     }
 
@@ -35,11 +33,7 @@ public class EnemiesMoveState : BaseStateEnemies {
         enemy.SwitchState(enemy.searchState);
     }
 
-    public virtual void followPlayer(EnemiesStateManager enemy){        
-        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.baseSpeed *Time.deltaTime);
-    }
-
-    public virtual void rotateTowardsPlayer(EnemiesStateManager enemy){
+    public void rotateTowardsPlayer(EnemiesStateManager enemy){
         var offset = 90f;
         Vector2 direction = enemy.target.position - enemy.transform.position;
         direction.Normalize();
@@ -47,12 +41,4 @@ public class EnemiesMoveState : BaseStateEnemies {
         enemy.transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
     }
 
-    public virtual void checkObstacles(EnemiesStateManager enemy){
-        RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position,enemy.transform.forward,20,enemy.obstacles.value);
-        if(hit.collider != null && hit.collider.transform != enemy.transform && hit.collider.tag != "Player"){
-            Debug.DrawLine(enemy.transform.position, hit.point, Color.red);
-            Debug.Log(hit.collider.tag);
-        }
-    }
-   
 }

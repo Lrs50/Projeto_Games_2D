@@ -10,4 +10,5 @@ public abstract class BaseStateEnemies
    public abstract void FixedUpdateState(EnemiesStateManager enemy);
 
    public abstract void OnCollisionEnter(EnemiesStateManager enemy);
+   
 }
