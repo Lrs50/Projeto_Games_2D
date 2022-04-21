@@ -2,17 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class LoadingProgressBar : MonoBehaviour
 {
-    private Image image;
-    // Start is called before the first frame update
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] sprites;
+ 
     private void Awake()
     {
-        image = transform.GetComponent<Image>();
+        spriteRenderer = transform.GetComponent<SpriteRenderer>();
     }
     private void Update()
     {
-        image.fillAmount= Loader.GetLoadingProgress();
+        if(Loader.GetLoadingProgress()>0.1){
+            spriteRenderer.sprite = sprites[0];
+        }else if(Loader.GetLoadingProgress()>0.25){
+            spriteRenderer.sprite = sprites[1];
+        }else if(Loader.GetLoadingProgress()>0.5){
+            spriteRenderer.sprite = sprites[2];
+        }else{
+            spriteRenderer.sprite = sprites[3];
+        }
+
     }
 }

@@ -36,10 +36,10 @@ public class DeformedAggressiveState : BaseStateEnemies {
         Vector3 direction = toPosition - fromPosition;
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
-            Debug.Log("Shootable! Pew pew");
+            //Debug.Log("Shootable! Pew pew");
         }else{
-            Debug.Log(hit);
-            Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
+            //Debug.Log(hit);
+            //Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
         }
     }
 
