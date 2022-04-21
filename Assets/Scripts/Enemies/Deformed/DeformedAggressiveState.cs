@@ -5,17 +5,17 @@ public class DeformedAggressiveState : BaseStateEnemies {
     }
 
     public override void UpdateState(EnemiesStateManager enemy){
-        if(Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.maxRange && Vector3.Distance(enemy.target.position, enemy.transform.position) >= enemy.minRange){
-            rotateTowardsPlayer(enemy);
+        if(Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.maxRange && Vector3.Distance(enemy.target.position, enemy.transform.position) >= enemy.minRange) {
             isShootable(enemy);        
-        }else{
+        }
+        else{
             enemy.SwitchState(enemy.searchState);
         }
 
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
-
+        rotateTowardsPlayer(enemy);
     }
 
     public override void OnCollisionEnter(EnemiesStateManager enemy){
@@ -34,11 +34,11 @@ public class DeformedAggressiveState : BaseStateEnemies {
         Vector3 fromPosition = enemy.transform.position;
         Vector3 toPosition = enemy.target.transform.position;
         Vector3 direction = toPosition - fromPosition;
-        RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction,Mathf.Infinity , enemy.obstacles);
-        //Debug.Log(hit.collider.gameObject.name);
-        if(hit.collider != null && hit.collider.tag == "Player"){
+        RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, Mathf.Infinity);
+        if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
             Debug.Log("Shootable! Pew pew");
         }else{
+            Debug.Log(hit);
             Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
         }
     }

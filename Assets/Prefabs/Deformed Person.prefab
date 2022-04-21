@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5311517204098917303}
   - component: {fileID: 545248004393240183}
   - component: {fileID: 8346390511460673480}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Deformed Person
   m_TagString: Untagged
   m_Icon: {fileID: 0}
