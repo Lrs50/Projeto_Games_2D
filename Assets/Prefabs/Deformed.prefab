@@ -139,7 +139,7 @@ MonoBehaviour:
   baseSpeed: 5
   maxSpeed: 5
   rotationSpeed: 8
-  maxRange: 7
+  maxRange: 10
   minRange: 0
   walkInput: {x: 0, y: 0}
   obstacles:
