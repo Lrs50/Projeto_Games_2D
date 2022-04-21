@@ -14,7 +14,7 @@ public class DeformedPersonAggressiveState: BaseStateEnemies {
                 ExitState(enemy);
             }
             
-            Debug.Log(enemy.aggro); 
+            //Debug.Log(enemy.aggro); 
         }
     }
 
@@ -28,7 +28,7 @@ public class DeformedPersonAggressiveState: BaseStateEnemies {
     }
 
     public void ExitState(EnemiesStateManager enemy){
-        Debug.Log("Lost aggro on opponent");
+        //Debug.Log("Lost aggro on opponent");
         enemy.agent.isStopped = true;
         enemy.SwitchState(enemy.searchState);
     }

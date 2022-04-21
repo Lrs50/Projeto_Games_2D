@@ -11,9 +11,9 @@ public class EnemiesSearchState: BaseStateEnemies {
         startPosition = enemy.transform.position;
         goToPosition = startPosition;
 
-        Debug.Log(enemy.transform.position);
-        Debug.Log(goToPosition);
-        Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
+        //Debug.Log(enemy.transform.position);
+        //Debug.Log(goToPosition);
+        //Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
     }
 
     public override void UpdateState(EnemiesStateManager enemy){
@@ -27,7 +27,7 @@ public class EnemiesSearchState: BaseStateEnemies {
             if (enemy.aggro > 100){
                 enemy.aggro = 100;
                 foundPlayer(enemy);
-                Debug.Log("aggro on enemy");
+                //Debug.Log("aggro on enemy");
             }
         }
     }
@@ -44,20 +44,20 @@ public class EnemiesSearchState: BaseStateEnemies {
     }
 
     public void doPatrol(EnemiesStateManager enemy){
-        Debug.Log(enemy.transform.position);
-        Debug.Log(goToPosition);
-        Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
+        //Debug.Log(enemy.transform.position);
+        //Debug.Log(goToPosition);
+        //Debug.Log(Vector3.Distance(enemy.transform.position, goToPosition));
         if (Vector3.Distance(enemy.transform.position, goToPosition) <= 2f) {
             if (enemy.waitTime <= 0){
                 enemy.waitTime = enemy.startWaitTime;
                 goToPosition = (Vector2) startPosition + Random.insideUnitCircle * 5f;
                 shouldMove = true;
-                Debug.Log("should move");
-                Debug.Log(goToPosition);
+                //Debug.Log("should move");
+                //Debug.Log(goToPosition);
             }
             else {
                 enemy.waitTime -= Time.deltaTime;
-                Debug.Log(enemy.waitTime);
+                //Debug.Log(enemy.waitTime);
             }
         }
     }
