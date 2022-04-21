@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1989262117353386327}
   - component: {fileID: 1989262117353386326}
   - component: {fileID: 6395776295639276329}
-  - component: {fileID: 1989262117353386325}
   - component: {fileID: 8502713041653447780}
+  - component: {fileID: 791994013}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -202,22 +202,6 @@ MonoBehaviour:
   m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!70 &1989262117353386325
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989262117353386313}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0007856538, y: -0.009476742}
-  m_Size: {x: 0.114454776, y: 0.26841637}
-  m_Direction: 0
 --- !u!114 &8502713041653447780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,10 +277,41 @@ MonoBehaviour:
   - {fileID: -3551967274139903119, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
   - {fileID: 8113700493152974639, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
   - {fileID: 4819963251569588764, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
+  dashAnimation:
+  - {fileID: -5809692940870928453, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
+  - {fileID: 2351414161340878556, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
+  - {fileID: 6285642079362487989, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
+  - {fileID: 3530494885523508410, guid: ca96c2a1405cf834a9afb80e05976111, type: 3}
   spriteRenderer: {fileID: 0}
   animationFrame: 0
   numFrames: 4
   animationOrientation: 0
+--- !u!61 &791994013
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989262117353386313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.009812161}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.1, y: 0.25}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.23201329}
+  m_EdgeRadius: 0
 --- !u!1 &1989262118155671007
 GameObject:
   m_ObjectHideFlags: 0

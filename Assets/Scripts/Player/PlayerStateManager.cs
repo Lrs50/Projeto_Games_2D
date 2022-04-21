@@ -49,6 +49,7 @@ public class PlayerStateManager : MonoBehaviour
     public Sprite[] idleAnimation;
     public Sprite[] walkAnimation;
     public Sprite[] runAnimation;
+    public Sprite[] dashAnimation;
 
     //Animation config
     public SpriteRenderer spriteRenderer;
