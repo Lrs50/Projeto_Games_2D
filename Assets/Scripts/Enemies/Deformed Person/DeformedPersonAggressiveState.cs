@@ -21,6 +21,9 @@ public class DeformedPersonAggressiveState: BaseStateEnemies {
     public override void FixedUpdateState(EnemiesStateManager enemy){
         rotateTowardsPlayer(enemy);
         enemy.agent.SetDestination(enemy.target.position);
+
+        
+
     }
 
     public override void OnCollisionEnter(EnemiesStateManager enemy) {

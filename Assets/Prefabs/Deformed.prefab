@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 9086002604251044308, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
-  m_Color: {r: 0.5283019, g: 0.102171585, b: 0.102171585, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -106,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &2666298901666578860
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,6 +151,16 @@ MonoBehaviour:
   aggro: 0
   waitTime: 0
   startWaitTime: 0
+  fowardSprite:
+  - {fileID: 9086002604251044308, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  - {fileID: -2387392252228742477, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  backSprite:
+  - {fileID: -8303484149359638580, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  - {fileID: -2658818468682538280, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  leftSprite:
+  - {fileID: 9086002604251044308, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  rightSprite:
+  - {fileID: -2387392252228742477, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
 --- !u!195 &1513660460687959313
 NavMeshAgent:
   m_ObjectHideFlags: 0
