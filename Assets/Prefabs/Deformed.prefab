@@ -94,7 +94,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5199675479302311704}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -147,7 +147,9 @@ MonoBehaviour:
     m_Bits: 384
   rb: {fileID: 0}
   agent: {fileID: 1513660460687959313}
+  spriteRenderer: {fileID: 0}
   isPatrol: 0
+  angle: 0
   aggro: 0
   waitTime: 0
   startWaitTime: 0
@@ -157,10 +159,6 @@ MonoBehaviour:
   backSprite:
   - {fileID: -8303484149359638580, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
   - {fileID: -2658818468682538280, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
-  leftSprite:
-  - {fileID: 9086002604251044308, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
-  rightSprite:
-  - {fileID: -2387392252228742477, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
 --- !u!195 &1513660460687959313
 NavMeshAgent:
   m_ObjectHideFlags: 0
