@@ -24,9 +24,10 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public LayerMask obstacles;
     public Rigidbody2D rb;
     public NavMeshAgent agent;
+    public SpriteRenderer spriteRenderer;
 
     public Boolean isPatrol;
-
+    public float angle;
     public float aggro;
 
     public float waitTime;
@@ -36,6 +37,7 @@ public abstract class EnemiesStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         //a
+        spriteRenderer = GetComponent<SpriteRenderer>();
         target = GameObject.FindWithTag("Player").transform;
         
         agent = GetComponent<NavMeshAgent>();
@@ -75,4 +77,9 @@ public abstract class EnemiesStateManager : MonoBehaviour
    public virtual void BecomeAggresive(){
        
    }
+
+   public virtual void Animate(){
+
+   }
+
 }
