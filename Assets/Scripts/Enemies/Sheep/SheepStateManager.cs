@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SheepStateManager : MonoBehaviour
+public class SheepStateManager : EnemiesStateManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public SheepAggressiveState aggressiveState = new SheepAggressiveState();
+
+    public SheepTackleState tackleState = new SheepTackleState();
+   
+    public override void BecomeAggresive()
     {
-        
+        SwitchState(aggressiveState);
     }
 }
