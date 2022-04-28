@@ -15,7 +15,7 @@ public class EnemiesStateManager : MonoBehaviour
     public float maxRange;
     public float minRange;
 
-    BaseStateEnemies currentState;
+    public BaseStateEnemies currentState;
 
     public virtual EnemiesSearchState searchState {get; protected set;} = new EnemiesSearchState();
     public virtual EnemiesMoveState moveState {get; protected set;} = new EnemiesMoveState();
@@ -25,7 +25,7 @@ public class EnemiesStateManager : MonoBehaviour
     public LayerMask obstacles;
     public Rigidbody2D rb;
     // Start is called before the first frame update
-    void Start() {
+    protected virtual void Start() {
         //a
         target = GameObject.FindWithTag("Player").transform;
         currentState = searchState;

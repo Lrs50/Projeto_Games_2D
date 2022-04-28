@@ -1,5 +1,3 @@
-using UnityEngine;
-using System.Collections;
 public class DeformedPersonAttackState: EnemiesAttackState {
     public override void EnterState(EnemiesStateManager enemy){
     }
