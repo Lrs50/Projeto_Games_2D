@@ -150,6 +150,7 @@ public class PlayerStateManager : MonoBehaviour
         if(context.ReadValue<float>()!=0){
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
         }
+        
     }
 
    private void OnTriggerEnter2D(Collider2D other)
@@ -164,7 +165,6 @@ public class PlayerStateManager : MonoBehaviour
        Sprite full = staminaUI[2];
        Sprite half = staminaUI[1];
        Sprite empty = staminaUI[0];
-
 
 
        for(int i=0;i<5;i++){

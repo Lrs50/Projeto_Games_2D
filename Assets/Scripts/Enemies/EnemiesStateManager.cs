@@ -33,10 +33,13 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public float waitTime;
 
     public float startWaitTime;
+    public string animationState = "iddle";
+    public Transform reference;
 
     // Start is called before the first frame update
     void Start() {
         //a
+        reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         target = GameObject.FindWithTag("Player").transform;
         

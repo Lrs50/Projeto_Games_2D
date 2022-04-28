@@ -153,12 +153,31 @@ MonoBehaviour:
   aggro: 0
   waitTime: 0
   startWaitTime: 0
-  fowardSprite:
+  animationState: iddle
+  iddle:
   - {fileID: 9086002604251044308, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
   - {fileID: -2387392252228742477, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
-  backSprite:
   - {fileID: -8303484149359638580, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
   - {fileID: -2658818468682538280, guid: fac4d787a406db94391b42c664d5b46e, type: 3}
+  attack:
+  - {fileID: 8787155026468732370, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 390992669149140617, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 400612857992509413, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -9083673122026177607, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -5543474804264426907, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3796281321144121750, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -7740691678245824217, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3626598133787509966, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -2671248045207160925, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -2801400049591796485, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -2056040445454206914, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -2308353728054017927, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 8134555402756907138, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3388837522197622948, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -2264665606110087554, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 5791806806158655685, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  direction: 0
+  count: 0
 --- !u!195 &1513660460687959313
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -1,6 +1,11 @@
 using UnityEngine;
 using System.Collections;
 public class DeformedAggressiveState : BaseStateEnemies {
+    public bool shoot = false;
+    public bool canShoot = false;
+    float shootDelay = 400;
+    public float shootAnimationTime = 100;
+    public int count = 0;
     public override void EnterState(EnemiesStateManager enemy){
     }
 
@@ -16,6 +21,23 @@ public class DeformedAggressiveState : BaseStateEnemies {
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
         enemy.Animate();
+        
+        count++;
+        if(count>=shootDelay && shoot==false){
+            if(canShoot){
+                shoot=true;
+                enemy.animationState="attack";
+            }
+            count=0;
+        }
+
+        if(count>=shootAnimationTime && shoot ==true){
+            shoot = false;
+            count=0;
+            enemy.animationState="iddle";
+        }
+
+        
     }
 
     public override void OnCollisionEnter(EnemiesStateManager enemy){
@@ -33,10 +55,9 @@ public class DeformedAggressiveState : BaseStateEnemies {
 
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
-            //Debug.Log("Shootable! Pew pew");
+            canShoot = true;
         }else{
-            //Debug.Log(hit);
-            //Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
+            canShoot = false;
         }
     }
 
