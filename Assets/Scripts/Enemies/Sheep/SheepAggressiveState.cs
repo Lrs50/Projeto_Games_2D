@@ -5,6 +5,7 @@ using UnityEngine;
 public class SheepAggressiveState : BaseStateEnemies
 {
     public override void EnterState(EnemiesStateManager enemy) {
+        enemy.animationState="run";
         enemy.agent.isStopped = false;
     }
 
@@ -27,8 +28,9 @@ public class SheepAggressiveState : BaseStateEnemies
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
-        rotateTowardsPlayer(enemy);
+        enemy.getAngle(enemy);
         enemy.agent.SetDestination(enemy.target.position);
+        enemy.Animate();
     }
 
     public override void OnCollisionEnter(EnemiesStateManager enemy) {
@@ -37,15 +39,10 @@ public class SheepAggressiveState : BaseStateEnemies
 
     public void ExitState(EnemiesStateManager enemy){
         //Debug.Log("Lost aggro on opponent");
+        enemy.animationState="iddle";
         enemy.SwitchState(enemy.searchState);
     }
 
-    public void rotateTowardsPlayer(EnemiesStateManager enemy){
-        var offset = 90f;
-        Vector2 direction = enemy.target.position - enemy.transform.position;
-        direction.Normalize();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;       
-        enemy.transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
-    }
+
 
 }

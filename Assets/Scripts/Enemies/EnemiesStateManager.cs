@@ -101,5 +101,16 @@ public abstract class EnemiesStateManager : MonoBehaviour
             direction = 3;
         }
     }
+    public void getAngle(EnemiesStateManager enemy){
+
+        Vector3 fromPosition = enemy.transform.position;
+        Vector3 toPosition = enemy.target.transform.position;
+        
+        Vector3 direction = toPosition - fromPosition;
+
+        direction.Normalize();
+        enemy.angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+        
+    }
 
 }
