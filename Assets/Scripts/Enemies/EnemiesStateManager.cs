@@ -27,14 +27,15 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     public Boolean isPatrol;
-    public float angle;
+    public float angle=0;
     public float aggro;
 
     public float waitTime;
 
     public float startWaitTime;
-    public string animationState = "iddle";
+    public string animationState = "idle";
     public Transform reference;
+    public int direction = 0;
 
     // Start is called before the first frame update
     void Start() {
@@ -84,5 +85,21 @@ public abstract class EnemiesStateManager : MonoBehaviour
    public virtual void Animate(){
 
    }
+   public void setDirection(){
+       
+
+        if(angle>-90 && angle<30){
+            //front right
+            direction = 1;
+        }else if(angle<-90 && angle>-180){
+            //front left
+            direction = 0;
+        }else if(angle<180 && angle>90){
+            //back left
+            direction = 2;
+        }else if(angle<90 && angle>30){
+            direction = 3;
+        }
+    }
 
 }

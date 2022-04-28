@@ -147,10 +147,35 @@ MonoBehaviour:
     m_Bits: 0
   rb: {fileID: 7034073446864961645}
   agent: {fileID: 7454336840031895722}
+  spriteRenderer: {fileID: 0}
   isPatrol: 1
+  angle: 0
   aggro: 0
   waitTime: 0
   startWaitTime: 3
+  animationState: idle
+  reference: {fileID: 0}
+  direction: 0
+  run:
+  - {fileID: -2721465947201589026, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 2380326538213091717, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -6845615780529790854, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -1804026025228764227, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 6568626662115020475, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -1576079826459966709, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 2669537856938380859, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -4793166514523499606, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 2546898235179390746, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3562583403373455310, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 1452104030053426178, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -6849939043785813856, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -6940900895018999311, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -6058385300836832037, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 4748817362820264416, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -4333197987032719798, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  idle: []
+  count: 0
+  index: 0
 --- !u!195 &7454336840031895722
 NavMeshAgent:
   m_ObjectHideFlags: 0

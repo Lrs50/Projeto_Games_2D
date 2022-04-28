@@ -3,8 +3,8 @@ using System.Collections;
 public class DeformedAggressiveState : BaseStateEnemies {
     public bool shoot = false;
     public bool canShoot = false;
-    float shootDelay = 400;
-    public float shootAnimationTime = 100;
+    float shootDelay = 200;
+    public float shootAnimationTime = 40;
     public int count = 0;
     public override void EnterState(EnemiesStateManager enemy){
     }
@@ -34,7 +34,7 @@ public class DeformedAggressiveState : BaseStateEnemies {
         if(count>=shootAnimationTime && shoot ==true){
             shoot = false;
             count=0;
-            enemy.animationState="iddle";
+            enemy.animationState="idle";
         }
 
         

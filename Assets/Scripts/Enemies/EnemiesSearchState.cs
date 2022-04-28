@@ -35,7 +35,7 @@ public class EnemiesSearchState: BaseStateEnemies {
     public override void FixedUpdateState(EnemiesStateManager enemy){
         if (shouldMove) {
             enemy.agent.isStopped = false;
-            rotateTowardsTarget(enemy);
+            //rotateTowardsTarget(enemy);
             enemy.agent.SetDestination(goToPosition);
         }
         else {

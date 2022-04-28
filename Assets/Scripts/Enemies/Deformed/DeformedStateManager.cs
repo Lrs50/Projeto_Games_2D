@@ -10,10 +10,10 @@ public class DeformedStateManager : EnemiesStateManager
 
     DeformedAggressiveState aggressiveState = new DeformedAggressiveState();
     
-    public Sprite[] iddle;
+    public Sprite[] idle;
     public Sprite[] attack;
 
-    public int direction = 0;
+    
     public int count=0;
     Transform shootingOrigin;
 
@@ -26,9 +26,9 @@ public class DeformedStateManager : EnemiesStateManager
     public override void Animate(){
         setDirection();
 
-        if(animationState.Equals("iddle")){
+        if(animationState.Equals("idle")){
             
-            spriteRenderer.sprite = iddle[direction];
+            spriteRenderer.sprite = idle[direction];
 
         }else if(animationState.Equals("attack")){
             count = aggressiveState.count;
@@ -40,19 +40,6 @@ public class DeformedStateManager : EnemiesStateManager
         
     }
 
-    private void setDirection(){
-        if(angle>-90 && angle<30){
-            //front right
-            direction = 1;
-        }else if(angle<-90 && angle>-180){
-            //front left
-            direction = 0;
-        }else if(angle<180 && angle>90){
-            //back left
-            direction = 2;
-        }else if(angle<90 && angle>30){
-            direction = 3;
-        }
-    }
+    
 
 }
