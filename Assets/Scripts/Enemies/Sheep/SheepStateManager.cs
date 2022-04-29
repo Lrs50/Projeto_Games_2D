@@ -64,5 +64,10 @@ public class SheepStateManager : EnemiesStateManager
             direction = 0;
         }
     }
+    public override void SetProperties(){
+        health = 7f;
+        damage = 20;
+
+   }
     
 }

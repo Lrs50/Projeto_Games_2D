@@ -10,10 +10,11 @@ public class Bullet_deformed : MonoBehaviour
     float liveTime = 1f;
     Vector2 direction;
     bool go = false;
+    public float damage = 15;
 
-    void Start()
+    void Awake()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     public void setDestination(Vector2 goal){

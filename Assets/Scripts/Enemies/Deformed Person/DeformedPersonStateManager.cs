@@ -44,4 +44,10 @@ public class DeformedPersonStateManager : EnemiesStateManager
         
     }
 
+    public override void SetProperties(){
+        health = 3f;
+        damage = 11;
+
+    }
+
 }

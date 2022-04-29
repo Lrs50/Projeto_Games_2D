@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     float startTime;
     float liveTime = 1f;
+    public float damage = 1;
+
     void Start()
     {
         startTime = Time.time;

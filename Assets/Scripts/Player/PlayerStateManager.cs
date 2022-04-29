@@ -58,6 +58,7 @@ public class PlayerStateManager : MonoBehaviour
     int animationCount=0;
     public int numFrames = 4;
     public int animationOrientation = 0;
+    public float health =100;
 
 
     private void Awake()
@@ -180,7 +181,8 @@ public class PlayerStateManager : MonoBehaviour
    }
 
    public void TakeDamage(float amount){
-       //Debug.Log(amount);
+       health -= amount;
+       Debug.Log(health);
    }
 }
 

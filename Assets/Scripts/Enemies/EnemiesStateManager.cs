@@ -37,9 +37,14 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public Transform reference;
     public int direction = 0;
 
+    public float health = 0;
+    public float damage = 0;
+
     // Start is called before the first frame update
     void Start() {
         //a
+        SetProperties();
+
         reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         target = GameObject.FindWithTag("Player").transform;
@@ -71,17 +76,30 @@ public abstract class EnemiesStateManager : MonoBehaviour
 
     }
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
+    private void OnTriggerEnter2D(Collider2D other){
+    
+        if(other.gameObject.tag == "Player Attack"){
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            health -= bullet.damage;
+            if(health<=0){
+                Destroy(gameObject);
+            }
+        }
    }
 
-   public virtual void BecomeAggresive(){
+    public virtual void BecomeAggresive(){
        
    }
 
-   public virtual void Animate(){
+    public virtual void Animate(){
 
    }
+    public virtual void SetProperties(){
+
+   }
+
+    
+
    public void setDirection(){
        
 
@@ -109,5 +127,7 @@ public abstract class EnemiesStateManager : MonoBehaviour
         enemy.angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
         
     }
+
+
 
 }
