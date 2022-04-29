@@ -14,14 +14,14 @@ public class DeformedStateManager : EnemiesStateManager
     public Transform shootOrigin;
     public Sprite[] idle;
     public Sprite[] attack;
-
+    
     
     public int count=0;
     Transform shootingOrigin;
 
     public override void BecomeAggresive()
     {
-        shootingOrigin = reference.GetChild(0); 
+        shootingOrigin = reference.GetChild(1); 
         SwitchState(aggressiveState);
     }
 
@@ -54,6 +54,5 @@ public class DeformedStateManager : EnemiesStateManager
         damage = 15;
 
    }
-    
 
 }

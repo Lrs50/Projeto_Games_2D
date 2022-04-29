@@ -182,7 +182,15 @@ public class PlayerStateManager : MonoBehaviour
 
    public void TakeDamage(float amount){
        health -= amount;
+       StartCoroutine(DamageAnimation());
        Debug.Log(health);
    }
+
+    IEnumerator DamageAnimation(){
+        
+        spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
 }
 

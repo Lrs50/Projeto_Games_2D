@@ -19,7 +19,8 @@ public abstract class EnemiesStateManager : MonoBehaviour
     BaseStateEnemies currentState;
 
     public virtual EnemiesSearchState searchState {get; protected set;} = new EnemiesSearchState();
-   
+    public Slider healthBar;
+
     public Vector2 walkInput;
     public LayerMask obstacles;
     public Rigidbody2D rb;
@@ -39,11 +40,14 @@ public abstract class EnemiesStateManager : MonoBehaviour
 
     public float health = 0;
     public float damage = 0;
+    public float maxHealth = 0;
 
     // Start is called before the first frame update
     void Start() {
         //a
         SetProperties();
+        maxHealth = health;
+        healthBar = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Slider>(); 
 
         reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -81,11 +85,23 @@ public abstract class EnemiesStateManager : MonoBehaviour
         if(other.gameObject.tag == "Player Attack"){
             Bullet bullet = other.gameObject.GetComponent<Bullet>();
             health -= bullet.damage;
+            
+            StartCoroutine(DamageAnimation());
+
             if(health<=0){
                 Destroy(gameObject);
             }
+
+            healthBar.value = health/maxHealth;
         }
    }
+
+    IEnumerator DamageAnimation(){
+        
+        spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.3f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
 
     public virtual void BecomeAggresive(){
        
@@ -97,8 +113,6 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public virtual void SetProperties(){
 
    }
-
-    
 
    public void setDirection(){
        
