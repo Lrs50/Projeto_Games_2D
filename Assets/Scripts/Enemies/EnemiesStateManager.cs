@@ -66,12 +66,9 @@ public abstract class EnemiesStateManager : MonoBehaviour
         currentState = state;
         currentState.EnterState(this);
     }
-
-    public void OnWalk(InputAction.CallbackContext context) {
-        walkInput = context.ReadValue<Vector2>();
-    }
     
-    public void OnShoot(InputAction.CallbackContext context) {
+    public virtual void OnShoot(Vector3 direction) {
+
     }
 
    private void OnTriggerEnter2D(Collider2D other)

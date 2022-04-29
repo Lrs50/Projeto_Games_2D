@@ -28,6 +28,13 @@ public class BossStateManager : MonoBehaviour{
     public float searchSpeed;
     public float startDelayDashAttack;
     public float delayToDashAttack;
+
+    // Sprites
+
+    
+
+
+
     void Start()
     {        
         target = GameObject.FindWithTag("Player").transform;

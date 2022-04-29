@@ -177,8 +177,10 @@ public class PlayerStateManager : MonoBehaviour
                staminaImages[i].sprite = full;
            }
        }
+   }
 
-        
-
+   public void TakeDamage(float amount){
+       //Debug.Log(amount);
    }
 }
+

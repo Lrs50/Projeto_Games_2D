@@ -8,6 +8,11 @@ TagManager:
   - Bullet
   - Water
   - Collider
+  - obstacles
+  - Boss
+  - Enemy
+  - Player Attack
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -17,7 +22,7 @@ TagManager:
   - UI
   - Bullet
   - Collider
-  - 
+  - World
   - 
   - 
   - 

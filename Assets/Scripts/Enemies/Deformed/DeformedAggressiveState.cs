@@ -6,6 +6,8 @@ public class DeformedAggressiveState : BaseStateEnemies {
     float shootDelay = 200;
     public float shootAnimationTime = 40;
     public int count = 0;
+    Vector3 direction;
+
     public override void EnterState(EnemiesStateManager enemy){
     }
 
@@ -31,6 +33,10 @@ public class DeformedAggressiveState : BaseStateEnemies {
             count=0;
         }
 
+        if(shoot==true && Mathf.Floor(shootAnimationTime/2)==count){
+            enemy.OnShoot(direction);
+        }
+
         if(count>=shootAnimationTime && shoot ==true){
             shoot = false;
             count=0;
@@ -48,7 +54,7 @@ public class DeformedAggressiveState : BaseStateEnemies {
         Vector3 fromPosition = enemy.transform.position;
         Vector3 toPosition = enemy.target.transform.position;
         // linha para atirar
-        Vector3 direction = toPosition - fromPosition;
+        direction = toPosition - fromPosition;
 
         direction.Normalize();
         enemy.angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 

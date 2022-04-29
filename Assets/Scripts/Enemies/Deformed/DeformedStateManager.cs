@@ -10,6 +10,8 @@ public class DeformedStateManager : EnemiesStateManager
 
     DeformedAggressiveState aggressiveState = new DeformedAggressiveState();
     
+    public GameObject Projectile;
+    public Transform shootOrigin;
     public Sprite[] idle;
     public Sprite[] attack;
 
@@ -37,6 +39,13 @@ public class DeformedStateManager : EnemiesStateManager
             
             spriteRenderer.sprite = attack[index];
         }
+        
+    }
+
+    public override void OnShoot(Vector3 direction) {
+        GameObject bulletTemp =Instantiate(Projectile,shootingOrigin.position,Quaternion.identity);
+        Bullet_deformed scriptTemp = bulletTemp.GetComponent<Bullet_deformed>();
+        scriptTemp.setDestination((Vector2) direction);
         
     }
 

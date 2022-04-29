@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 1513660460687959313}
   m_Layer: 2
   m_Name: Deformed
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,6 +187,8 @@ MonoBehaviour:
   animationState: idle
   reference: {fileID: 0}
   direction: 0
+  Projectile: {fileID: 5737861312730213513, guid: bcf8cfde60b97a84391bcc5e4820d0ea, type: 3}
+  shootOrigin: {fileID: 1787756027}
   idle:
   - {fileID: 8787155026468732370, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
   - {fileID: 390992669149140617, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
