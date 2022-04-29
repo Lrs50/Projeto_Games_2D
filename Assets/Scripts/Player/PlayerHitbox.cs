@@ -9,6 +9,7 @@ public class PlayerHitbox : MonoBehaviour
 
     private  void OnCollisionEnter2D(Collision2D other)
     {
+        Debug.Log($"{other.gameObject.tag} {damageValue}");
         Debug.Log(other.gameObject.tag);
         if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile")){
             player.TakeDamage(damageValue);
@@ -16,7 +17,7 @@ public class PlayerHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log($"{other.gameObject.tag} {damageValue}");
+        Debug.Log($"{other.gameObject.tag} {damageValue}");
         if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile")){
             Debug.Log($"{other.gameObject.tag} {damageValue}");
             player.TakeDamage(damageValue);

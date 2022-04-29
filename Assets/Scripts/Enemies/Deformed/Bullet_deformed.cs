@@ -20,7 +20,7 @@ public class Bullet_deformed : MonoBehaviour
         startTime = Time.time;
 
         Vector2 direction = goal;
-        direction = new Vector2(direction.x - transform.position.x,direction.y-transform.position.y);
+        direction = new Vector2(direction.x,direction.y);
         
         direction = direction.normalized;
         rb.velocity = direction*speed;

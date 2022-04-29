@@ -3,7 +3,7 @@ using System.Collections;
 public class DeformedAggressiveState : BaseStateEnemies {
     public bool shoot = false;
     public bool canShoot = false;
-    float shootDelay = 200;
+    float shootDelay = 50;
     public float shootAnimationTime = 40;
     public int count = 0;
     Vector3 direction;
