@@ -9,8 +9,16 @@ public class BossStateManager : MonoBehaviour{
     public BossLandingState landingState = new BossLandingState();
     public BossDashAttackState dashAttack = new BossDashAttackState();
     public BossMoveState moveState = new BossMoveState();
+    public BossTrackingAttackState trackAttack = new BossTrackingAttackState();
+    public BossNormalAttackState normalAttack = new BossNormalAttackState();
     public GameObject bullet;
+    public GameObject trackingBullet;
+    public GameObject normalBullet;
+    public GameObject instanceOfTrackingBullet;
+    public GameObject instanceOfNormalBullet;
     public FeatherProjectile bulletProperties;
+    public TrackingProjectile trackingBulletProperties;
+    public NormalProjectile normalBulletProperties;
     public float baseSpeed = 5f;
     public SpriteRenderer spriteRenderer;
     public Sprite shadowSprite;
@@ -42,6 +50,8 @@ public class BossStateManager : MonoBehaviour{
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
+        trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
+        normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
         currentState = searchState;
         currentState.EnterState(this);
     }
