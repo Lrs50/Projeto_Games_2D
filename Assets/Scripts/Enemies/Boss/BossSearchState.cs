@@ -13,7 +13,7 @@ public class BossSearchState: BaseStateBoss {
         enemy.agent.SetDestination(enemy.target.position);
         enemy.timerForAttacks += Time.deltaTime;
         if(enemy.timerForAttacks > 5){
-            int whichAttack = 5;//Random.Range(1,4);
+            int whichAttack = 2;//Random.Range(1,4);
             Debug.Log(whichAttack);
             if(whichAttack <= 1){
                 enemy.SwitchState(enemy.attackState);

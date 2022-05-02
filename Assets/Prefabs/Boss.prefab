@@ -160,3 +160,6 @@ MonoBehaviour:
   searchSpeed: 4
   startDelayDashAttack: 0
   delayToDashAttack: 0
+  shadow: {fileID: 0}
+  pos: {fileID: 849698980090295785, guid: 796125bee2506df49be851ef56a1e58d, type: 3}
+  instanceOfShadow: {fileID: 7759498680134837464, guid: f7f57189b087e1c4581f2be6670826f5, type: 3}

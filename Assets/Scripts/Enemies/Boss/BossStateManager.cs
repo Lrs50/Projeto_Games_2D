@@ -36,6 +36,8 @@ public class BossStateManager : MonoBehaviour{
     public float searchSpeed;
     public float startDelayDashAttack;
     public float delayToDashAttack;
+    public BossShadow shadow;
+    public GameObject instanceOfShadow;
 
     // Sprites
 
@@ -50,6 +52,8 @@ public class BossStateManager : MonoBehaviour{
         agent.updateRotation = false;
         agent.updateUpAxis = false;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
+        shadow = instanceOfShadow.GetComponent<BossShadow>();
+        //shadow = transform.GetChild(0).gameObject.GetComponent<BossShadow>();
         trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
         normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
         currentState = searchState;
@@ -72,11 +76,21 @@ public class BossStateManager : MonoBehaviour{
 
     public void AreaDamage(Vector2 center, float radius)
     {
+        bool hitPlayer = false;
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(center, radius);
-        foreach (var hitCollider in hitColliders)
+        for (int i = 0; i < hitColliders.Length && !hitPlayer; i++)
         {
-            Debug.Log("Acertou o player");
+            if(hitColliders[i].CompareTag("Player")){
+                Debug.Log("Acertou o player");
+                hitPlayer = true;
+            }
         }
+        // foreach (var hitCollider in hitColliders)
+        // {
+        //     if(hitCollider.CompareTag("Player")){
+        //         Debug.Log("Acertou o player");
+        //     }
+        // }
     }
 
 }

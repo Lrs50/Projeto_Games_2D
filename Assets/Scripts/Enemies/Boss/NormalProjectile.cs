@@ -13,17 +13,22 @@ public class NormalProjectile : MonoBehaviour
     public Vector3 _bossPosition;
     public float startTime;
     public float liveTime = 1f;
+    private Vector3 motion;
     void Start()
     {
         startTime = Time.time;
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         Physics2D.IgnoreCollision(boss.GetComponent<Collider2D>(),GetComponent<Collider2D>());
+        Vector3 sourceToDestination = player.transform.position - boss.transform.position;
+        motion = sourceToDestination.normalized * _projectileSpeed;
     }
     void Update()
     {
         if((Time.time-startTime)>=liveTime){
             Destroy(gameObject);
         }
+        transform.position += motion * Time.deltaTime;   
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
