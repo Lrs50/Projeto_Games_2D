@@ -58,6 +58,7 @@ public class PlayerStateManager : MonoBehaviour
     int animationCount=0;
     public int numFrames = 4;
     public int animationOrientation = 0;
+    public float health =100;
 
 
     private void Awake()
@@ -150,6 +151,7 @@ public class PlayerStateManager : MonoBehaviour
         if(context.ReadValue<float>()!=0){
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
         }
+        
     }
 
    private void OnTriggerEnter2D(Collider2D other)
@@ -166,7 +168,6 @@ public class PlayerStateManager : MonoBehaviour
        Sprite empty = staminaUI[0];
 
 
-
        for(int i=0;i<5;i++){
            if((stamina<(i+1)*20)){
                if(stamina>i*20 +10) 
@@ -177,8 +178,19 @@ public class PlayerStateManager : MonoBehaviour
                staminaImages[i].sprite = full;
            }
        }
-
-        
-
    }
+
+   public void TakeDamage(float amount){
+       health -= amount;
+       StartCoroutine(DamageAnimation());
+       Debug.Log(health);
+   }
+
+    IEnumerator DamageAnimation(){
+        
+        spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
 }
+

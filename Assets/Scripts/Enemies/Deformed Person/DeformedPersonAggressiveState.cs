@@ -19,10 +19,9 @@ public class DeformedPersonAggressiveState: BaseStateEnemies {
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
-        rotateTowardsPlayer(enemy);
+        getAngle(enemy);
         enemy.agent.SetDestination(enemy.target.position);
-
-        
+        enemy.Animate();
 
     }
 
@@ -36,12 +35,16 @@ public class DeformedPersonAggressiveState: BaseStateEnemies {
         enemy.SwitchState(enemy.searchState);
     }
 
-    public void rotateTowardsPlayer(EnemiesStateManager enemy){
-        var offset = 90f;
-        Vector2 direction = enemy.target.position - enemy.transform.position;
+    public void getAngle(EnemiesStateManager enemy){
+
+        Vector3 fromPosition = enemy.transform.position;
+        Vector3 toPosition = enemy.target.transform.position;
+        
+        Vector3 direction = toPosition - fromPosition;
+
         direction.Normalize();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;       
-        enemy.transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
+        enemy.angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+        
     }
 
 }

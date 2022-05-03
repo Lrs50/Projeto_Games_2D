@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     float startTime;
     float liveTime = 1f;
+    public float damage = 1;
+
     void Start()
     {
         startTime = Time.time;
@@ -28,7 +30,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "Target" || other.gameObject.tag == "Collider"){
+        if(other.gameObject.name == "World" || other.gameObject.tag == "Enemy" || other.gameObject.tag == "Target"){
             Destroy(gameObject);
         }
     }

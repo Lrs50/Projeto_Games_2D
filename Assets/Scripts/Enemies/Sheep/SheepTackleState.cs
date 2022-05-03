@@ -9,6 +9,7 @@ public class SheepTackleState : BaseStateEnemies
     public float dashTimer = 0.5f;
 
     public override void EnterState(EnemiesStateManager enemy){
+        enemy.animationState="jump";
         enemy.waitTime = enemy.startWaitTime / 2;
     }
 
@@ -27,8 +28,8 @@ public class SheepTackleState : BaseStateEnemies
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
-        //player.spriteRenderer.sprite = player.dashAnimation[player.animationOrientation];
-        rotateTowardsPlayer(enemy);
+        enemy.getAngle(enemy);
+        enemy.Animate();
     }
 
     public override void OnCollisionEnter(EnemiesStateManager enemy){
@@ -36,6 +37,7 @@ public class SheepTackleState : BaseStateEnemies
     }
     
     private IEnumerator Dash(EnemiesStateManager enemy){
+        enemy.getAngle(enemy);
         Vector3 fromPosition = enemy.transform.position;
         Vector3 toPosition = enemy.target.transform.position;
         Vector3 direction = toPosition - fromPosition;
@@ -55,4 +57,5 @@ public class SheepTackleState : BaseStateEnemies
     public void ExitState(EnemiesStateManager enemy){
         enemy.BecomeAggresive();
     }
+    
 }
