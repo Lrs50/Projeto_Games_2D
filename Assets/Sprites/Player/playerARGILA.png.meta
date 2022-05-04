@@ -1,0 +1,2136 @@
+fileFormatVersion: 2
+guid: e1a5badc738b4d841bdd343c594f1320
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4102759957825460559
+    second: playerARGILA_0
+  - first:
+      213: -2192451417512618717
+    second: playerARGILA_1
+  - first:
+      213: 5853837954304780859
+    second: playerARGILA_2
+  - first:
+      213: -3793996311015457434
+    second: playerARGILA_3
+  - first:
+      213: 7228310631418952797
+    second: playerARGILA_4
+  - first:
+      213: 5480172339370139495
+    second: playerARGILA_5
+  - first:
+      213: 2343437910250494962
+    second: playerARGILA_6
+  - first:
+      213: -399409771976203370
+    second: playerARGILA_7
+  - first:
+      213: -3225532360353870858
+    second: playerARGILA_8
+  - first:
+      213: 4752833199426871981
+    second: playerARGILA_9
+  - first:
+      213: 7461921077080594610
+    second: playerARGILA_10
+  - first:
+      213: 620314113556084309
+    second: playerARGILA_11
+  - first:
+      213: -7511784176447177603
+    second: playerARGILA_12
+  - first:
+      213: -7838668423467299801
+    second: playerARGILA_13
+  - first:
+      213: 3863584924328368310
+    second: playerARGILA_14
+  - first:
+      213: 2689367232005645327
+    second: playerARGILA_15
+  - first:
+      213: 5512679597842643151
+    second: playerARGILA_16
+  - first:
+      213: 5095690155283908131
+    second: playerARGILA_17
+  - first:
+      213: -2843340165478150842
+    second: playerARGILA_18
+  - first:
+      213: -7641340206460996925
+    second: playerARGILA_19
+  - first:
+      213: -3120854271140455924
+    second: playerARGILA_20
+  - first:
+      213: -3248721226881053381
+    second: playerARGILA_21
+  - first:
+      213: 6394034459242844267
+    second: playerARGILA_22
+  - first:
+      213: 4465095729929531887
+    second: playerARGILA_23
+  - first:
+      213: -3406147018477651885
+    second: playerARGILA_24
+  - first:
+      213: 8064785523934396755
+    second: playerARGILA_25
+  - first:
+      213: -990482197519223672
+    second: playerARGILA_26
+  - first:
+      213: 406852569195621763
+    second: playerARGILA_27
+  - first:
+      213: 8151642555732089499
+    second: playerARGILA_28
+  - first:
+      213: 7155807314807694085
+    second: playerARGILA_29
+  - first:
+      213: -8324466745467400311
+    second: playerARGILA_30
+  - first:
+      213: 2018429267617048362
+    second: playerARGILA_31
+  - first:
+      213: 3093416808085979566
+    second: playerARGILA_32
+  - first:
+      213: 5852389159903584870
+    second: playerARGILA_33
+  - first:
+      213: -3116754002658299174
+    second: playerARGILA_34
+  - first:
+      213: -4997389690694794614
+    second: playerARGILA_35
+  - first:
+      213: -5347946060490791640
+    second: playerARGILA_36
+  - first:
+      213: -6984408973141314542
+    second: playerARGILA_37
+  - first:
+      213: -5039214938504853653
+    second: playerARGILA_38
+  - first:
+      213: -5387106440528109372
+    second: playerARGILA_39
+  - first:
+      213: 7134173918711364117
+    second: playerARGILA_40
+  - first:
+      213: 6309739810262941896
+    second: playerARGILA_41
+  - first:
+      213: 952814541440476781
+    second: playerARGILA_42
+  - first:
+      213: 945902744699875789
+    second: playerARGILA_43
+  - first:
+      213: -5324792123685225695
+    second: playerARGILA_44
+  - first:
+      213: -244356014951025538
+    second: playerARGILA_45
+  - first:
+      213: 9085680574796110453
+    second: playerARGILA_46
+  - first:
+      213: 77804840555334911
+    second: playerARGILA_47
+  - first:
+      213: 2062440501143268766
+    second: playerARGILA_48
+  - first:
+      213: -6852418856578666918
+    second: playerARGILA_49
+  - first:
+      213: 2624409880103270772
+    second: playerARGILA_50
+  - first:
+      213: -696793504036272037
+    second: playerARGILA_51
+  - first:
+      213: 7863362148985398238
+    second: playerARGILA_52
+  - first:
+      213: 1694670475664394928
+    second: playerARGILA_53
+  - first:
+      213: -1829163664486908739
+    second: playerARGILA_54
+  - first:
+      213: 1628464971033546909
+    second: playerARGILA_55
+  - first:
+      213: 668855255849637281
+    second: playerARGILA_56
+  - first:
+      213: 1689039004743876244
+    second: playerARGILA_57
+  - first:
+      213: 4511909947427949733
+    second: playerARGILA_58
+  - first:
+      213: -7496726846576745783
+    second: playerARGILA_59
+  - first:
+      213: -5700156634545377575
+    second: playerARGILA_60
+  - first:
+      213: 3545936639033802291
+    second: playerARGILA_61
+  - first:
+      213: 5759415270272771362
+    second: playerARGILA_62
+  - first:
+      213: -8004263554960668373
+    second: playerARGILA_63
+  - first:
+      213: -2558822975724777799
+    second: playerARGILA_64
+  - first:
+      213: -2646762468860418764
+    second: playerARGILA_65
+  - first:
+      213: -2176939925191292712
+    second: playerARGILA_66
+  - first:
+      213: 5231749783436979641
+    second: playerARGILA_67
+  - first:
+      213: 692295514271282925
+    second: playerARGILA_68
+  - first:
+      213: 2646746302328560763
+    second: playerARGILA_69
+  - first:
+      213: -1031768095329168249
+    second: playerARGILA_70
+  - first:
+      213: 4028684374502437151
+    second: playerARGILA_71
+  - first:
+      213: 3560826868427373535
+    second: playerARGILA_72
+  - first:
+      213: 1540245540742479120
+    second: playerARGILA_73
+  - first:
+      213: -7784701987579390171
+    second: playerARGILA_74
+  - first:
+      213: 6372325070559216961
+    second: playerARGILA_75
+  - first:
+      213: 5754999702418547694
+    second: playerARGILA_76
+  - first:
+      213: -5113139258461019210
+    second: playerARGILA_77
+  - first:
+      213: 3386345309615988369
+    second: playerARGILA_78
+  - first:
+      213: -6056507455839083931
+    second: playerARGILA_79
+  - first:
+      213: 6679866680601482500
+    second: playerARGILA_80
+  - first:
+      213: -2315938677031736433
+    second: playerARGILA_81
+  - first:
+      213: 2685643709300878560
+    second: playerARGILA_82
+  - first:
+      213: -7887079973744762145
+    second: playerARGILA_83
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerARGILA_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4912ecb17eefe830800000000000000
+      internalID: 4102759957825460559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325dbd74d09d291e0800000000000000
+      internalID: -2192451417512618717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a290fba920d3150800000000000000
+      internalID: 5853837954304780859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66df7c2e474095bc0800000000000000
+      internalID: -3793996311015457434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cf7e7d83e105460800000000000000
+      internalID: 7228310631418952797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f141c15bb7d0c40800000000000000
+      internalID: 5480172339370139495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb1aa10d50958020800000000000000
+      internalID: 2343437910250494962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693e985bde2057af0800000000000000
+      internalID: -399409771976203370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 212
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb8499686b9c33d0800000000000000
+      internalID: -3225532360353870858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 212
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2a5800d9475f140800000000000000
+      internalID: 4752833199426871981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 212
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b893654fa11e8760800000000000000
+      internalID: 7461921077080594610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 210
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556fba3566ccb9800800000000000000
+      internalID: 620314113556084309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c37753718c0c790800000000000000
+      internalID: -7511784176447177603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c09239994773390800000000000000
+      internalID: -7838668423467299801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8952eb4063e9530800000000000000
+      internalID: 3863584924328368310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04a546af3d825520800000000000000
+      internalID: 2689367232005645327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc834f503e8f08c40800000000000000
+      internalID: 5512679597842643151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3260727b23787b640800000000000000
+      internalID: 5095690155283908131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d03152f2d6a88d0800000000000000
+      internalID: -2843340165478150842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_19
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c27bf9519184f590800000000000000
+      internalID: -7641340206460996925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a99ec439f70b4d0800000000000000
+      internalID: -3120854271140455924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3dcb71b1493ae2d0800000000000000
+      internalID: -3248721226881053381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60d6c0b67c2cb850800000000000000
+      internalID: 6394034459242844267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_23
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe13096c8e437fd30800000000000000
+      internalID: 4465095729929531887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35832ee455feab0d0800000000000000
+      internalID: -3406147018477651885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_25
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35182d774bfdbef60800000000000000
+      internalID: 8064785523934396755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_26
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b48c60b91142f0800000000000000
+      internalID: -990482197519223672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d2cde814e65a500800000000000000
+      internalID: 406852569195621763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a5e5617b3702170800000000000000
+      internalID: 8151642555732089499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 145
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5032148f6d88e4360800000000000000
+      internalID: 7155807314807694085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 145
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f0dd3999d897c80800000000000000
+      internalID: -8324466745467400311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27e09c89b6e20c10800000000000000
+      internalID: 2018429267617048362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1003482360eea20800000000000000
+      internalID: 3093416808085979566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 145
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66266630fecd73150800000000000000
+      internalID: 5852389159903584870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_34
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 145
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad276437fb01fb4d0800000000000000
+      internalID: -3116754002658299174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8200f9bd84b5aab0800000000000000
+      internalID: -4997389690694794614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_36
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8252f72846748c5b0800000000000000
+      internalID: -5347946060490791640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_37
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 145
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2147cdd3b05621f90800000000000000
+      internalID: -6984408973141314542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_38
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 145
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67839b56bc111ab0800000000000000
+      internalID: -5039214938504853653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_39
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c06a150c372d35b0800000000000000
+      internalID: -5387106440528109372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_40
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ab5ae616da10360800000000000000
+      internalID: 7134173918711364117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_41
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 145
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c00ddf4de2b09750800000000000000
+      internalID: 6309739810262941896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_42
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 145
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66e267f6c3193d00800000000000000
+      internalID: 952814541440476781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_43
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc137e1e885802d00800000000000000
+      internalID: 945902744699875789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bb1f486c98a16b0800000000000000
+      internalID: -5324792123685225695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_45
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 97
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e743d12cf7fdb9cf0800000000000000
+      internalID: -244356014951025538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_46
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a93634852d61e70800000000000000
+      internalID: 9085680574796110453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_47
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 97
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc4b1b171b641100800000000000000
+      internalID: 77804840555334911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_48
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 97
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9de50165b24f9c10800000000000000
+      internalID: 2062440501143268766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 97
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ea0790b5157e0a0800000000000000
+      internalID: -6852418856578666918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 479b49891e6cb6420800000000000000
+      internalID: 2624409880103270772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_51
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 97
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b584e16fffd7456f0800000000000000
+      internalID: -696793504036272037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 97
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3e68e6636402d60800000000000000
+      internalID: 7863362148985398238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_53
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba8151a1dda48710800000000000000
+      internalID: 1694670475664394928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_54
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcb436a6518d96e0800000000000000
+      internalID: -1829163664486908739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_55
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 97
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d901f9f5348799610800000000000000
+      internalID: 1628464971033546909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_56
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5121bbf40484900800000000000000
+      internalID: 668855255849637281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_57
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 97
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49eb981a60ca07710800000000000000
+      internalID: 1689039004743876244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_58
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 97
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac8efa21368d9e30800000000000000
+      internalID: 4511909947427949733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_59
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2a8a307a646f790800000000000000
+      internalID: -7496726846576745783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de26d9ddb9f4e0b0800000000000000
+      internalID: -5700156634545377575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_61
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 65
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ef6a50692b53130800000000000000
+      internalID: 3545936639033802291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_62
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 65
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225a1927cad8def40800000000000000
+      internalID: 5759415270272771362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_63
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 65
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29c6f584b42be090800000000000000
+      internalID: -8004263554960668373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be01d09f0c3d7cd0800000000000000
+      internalID: -2558822975724777799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_65
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 65
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4352db6ce8fc44bd0800000000000000
+      internalID: -2646762468860418764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_66
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 65
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d88b950ca4f9c1e0800000000000000
+      internalID: -2176939925191292712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_67
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 65
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdec7385b8ea9840800000000000000
+      internalID: 5231749783436979641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 33
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de67cbf2a178b9900800000000000000
+      internalID: 692295514271282925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_69
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7c5fd82db12bb420800000000000000
+      internalID: 2646746302328560763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_70
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784d253426c6ea1f0800000000000000
+      internalID: -1031768095329168249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_71
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 33
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11726ef713c8e730800000000000000
+      internalID: 4028684374502437151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_72
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbb747bb299a6130800000000000000
+      internalID: 3560826868427373535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 33
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01db5d2a82d006510800000000000000
+      internalID: 1540245540742479120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_74
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 33
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5279d0499ce27f390800000000000000
+      internalID: -7784701987579390171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_75
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1458fffb3eb0f6850800000000000000
+      internalID: 6372325070559216961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3e221fcbddddf40800000000000000
+      internalID: 5754999702418547694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_77
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3a35c5fea7a09b0800000000000000
+      internalID: -5113139258461019210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_78
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e98721e17befe20800000000000000
+      internalID: 3386345309615988369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_79
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562e433ce86f2fba0800000000000000
+      internalID: -6056507455839083931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_80
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4051834ca57a3bc50800000000000000
+      internalID: 6679866680601482500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_81
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b6fe92b022cdfd0800000000000000
+      internalID: -2315938677031736433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_82
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec242679b2554520800000000000000
+      internalID: 2685643709300878560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILA_83
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2a8d92d867b8290800000000000000
+      internalID: -7887079973744762145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

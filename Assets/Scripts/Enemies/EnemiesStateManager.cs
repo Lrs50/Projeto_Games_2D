@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.AI;
 using UnityEngine.InputSystem;
-using System;
 
 public abstract class EnemiesStateManager : MonoBehaviour
 {
@@ -27,7 +26,7 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public NavMeshAgent agent;
     public SpriteRenderer spriteRenderer;
 
-    public Boolean isPatrol;
+    public bool isPatrol;
     public float angle=0;
     public float aggro;
 
@@ -41,6 +40,17 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public float health = 0;
     public float damage = 0;
     public float maxHealth = 0;
+
+    public float dropChance = 0.1f;
+
+    public GameObject soul;
+
+    public GameObject guarana;
+    public float guaranaDropChance;
+    public GameObject acai;
+    public float acaiDropChance;
+    public GameObject coco;
+    public float cocoDropChance;
 
     // Start is called before the first frame update
     void Start() {
@@ -89,11 +99,34 @@ public abstract class EnemiesStateManager : MonoBehaviour
             StartCoroutine(DamageAnimation());
 
             if(health<=0){
+                MaybeDropItem();
+                Instantiate(soul, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
 
             healthBar.value = health/maxHealth;
         }
+   }
+
+   private void MaybeDropItem() {
+       if(Random.value <= dropChance) {
+           var item = GetItemToDrop();
+           Instantiate(item, transform.position, Quaternion.identity);
+        }
+   }
+
+   private GameObject GetItemToDrop() {
+       float value = Random.value;
+
+       if (value <= acaiDropChance){
+           return acai;
+       } 
+       else if (value <= guaranaDropChance){
+           return guarana;
+       }
+       else {
+           return coco;
+       }
    }
 
     IEnumerator DamageAnimation(){

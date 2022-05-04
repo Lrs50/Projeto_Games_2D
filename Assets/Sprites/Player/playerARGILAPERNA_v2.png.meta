@@ -1,0 +1,2136 @@
+fileFormatVersion: 2
+guid: 351456f1cc75e6c41b65a2e8797d5b1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8860214318397466117
+    second: playerARGILAPERNA_v2_0
+  - first:
+      213: 5142928746404480690
+    second: playerARGILAPERNA_v2_1
+  - first:
+      213: 2965451800776460181
+    second: playerARGILAPERNA_v2_2
+  - first:
+      213: 2146249556851261813
+    second: playerARGILAPERNA_v2_3
+  - first:
+      213: -956474537973265121
+    second: playerARGILAPERNA_v2_4
+  - first:
+      213: 7498955514346076936
+    second: playerARGILAPERNA_v2_5
+  - first:
+      213: -1105254909791966055
+    second: playerARGILAPERNA_v2_6
+  - first:
+      213: -5989381001327739707
+    second: playerARGILAPERNA_v2_7
+  - first:
+      213: -7916569984517999682
+    second: playerARGILAPERNA_v2_8
+  - first:
+      213: 140574833821141866
+    second: playerARGILAPERNA_v2_9
+  - first:
+      213: 4957788461361285016
+    second: playerARGILAPERNA_v2_10
+  - first:
+      213: 1629107142386589765
+    second: playerARGILAPERNA_v2_11
+  - first:
+      213: -9219374891719391855
+    second: playerARGILAPERNA_v2_12
+  - first:
+      213: 2308081442570473971
+    second: playerARGILAPERNA_v2_13
+  - first:
+      213: 4977462831220668419
+    second: playerARGILAPERNA_v2_14
+  - first:
+      213: -3835847951815258530
+    second: playerARGILAPERNA_v2_15
+  - first:
+      213: 7666107911472038217
+    second: playerARGILAPERNA_v2_16
+  - first:
+      213: 4891220850820206390
+    second: playerARGILAPERNA_v2_17
+  - first:
+      213: -3820522188847093021
+    second: playerARGILAPERNA_v2_18
+  - first:
+      213: -4547954283211577242
+    second: playerARGILAPERNA_v2_19
+  - first:
+      213: 909645539030750027
+    second: playerARGILAPERNA_v2_20
+  - first:
+      213: -3634598767129885984
+    second: playerARGILAPERNA_v2_21
+  - first:
+      213: 7598178420921060403
+    second: playerARGILAPERNA_v2_22
+  - first:
+      213: -442583452692786503
+    second: playerARGILAPERNA_v2_23
+  - first:
+      213: 3823772186204234945
+    second: playerARGILAPERNA_v2_24
+  - first:
+      213: 1816565340989233144
+    second: playerARGILAPERNA_v2_25
+  - first:
+      213: 4157044300188844403
+    second: playerARGILAPERNA_v2_26
+  - first:
+      213: -7713334133192993575
+    second: playerARGILAPERNA_v2_27
+  - first:
+      213: 3794357723248775797
+    second: playerARGILAPERNA_v2_28
+  - first:
+      213: 5782887287633802534
+    second: playerARGILAPERNA_v2_29
+  - first:
+      213: -1205279607613058180
+    second: playerARGILAPERNA_v2_30
+  - first:
+      213: -8481130299644695983
+    second: playerARGILAPERNA_v2_31
+  - first:
+      213: 9004095330245082655
+    second: playerARGILAPERNA_v2_32
+  - first:
+      213: 6873402363031178224
+    second: playerARGILAPERNA_v2_33
+  - first:
+      213: 7695225484950506887
+    second: playerARGILAPERNA_v2_34
+  - first:
+      213: 1858516530807265457
+    second: playerARGILAPERNA_v2_35
+  - first:
+      213: -5201259704786868187
+    second: playerARGILAPERNA_v2_36
+  - first:
+      213: -7672108835886796193
+    second: playerARGILAPERNA_v2_37
+  - first:
+      213: 5121228131015264700
+    second: playerARGILAPERNA_v2_38
+  - first:
+      213: 6086709719610562929
+    second: playerARGILAPERNA_v2_39
+  - first:
+      213: 2646060471464063038
+    second: playerARGILAPERNA_v2_40
+  - first:
+      213: 3307246639394144381
+    second: playerARGILAPERNA_v2_41
+  - first:
+      213: 2363701054094943294
+    second: playerARGILAPERNA_v2_42
+  - first:
+      213: 2946578381744253698
+    second: playerARGILAPERNA_v2_43
+  - first:
+      213: 7658894334647280264
+    second: playerARGILAPERNA_v2_44
+  - first:
+      213: 4219593672218732187
+    second: playerARGILAPERNA_v2_45
+  - first:
+      213: -4638363612487971768
+    second: playerARGILAPERNA_v2_46
+  - first:
+      213: -8560698184752272117
+    second: playerARGILAPERNA_v2_47
+  - first:
+      213: 2872814282427355398
+    second: playerARGILAPERNA_v2_48
+  - first:
+      213: 7763187620861306254
+    second: playerARGILAPERNA_v2_49
+  - first:
+      213: -1474720041612170975
+    second: playerARGILAPERNA_v2_50
+  - first:
+      213: 9083330917765306776
+    second: playerARGILAPERNA_v2_51
+  - first:
+      213: -597895883639036226
+    second: playerARGILAPERNA_v2_52
+  - first:
+      213: -6790792726177045281
+    second: playerARGILAPERNA_v2_53
+  - first:
+      213: 7985724071347487027
+    second: playerARGILAPERNA_v2_54
+  - first:
+      213: -2164009926973909698
+    second: playerARGILAPERNA_v2_55
+  - first:
+      213: -2360786648273285600
+    second: playerARGILAPERNA_v2_56
+  - first:
+      213: -1089372935645302953
+    second: playerARGILAPERNA_v2_57
+  - first:
+      213: -5193819384046225610
+    second: playerARGILAPERNA_v2_58
+  - first:
+      213: -4707646185929760220
+    second: playerARGILAPERNA_v2_59
+  - first:
+      213: -1671471309981554351
+    second: playerARGILAPERNA_v2_60
+  - first:
+      213: 329522490073385576
+    second: playerARGILAPERNA_v2_61
+  - first:
+      213: 5458112718030491432
+    second: playerARGILAPERNA_v2_62
+  - first:
+      213: 4210637650474095311
+    second: playerARGILAPERNA_v2_63
+  - first:
+      213: 8159864665500466340
+    second: playerARGILAPERNA_v2_64
+  - first:
+      213: -7629932846608165991
+    second: playerARGILAPERNA_v2_65
+  - first:
+      213: -6474306622694388424
+    second: playerARGILAPERNA_v2_66
+  - first:
+      213: 4254117676283722387
+    second: playerARGILAPERNA_v2_67
+  - first:
+      213: -4591336098427283762
+    second: playerARGILAPERNA_v2_68
+  - first:
+      213: -8310927475597860285
+    second: playerARGILAPERNA_v2_69
+  - first:
+      213: 9154943751269272156
+    second: playerARGILAPERNA_v2_70
+  - first:
+      213: -6907526380123904517
+    second: playerARGILAPERNA_v2_71
+  - first:
+      213: -5215731318727389342
+    second: playerARGILAPERNA_v2_72
+  - first:
+      213: 6696544934536974544
+    second: playerARGILAPERNA_v2_73
+  - first:
+      213: 6945238241311221743
+    second: playerARGILAPERNA_v2_74
+  - first:
+      213: -5505113972362039594
+    second: playerARGILAPERNA_v2_75
+  - first:
+      213: 3241530061336139053
+    second: playerARGILAPERNA_v2_76
+  - first:
+      213: 7716001960589947851
+    second: playerARGILAPERNA_v2_77
+  - first:
+      213: 3840427017432383225
+    second: playerARGILAPERNA_v2_78
+  - first:
+      213: -344020425671088623
+    second: playerARGILAPERNA_v2_79
+  - first:
+      213: 2583310795415511138
+    second: playerARGILAPERNA_v2_80
+  - first:
+      213: -6291283037321580853
+    second: playerARGILAPERNA_v2_81
+  - first:
+      213: -8492752073706285623
+    second: playerARGILAPERNA_v2_82
+  - first:
+      213: -2273990233843276973
+    second: playerARGILAPERNA_v2_83
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50629e9aafdc5fa70800000000000000
+      internalID: 8860214318397466117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_1
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6859a427a5f5740800000000000000
+      internalID: 5142928746404480690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597c2df73b6672920800000000000000
+      internalID: 2965451800776460181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5718573c99209cd10800000000000000
+      internalID: 2146249556851261813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1dc56fa97be9b2f0800000000000000
+      internalID: -956474537973265121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80bfd032f44a11860800000000000000
+      internalID: 7498955514346076936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 209
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ce793f38859a0f0800000000000000
+      internalID: -1105254909791966055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_7
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 209
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccf26f56b171eca0800000000000000
+      internalID: -5989381001327739707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 212
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3f849fa81b22290800000000000000
+      internalID: -7916569984517999682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_9
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 212
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bc44a011c63f100800000000000000
+      internalID: 140574833821141866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 212
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89748fe865a9dc440800000000000000
+      internalID: 4957788461361285016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_11
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 210
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540210b8050cb9610800000000000000
+      internalID: 1629107142386589765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19509efd1633e0080800000000000000
+      internalID: -9219374891719391855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_13
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f19511e7d3f70020800000000000000
+      internalID: 2308081442570473971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3083e91c210831540800000000000000
+      internalID: 4977462831220668419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_15
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e44ab6c9454cac0800000000000000
+      internalID: -3835847951815258530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9414a19578c736a60800000000000000
+      internalID: 7666107911472038217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_17
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f4f13f27b11e340800000000000000
+      internalID: 4891220850820206390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_18
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea654daf47cafac0800000000000000
+      internalID: -3820522188847093021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_19
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668257eecab62e0c0800000000000000
+      internalID: -4547954283211577242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_20
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4352795cc5bf9c00800000000000000
+      internalID: 909645539030750027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e28620adaf4f8dc0800000000000000
+      internalID: -3634598767129885984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_22
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 177
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cc9075407227960800000000000000
+      internalID: 7598178420921060403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_23
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 177
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2d7c6d1b0abd9f0800000000000000
+      internalID: -442583452692786503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_24
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4e8bc4b84c01530800000000000000
+      internalID: 3823772186204234945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_25
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f713f49d8cb53910800000000000000
+      internalID: 1816565340989233144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_26
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 177
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371815c14c9c0b930800000000000000
+      internalID: 4157044300188844403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 177
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4d22d097bb4f490800000000000000
+      internalID: -7713334133192993575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_28
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d005fe3448a430800000000000000
+      internalID: 3794357723248775797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 145
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 625f88b5951f04050800000000000000
+      internalID: 5782887287633802534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 145
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c73933d259cf54fe0800000000000000
+      internalID: -1205279607613058180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_31
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a20eb6de8fc4a80800000000000000
+      internalID: -8481130299644695983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ef2034ff8f4fc70800000000000000
+      internalID: 9004095330245082655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_33
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 145
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fbcdc6480b336f50800000000000000
+      internalID: 6873402363031178224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_34
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 145
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d0209beceeaca60800000000000000
+      internalID: 7695225484950506887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_35
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b855fb10f6cac910800000000000000
+      internalID: 1858516530807265457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_36
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52820af1bd961d7b0800000000000000
+      internalID: -5201259704786868187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_37
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 145
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52f4de89a1378590800000000000000
+      internalID: -7672108835886796193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_38
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 145
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb907ea0ad1421740800000000000000
+      internalID: 5121228131015264700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_39
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 145
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1791e40cd36587450800000000000000
+      internalID: 6086709719610562929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_40
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3071d7baf1b8b420800000000000000
+      internalID: 2646060471464063038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_41
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 145
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7041b5cb43b5ed20800000000000000
+      internalID: 3307246639394144381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_42
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 145
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34ab84d59d8dc020800000000000000
+      internalID: 2363701054094943294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_43
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 146
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b26b23d6954e820800000000000000
+      internalID: 2946578381744253698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88227ec91dbd94a60800000000000000
+      internalID: 7658894334647280264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_45
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 97
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b966519a6120f8a30800000000000000
+      internalID: 4219593672218732187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_46
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 97
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c8e8a9ed831afb0800000000000000
+      internalID: -4638363612487971768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_47
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 97
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d62848b5a423980800000000000000
+      internalID: -8560698184752272117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_48
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 97
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60150c97e594ed720800000000000000
+      internalID: 2872814282427355398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 97
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85e52292026cbb60800000000000000
+      internalID: 7763187620861306254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 97
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 129ae808fedb88be0800000000000000
+      internalID: -1474720041612170975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_51
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 97
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89959ba18597e0e70800000000000000
+      internalID: 9083330917765306776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_52
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 97
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6e6039cd8d3b7f0800000000000000
+      internalID: -597895883639036226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_53
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd429e4aef142c1a0800000000000000
+      internalID: -6790792726177045281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_54
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33104f29bbdf2de60800000000000000
+      internalID: 7985724071347487027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_55
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 97
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e351d44df64e7f1e0800000000000000
+      internalID: -2164009926973909698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_56
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e8f272d0dcc3fd0800000000000000
+      internalID: -2360786648273285600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_57
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 97
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75fefe63615c1e0f0800000000000000
+      internalID: -1089372935645302953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_58
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 97
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637f26ac9c8dbe7b0800000000000000
+      internalID: -5193819384046225610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_59
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 97
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4222f6f6cb41baeb0800000000000000
+      internalID: -4707646185929760220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 65
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159ea4c03bdbdc8e0800000000000000
+      internalID: -1671471309981554351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_61
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 65
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a835675f2b29400800000000000000
+      internalID: 329522490073385576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_62
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 65
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fcf36499c1fbb40800000000000000
+      internalID: 5458112718030491432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_63
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 65
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2d46a52a03f6a30800000000000000
+      internalID: 4210637650474095311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_64
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 65
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acba623ea9ad3170800000000000000
+      internalID: 8159864665500466340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_65
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 65
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 993d5d940880d1690800000000000000
+      internalID: -7629932846608165991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_66
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 65
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d8753dd64a626a0800000000000000
+      internalID: -6474306622694388424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_67
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 65
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39af99fbc79a90b30800000000000000
+      internalID: 4254117676283722387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 33
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec650d8f42c4840c0800000000000000
+      internalID: -4591336098427283762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_69
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342a4fe7e77a9ac80800000000000000
+      internalID: -8310927475597860285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_70
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a461936d4ec0f70800000000000000
+      internalID: 9154943751269272156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_71
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 33
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5231cda598320a0800000000000000
+      internalID: -6907526380123904517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_72
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fcf5feffffd97b0800000000000000
+      internalID: -5215731318727389342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_73
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 33
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0948d5328eeec50800000000000000
+      internalID: 6696544934536974544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_74
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 33
+        width: 11
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe760dd0261726060800000000000000
+      internalID: 6945238241311221743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_75
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 33
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de225d6208e993b0800000000000000
+      internalID: -5505113972362039594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25d0ba9a6a3cfc20800000000000000
+      internalID: 3241530061336139053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_77
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc37e2be6eeb41b60800000000000000
+      internalID: 7716001960589947851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_78
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9febedf5600fb4530800000000000000
+      internalID: 3840427017432383225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_79
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116656cde3bc93bf0800000000000000
+      internalID: -344020425671088623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_80
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 1
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2606c214b73c9d320800000000000000
+      internalID: 2583310795415511138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_81
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcea103096fd0b8a0800000000000000
+      internalID: -6291283037321580853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_82
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c556494cfea32a80800000000000000
+      internalID: -8492752073706285623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: playerARGILAPERNA_v2_83
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 1
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35360113ee92170e0800000000000000
+      internalID: -2273990233843276973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

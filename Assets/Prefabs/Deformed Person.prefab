@@ -36,8 +36,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.6683334, y: -0.0033333339}
-  m_SizeDelta: {x: 1920, y: 1080}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &48279935
 Canvas:
@@ -246,7 +246,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 61.1, y: 9.2}
+  m_AnchoredPosition: {x: 0, y: 9}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971601236
@@ -572,6 +572,14 @@ MonoBehaviour:
   health: 0
   damage: 0
   maxHealth: 0
+  dropChance: 0.05
+  soul: {fileID: 5826202563129593795, guid: 00a31346ef9f15f4cbc9114cac941c21, type: 3}
+  guarana: {fileID: 6177288368399812868, guid: f0e4a5811db9a3c4db0056521221b469, type: 3}
+  guaranaDropChance: 0.9
+  acai: {fileID: 6177288368399812868, guid: d20632b63c912b54fb6be6d1f0dd5d26, type: 3}
+  acaiDropChance: 0.4
+  coco: {fileID: 6177288368399812868, guid: 99c1393445b63fc42a71f4b32d081ab2, type: 3}
+  cocoDropChance: 1
   run:
   - {fileID: -2721465947201589026, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
   - {fileID: 2380326538213091717, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
@@ -602,7 +610,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.05
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
