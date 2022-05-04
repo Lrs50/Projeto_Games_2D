@@ -98,14 +98,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.1
-  m_AngularDrag: 0.1
+  m_LinearDrag: 1.5
+  m_AngularDrag: 1.5
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &6971809349165305836
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,8 +151,8 @@ MonoBehaviour:
   followingTime: 5
   rb: {fileID: 7506563792997353397}
   cd: {fileID: 6971809349165305836}
-  dashMag: 10
-  dashTimer: 0.3
+  dashMag: 5
+  dashTimer: 1
   maxRange: 5
   agent: {fileID: 0}
   timerForAttacks: 0
@@ -161,5 +161,5 @@ MonoBehaviour:
   startDelayDashAttack: 0
   delayToDashAttack: 0
   shadow: {fileID: 0}
-  pos: {fileID: 849698980090295785, guid: 796125bee2506df49be851ef56a1e58d, type: 3}
   instanceOfShadow: {fileID: 7759498680134837464, guid: f7f57189b087e1c4581f2be6670826f5, type: 3}
+  qtDash: 0

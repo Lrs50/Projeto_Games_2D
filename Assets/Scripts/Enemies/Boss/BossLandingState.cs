@@ -11,10 +11,11 @@ public class BossLandingState: BaseStateBoss {
         enemy.shadow.transform.localScale = new Vector3(0.5f,0.5f,1f);
         enemy.shadow.transform.position = enemy.transform.position;
         //enemy.spriteRenderer.sprite = enemy.bossSprite;
+        rotateTowardsPlayer(enemy);
         enemy.StartCoroutine(aoeDamage(enemy));
     }
 
-    public override void UpdateState(BossStateManager enemy){
+    public override void UpdateState(BossStateManager enemy){        
     }
 
     public override void FixedUpdateState(BossStateManager enemy){

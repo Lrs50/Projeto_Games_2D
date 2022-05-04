@@ -12,21 +12,29 @@ public class BossFlyState: BaseStateBoss {
         enemy.shadow.spriteRenderer.sprite = enemy.bossSprite;
         enemy.spriteRenderer.sprite = enemy.shadowSprite;
         enemy.transform.localScale = new Vector3(0.5f,0.5f,1f);
-        enemy.shadow.transform.localScale = new Vector3(1f,1f,1f);
+        enemy.shadow.transform.localScale = new Vector3(2f,2f,1f);
         enemy.startFollowingTime = 0;
-        enemy.agent.speed = enemy.flySpeed;
         
     }
 
     public override void UpdateState(BossStateManager enemy){
-        enemy.shadow.transform.position = new Vector3(enemy.transform.position.x, enemy.transform.position.y + 10f, enemy.transform.position.z);
-        enemy.startFollowingTime += Time.deltaTime;
-        if(enemy.startFollowingTime < enemy.followingTime){
-            enemy.agent.SetDestination(enemy.target.position);
-            //followPlayer(enemy);
+        float dist = Vector3.Distance(enemy.shadow.transform.position,enemy.transform.position);
+        //enemy.shadow.transform.position = new Vector3(enemy.transform.position.x, enemy.shadow.transform.position.y + (enemy.transform.position.y - enemy.shadow.transform.position.y), enemy.transform.position.z);
+        if(dist < 10){
+            //enemy.shadow.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.transform.position + new Vector3(0,10,0), enemy.baseSpeed * Time.deltaTime);
+            enemy.shadow.transform.position += Vector3.up *(enemy.flySpeed)*Time.deltaTime;
         }else{
-            enemy.SwitchState(enemy.landingState);
+            enemy.startFollowingTime += Time.deltaTime;
+            if(enemy.startFollowingTime < enemy.followingTime){
+                //enemy.agent.SetDestination(enemy.target.position);
+                followPlayer(enemy);
+            }else{
+                enemy.SwitchState(enemy.landingState);
+            }
+
         }
+
+        
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
@@ -38,6 +46,7 @@ public class BossFlyState: BaseStateBoss {
     }
 
     public void followPlayer(BossStateManager enemy){
-        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.baseSpeed *Time.deltaTime);
+        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.target.transform.position,enemy.flySpeed *Time.deltaTime);
     }
+
 }

@@ -11200,6 +11200,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1045284170}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: qtDash
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: shadow
       value: 
       objectReference: {fileID: 537761800}
@@ -11208,12 +11212,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: baseSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: dashTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: instanceOfShadow
       value: 
       objectReference: {fileID: 537761796}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: delayToDashAttack
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1129998390985450837, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_Name

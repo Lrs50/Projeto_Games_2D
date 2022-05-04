@@ -11,6 +11,7 @@ public class BossStateManager : MonoBehaviour{
     public BossMoveState moveState = new BossMoveState();
     public BossTrackingAttackState trackAttack = new BossTrackingAttackState();
     public BossNormalAttackState normalAttack = new BossNormalAttackState();
+    public BossDrillAttackState drillAttack = new BossDrillAttackState();
     public GameObject bullet;
     public GameObject trackingBullet;
     public GameObject normalBullet;
@@ -38,6 +39,7 @@ public class BossStateManager : MonoBehaviour{
     public float delayToDashAttack;
     public BossShadow shadow;
     public GameObject instanceOfShadow;
+    public int qtDash;
 
     // Sprites
 
@@ -58,6 +60,7 @@ public class BossStateManager : MonoBehaviour{
         normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
         currentState = searchState;
         currentState.EnterState(this);
+        
     }
 
      // Update is called once per frame
@@ -92,5 +95,7 @@ public class BossStateManager : MonoBehaviour{
         //     }
         // }
     }
+
+    
 
 }
