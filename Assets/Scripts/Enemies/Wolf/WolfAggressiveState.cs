@@ -14,12 +14,12 @@ public class WolfAggressiveState : BaseStateEnemies {
         if(Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.maxRange) {
             enemy.aggro = 100f;
             if (Vector3.Distance(enemy.target.position, enemy.transform.position) < enemy.minRange) {
-                Debug.Log("flee");
+                //Debug.Log("flee");
                 flee = true;
                 enemy.agent.isStopped = false;
             }
             else {
-                Debug.Log("shoot");
+                //Debug.Log("shoot");
                 flee = false;          
                 chase = false;
                 enemy.agent.isStopped = true;
@@ -27,7 +27,7 @@ public class WolfAggressiveState : BaseStateEnemies {
             }      
         }
         else {
-            Debug.Log("chase");
+          //  Debug.Log("chase");
             chase = true;
             enemy.agent.isStopped = false;
 
@@ -75,10 +75,10 @@ public class WolfAggressiveState : BaseStateEnemies {
 
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
-            Debug.Log("Shootable! Pew pew");
+           // Debug.Log("Shootable! Pew pew");
         }else{
             //Debug.Log(hit);
-            Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
+          //  Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
         }
     }
 

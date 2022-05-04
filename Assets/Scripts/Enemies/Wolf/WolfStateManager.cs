@@ -11,4 +11,5 @@ public class WolfStateManager : EnemiesStateManager
     {
         SwitchState(aggressiveState);
     }
+
 }

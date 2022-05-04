@@ -159,6 +159,10 @@ public class PlayerStateManager : MonoBehaviour
        if(other.gameObject.name=="Door"){
            Loader.Load(Loader.Scene.Phase1_0);
        }
+
+        if(other.gameObject.tag.Equals("Item")) {
+            Debug.Log("got an item!");
+        }
    }
 
    private void UpdateStaminaUI(){

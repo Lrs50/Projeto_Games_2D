@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - Player Attack
   - Projectile
+  - Item
   layers:
   - Default
   - TransparentFX
