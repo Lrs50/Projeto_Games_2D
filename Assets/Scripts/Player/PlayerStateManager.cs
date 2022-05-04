@@ -16,6 +16,9 @@ public class PlayerStateManager : MonoBehaviour
     public float dashMag = 10f;
     public float dashTimer = 0.3f;
 
+    float shootCooldown = 0.2f;
+    float shootCounter = 1;
+
     BaseStatePlayer currentState;
 
     public PlayerIdleState idleState = new PlayerIdleState();
@@ -29,10 +32,13 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject playerUI;
     public float stamina = 100f;
     Image[] staminaImages;
+    Image[] healthImages;
+    Image[] manaImages;
     //public Text debug;
 
     //Sprite references
-    public Sprite[] staminaUI;
+    public Sprite[] elementsUI;
+
 
     //Shooting
     public Transform shootingOrigin;
@@ -59,6 +65,7 @@ public class PlayerStateManager : MonoBehaviour
     public int numFrames = 4;
     public int animationOrientation = 0;
     public float health =100;
+    public float mana = 100;
 
 
     private void Awake()
@@ -66,11 +73,25 @@ public class PlayerStateManager : MonoBehaviour
 
         spriteRenderer = GetComponent<SpriteRenderer>();
 
-        staminaImages = new Image[5];
+        staminaImages = new Image[4];
+        healthImages = new Image[5];
+        manaImages = new Image[5];
+
         Transform stats = playerUI.transform.GetChild(0);
+        Transform health = stats.GetChild(0);
         Transform stamina = stats.GetChild(2);
+        Transform mana = stats.GetChild(1);
+
         for(int i=0;i<5;i++){
+            healthImages[i] = health.GetChild(i+1).gameObject.GetComponent<Image>();
+        }
+
+        for(int i=0;i<4;i++){
             staminaImages[i] = stamina.GetChild(i+1).gameObject.GetComponent<Image>();
+        }
+
+        for(int i=0;i<5;i++){
+            manaImages[i] = mana.GetChild(i+1).gameObject.GetComponent<Image>();
         }
         
     }
@@ -86,18 +107,21 @@ public class PlayerStateManager : MonoBehaviour
     void Update() {
         currentState.UpdateState(this);
         
-        stamina+= 5f*Time.deltaTime;
-
-        UpdateStaminaUI();
+        UpdateUI();
 
         if(stamina>=100f){
             stamina=100f;
         }
-        
+        if(health<=0){
+            health=0;
+        }  
     }
 
     void FixedUpdate() {
 
+        if(shootCounter<1){
+            shootCounter += 1/(50*shootCooldown);
+        }
 
         if(walkInput.y>0){
             //UP
@@ -113,8 +137,6 @@ public class PlayerStateManager : MonoBehaviour
             animationOrientation = 2;
         }
         
-        
-
         animationCount++;
         if(animationCount==animationSpeed){
             animationCount=0;
@@ -148,7 +170,8 @@ public class PlayerStateManager : MonoBehaviour
     
     public void OnShoot(InputAction.CallbackContext context) {
 
-        if(context.ReadValue<float>()!=0){
+        if(context.ReadValue<float>()!=0 && shootCounter>=1){
+            shootCounter=0;
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
         }
         
@@ -161,29 +184,57 @@ public class PlayerStateManager : MonoBehaviour
        }
    }
 
-   private void UpdateStaminaUI(){
+   private void UpdateUI(){
 
-       Sprite full = staminaUI[2];
-       Sprite half = staminaUI[1];
-       Sprite empty = staminaUI[0];
+       Sprite estaminaFull = elementsUI[6];
+       Sprite estaminaHalf = elementsUI[7];
+       Sprite estaminaEmpty = elementsUI[8];
 
+       Sprite healthFull = elementsUI[0];
+       Sprite healthHalf = elementsUI[1];
+       Sprite healthEmpty = elementsUI[2];
 
-       for(int i=0;i<5;i++){
-           if((stamina<(i+1)*20)){
-               if(stamina>i*20 +10) 
-                    staminaImages[i].sprite = half;
+       Sprite manaFull = elementsUI[3];
+       Sprite manaHalf = elementsUI[4];
+       Sprite manaEmpty = elementsUI[5];
+
+        for(int i=0;i<5;i++){
+           if((health<(i+1)*20)){
+               if(health>i*20 +10) 
+                    healthImages[i].sprite = healthHalf;
                 else
-                    staminaImages[i].sprite = empty;
+                    healthImages[i].sprite = healthEmpty;
            }else{
-               staminaImages[i].sprite = full;
+               healthImages[i].sprite = healthFull;
            }
-       }
+        }
+
+        for(int i=0;i<5;i++){
+           if((mana<(i+1)*20)){
+               if(mana>i*20 +10) 
+                    manaImages[i].sprite = manaHalf;
+                else
+                    manaImages[i].sprite = manaEmpty;
+           }else{
+               manaImages[i].sprite = manaFull;
+           }
+        }
+
+        for(int i=0;i<4;i++){
+           if((stamina<(i+1)*25)){
+               if(stamina>i*25 +12) 
+                    staminaImages[i].sprite = estaminaHalf;
+                else
+                    staminaImages[i].sprite = estaminaEmpty;
+           }else{
+               staminaImages[i].sprite = estaminaFull;
+           }
+        }
    }
 
    public void TakeDamage(float amount){
        health -= amount;
        StartCoroutine(DamageAnimation());
-       Debug.Log(health);
    }
 
     IEnumerator DamageAnimation(){

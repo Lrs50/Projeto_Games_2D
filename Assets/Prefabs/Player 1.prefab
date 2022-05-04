@@ -295,10 +295,16 @@ MonoBehaviour:
   rb: {fileID: 1989262117353386326}
   playerUI: {fileID: 0}
   stamina: 100
-  staminaUI:
-  - {fileID: -904383593905977048, guid: 40d20248429e757428e45ea039819163, type: 3}
-  - {fileID: 3258390483890048815, guid: 40d20248429e757428e45ea039819163, type: 3}
+  elementsUI:
+  - {fileID: 7389598976340231931, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: 438845378595458277, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -1744067902420132893, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -5785623612672892609, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -3345189482235192670, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -3496034695684849673, guid: 40d20248429e757428e45ea039819163, type: 3}
   - {fileID: -8490929786312914279, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: 3258390483890048815, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -904383593905977048, guid: 40d20248429e757428e45ea039819163, type: 3}
   shootingOrigin: {fileID: 1989262118155671004}
   bullet: {fileID: 9123797642374834258, guid: a10e6a92aaea8fb459d9d372b3fed607, type: 3}
   walkInput: {x: 0, y: 0}
@@ -358,6 +364,7 @@ MonoBehaviour:
   animationFrame: 0
   numFrames: 4
   animationOrientation: 0
+  health: 100
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0
