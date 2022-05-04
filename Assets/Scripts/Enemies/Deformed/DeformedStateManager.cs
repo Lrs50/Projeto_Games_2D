@@ -51,7 +51,7 @@ public class DeformedStateManager : EnemiesStateManager
 
     public override void SetProperties(){
         health = 5f;
-        damage = 15;
+        damage = 0;
 
    }
 

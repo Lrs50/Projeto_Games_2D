@@ -10,7 +10,7 @@ public class Bullet_deformed : MonoBehaviour
     float liveTime = 1f;
     Vector2 direction;
     bool go = false;
-    public float damage = 15;
+    public float damage = 5;
 
     void Awake()
     {
