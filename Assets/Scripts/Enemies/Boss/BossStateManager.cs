@@ -8,15 +8,14 @@ public class BossStateManager : MonoBehaviour{
     public BossFlyState flyingState = new BossFlyState();
     public BossLandingState landingState = new BossLandingState();
     public BossDashAttackState dashAttack = new BossDashAttackState();
-    public BossMoveState moveState = new BossMoveState();
     public BossTrackingAttackState trackAttack = new BossTrackingAttackState();
     public BossNormalAttackState normalAttack = new BossNormalAttackState();
     public BossDrillAttackState drillAttack = new BossDrillAttackState();
+    public BossGoingBackState backState = new BossGoingBackState();
     public GameObject bullet;
     public GameObject trackingBullet;
     public GameObject normalBullet;
     public GameObject instanceOfTrackingBullet;
-    public GameObject instanceOfNormalBullet;
     public FeatherProjectile bulletProperties;
     public TrackingProjectile trackingBulletProperties;
     public NormalProjectile normalBulletProperties;
@@ -30,7 +29,6 @@ public class BossStateManager : MonoBehaviour{
     public Collider2D cd;
     public float dashMag;
     public float dashTimer;
-    public float maxRange = 5;
     public NavMeshAgent agent;
     public float timerForAttacks;
     public float flySpeed;
@@ -39,8 +37,12 @@ public class BossStateManager : MonoBehaviour{
     public float delayToDashAttack;
     public BossShadow shadow;
     public GameObject instanceOfShadow;
-    public int qtDash;
+    public int qtdDashDrillAttack;
+    public int qtdDash;
 
+    public int dashCounter = 0;
+
+    public Vector3 goBack;
     // Sprites
 
     
@@ -49,6 +51,7 @@ public class BossStateManager : MonoBehaviour{
 
     void Start()
     {        
+        Physics2D.IgnoreLayerCollision(2,7);
         target = GameObject.FindWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
@@ -94,6 +97,12 @@ public class BossStateManager : MonoBehaviour{
         //         Debug.Log("Acertou o player");
         //     }
         // }
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player")){
+            this.rb.velocity=Vector2.zero;
+        }
     }
 
     

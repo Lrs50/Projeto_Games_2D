@@ -21,7 +21,7 @@ public class BossSearchState: BaseStateBoss {
         }
         enemy.timerForAttacks += Time.deltaTime;
         if(enemy.timerForAttacks > 5){
-            int whichAttack = 6;//Random.Range(1,4);
+            int whichAttack = 3;//Random.Range(1,4);
             Debug.Log(whichAttack);
             if(whichAttack <= 1){
                 enemy.SwitchState(enemy.attackState);

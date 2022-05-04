@@ -98,8 +98,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 1.5
-  m_AngularDrag: 1.5
+  m_LinearDrag: 0.1
+  m_AngularDrag: 0.1
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -139,7 +139,6 @@ MonoBehaviour:
   trackingBullet: {fileID: 2771463670074540107, guid: edb3490b8ed677244ba3722be7cb6f04, type: 3}
   normalBullet: {fileID: 5114576443552258949, guid: 4b4c28ccfade4f140922b277c34656c4, type: 3}
   instanceOfTrackingBullet: {fileID: 0}
-  instanceOfNormalBullet: {fileID: 0}
   bulletProperties: {fileID: 0}
   trackingBulletProperties: {fileID: 0}
   normalBulletProperties: {fileID: 0}
@@ -152,8 +151,7 @@ MonoBehaviour:
   rb: {fileID: 7506563792997353397}
   cd: {fileID: 6971809349165305836}
   dashMag: 5
-  dashTimer: 1
-  maxRange: 5
+  dashTimer: 0.1
   agent: {fileID: 0}
   timerForAttacks: 0
   flySpeed: 7
@@ -162,4 +160,7 @@ MonoBehaviour:
   delayToDashAttack: 0
   shadow: {fileID: 0}
   instanceOfShadow: {fileID: 7759498680134837464, guid: f7f57189b087e1c4581f2be6670826f5, type: 3}
-  qtDash: 0
+  qtdDashDrillAttack: 0
+  qtdDash: 2
+  dashCounter: 0
+  goBack: {x: 0, y: 0, z: 0}
