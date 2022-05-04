@@ -38,6 +38,7 @@ public class PlayerMoveState : BaseStatePlayer {
 
         if(canRun==1){
             player.spriteRenderer.sprite = player.runAnimation[player.animationOrientation + player.animationFrame*4];
+            player.stamina -= 0.25f; 
         }else{
             player.spriteRenderer.sprite = player.walkAnimation[player.animationOrientation + player.animationFrame*4];
             player.stamina+= 50f/200f; // 4sec

@@ -52,10 +52,17 @@ public class PlayerStateManager : MonoBehaviour
     public Vector2 smoothInputVelocity;
 
     //Sprites
-    public Sprite[] idleAnimation;
-    public Sprite[] walkAnimation;
-    public Sprite[] runAnimation;
-    public Sprite[] dashAnimation;
+    public Sprite[] normalAnimation;
+    public Sprite[] animation2;
+    public Sprite[] animation3;
+
+    [System.NonSerialized] public Sprite[] idleAnimation;
+    [System.NonSerialized] public Sprite[] walkAnimation;
+    [System.NonSerialized] public Sprite[] runAnimation;
+    [System.NonSerialized] public Sprite[] dashAnimation;
+    [System.NonSerialized] public Sprite[] idleAttackAnimation;
+    [System.NonSerialized] public Sprite[] walkAttackAnimation;
+
 
     //Animation config
     public SpriteRenderer spriteRenderer;
@@ -67,10 +74,47 @@ public class PlayerStateManager : MonoBehaviour
     public float health =100;
     public float mana = 100;
 
+    public void SetAnimationMode(String animationMode){
+        Sprite[] reference = normalAnimation;
+
+        idleAnimation = new Sprite[8];
+        walkAnimation =new Sprite[16];
+        runAnimation = new Sprite[16];
+        dashAnimation = new Sprite[4] ;
+        idleAttackAnimation = new Sprite[16];
+        walkAttackAnimation = new Sprite[32];
+
+        if(animationMode.Equals("normal")){
+            reference = normalAnimation;
+        }else if(animationMode.Equals("1")){
+            reference = animation2;
+        }else if(animationMode.Equals("2")){
+            reference = animation3;
+        }
+
+        for(int i=0;i<idleAnimation.Length;i++){
+            idleAnimation[i] = reference[i];
+        }
+        for(int i=0;i<walkAnimation.Length;i++){
+            walkAnimation[i] = reference[i+12];
+        }
+        for(int i=0;i<runAnimation.Length;i++){
+            runAnimation[i] = reference[28+i];
+        }
+        for(int i=0;i<dashAnimation.Length;i++){
+            dashAnimation[i] = reference[8+i];
+        }
+        for(int i=0;i<idleAttackAnimation.Length;i++){
+            idleAttackAnimation[i] = reference[44+i];
+        }
+        for(int i=0;i<walkAttackAnimation.Length;i++){
+            walkAttackAnimation[i] = reference[52+i];
+        }
+    }
 
     private void Awake()
     {
-
+        SetAnimationMode("normal");
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         staminaImages = new Image[4];
