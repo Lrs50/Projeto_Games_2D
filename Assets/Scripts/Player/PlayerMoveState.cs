@@ -4,6 +4,9 @@ using System;
 public class PlayerMoveState : BaseStatePlayer {
     Vector2 previousDirection;
     float canRun = 1f;
+    float staminaCost = 25f;
+    float dashCooldown = 0.5f;
+    float dashCounter = 1;
 
     public override void EnterState(PlayerStateManager player) {
     	player.numFrames = 4;
@@ -11,14 +14,15 @@ public class PlayerMoveState : BaseStatePlayer {
     }
 
     public override void UpdateState(PlayerStateManager player) {
-        if(player.dashInput!=0f && player.stamina>=10f){
-            player.stamina -= 10f;
+
+        if(player.dashInput!=0f && player.stamina>=staminaCost && dashCounter>=1){
+            player.stamina -= staminaCost;
+            dashCounter = 0;
             player.SwitchState(player.dashState);
         }
 
         if(player.sprintInput!=0f && player.stamina>0){
             canRun = 1;
-            player.stamina-= 2.5f*Time.deltaTime;
             
         }else{
             canRun = 0;
@@ -28,10 +32,16 @@ public class PlayerMoveState : BaseStatePlayer {
 
     public override void FixedUpdateState(PlayerStateManager player){
 
+        if(dashCounter<1){
+            dashCounter+= 1/(50f*dashCooldown);
+        }
+
         if(canRun==1){
             player.spriteRenderer.sprite = player.runAnimation[player.animationOrientation + player.animationFrame*4];
+            player.stamina -= 0.25f; 
         }else{
             player.spriteRenderer.sprite = player.walkAnimation[player.animationOrientation + player.animationFrame*4];
+            player.stamina+= 50f/200f; // 4sec
         }
     
         Vector2 direction = player.walkInput;
