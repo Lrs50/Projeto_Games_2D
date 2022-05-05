@@ -224,6 +224,9 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnSprint(InputAction.CallbackContext context) {
         sprintInput = context.ReadValue<float>();
+        if(stamina<5f){
+            sprintInput=0;
+        }
     }
 
     
