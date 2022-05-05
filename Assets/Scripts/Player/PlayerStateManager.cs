@@ -27,6 +27,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerIdleState idleState = new PlayerIdleState();
     public PlayerMoveState moveState = new PlayerMoveState();
     public PlayerDashState dashState = new PlayerDashState();
+    public PlayerEvolveState evolveState= new PlayerEvolveState();
 
     public Rigidbody2D rb;
 
@@ -41,6 +42,7 @@ public class PlayerStateManager : MonoBehaviour
 
     //Sprite references
     public Sprite[] elementsUI;
+    public Material flash;
 
 
     //Shooting
@@ -76,8 +78,9 @@ public class PlayerStateManager : MonoBehaviour
     public int animationOrientation = 0;
     public float health =100;
     public float mana = 100;
+    public String animationMode = "normal";
 
-    public void SetAnimationMode(String animationMode){
+    public void SetAnimationMode(){
         Sprite[] reference = normalAnimation;
 
         idleAnimation = new Sprite[8];
@@ -86,6 +89,7 @@ public class PlayerStateManager : MonoBehaviour
         dashAnimation = new Sprite[4] ;
         idleAttackAnimation = new Sprite[16];
         walkAttackAnimation = new Sprite[32];
+        
 
         if(animationMode.Equals("normal")){
             reference = normalAnimation;
@@ -117,7 +121,7 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
-        SetAnimationMode("normal");
+        SetAnimationMode();
         spriteRenderer = GetComponent<SpriteRenderer>();
 
         staminaImages = new Image[4];
@@ -154,6 +158,10 @@ public class PlayerStateManager : MonoBehaviour
     void Update() {
         currentState.UpdateState(this);
         
+        if(Input.GetKeyDown(KeyCode.P)){
+            SwitchState(evolveState);
+        }
+
         UpdateUI();
 
         if(stamina>=100f){
@@ -173,8 +181,6 @@ public class PlayerStateManager : MonoBehaviour
             }
         }
         
-
-
         if(shootCounter<1){
             shootCounter += 1/(50*shootCooldown);
         }
@@ -305,5 +311,51 @@ public class PlayerStateManager : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color=Color.white;
     }
+
+    IEnumerator Evolve(){
+
+        Material old = spriteRenderer.material;
+        Vector3 escale = transform.localScale;
+        Vector3 pos = transform.position;
+        float animationCooldown=0.1f;
+        spriteRenderer.material=flash;
+
+
+
+        for(int i=0;i<15;i++){
+            spriteRenderer.color=Color.white;
+            transform.localScale = escale*1.25f;
+            transform.position = pos + (Vector3)UnityEngine.Random.insideUnitCircle.normalized*0.2f;
+            yield return new WaitForSeconds(animationCooldown);
+            transform.localScale = escale*1f;
+            spriteRenderer.color=UnityEngine.Random.ColorHSV();
+            transform.position = pos + (Vector3)UnityEngine.Random.insideUnitCircle.normalized*0.2f;
+            yield return new WaitForSeconds(animationCooldown);
+            transform.localScale = escale*0.8f;
+            spriteRenderer.color=Color.black;
+            yield return new WaitForSeconds(animationCooldown);
+            transform.position = pos + (Vector3)UnityEngine.Random.insideUnitCircle.normalized*0.2f;
+        }
+
+        if(animationMode=="normal"){
+            animationMode="1";
+            SetAnimationMode();
+        }else if(animationMode=="1"){
+            animationMode="2";
+            SetAnimationMode();
+        }
+
+        transform.localScale = escale;
+        spriteRenderer.material = old;
+        spriteRenderer.color=Color.white;
+         transform.position = pos;
+        SwitchState(idleState);
+
+    }
+
+    public void StartEvolve(){
+        StartCoroutine(Evolve());
+    }
+
 }
 
