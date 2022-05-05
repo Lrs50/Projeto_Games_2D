@@ -34,6 +34,7 @@ public class PlayerStateManager : MonoBehaviour
 
     //UI
     public GameObject playerUI;
+    public GameObject pauseUI;
     public float stamina = 100f;
     Image[] staminaImages;
     Image[] healthImages;
@@ -158,8 +159,14 @@ public class PlayerStateManager : MonoBehaviour
     void Update() {
         currentState.UpdateState(this);
         
-        if(Input.GetKeyDown(KeyCode.P)){
+        if(Input.GetKeyDown(KeyCode.E)){
             SwitchState(evolveState);
+        }
+        if(Input.GetKeyDown(KeyCode.Return)){
+            Pause(true);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape)){
+            Pause(false);
         }
 
         UpdateUI();
@@ -356,6 +363,18 @@ public class PlayerStateManager : MonoBehaviour
 
     public void StartEvolve(){
         StartCoroutine(Evolve());
+    }
+
+    public void Pause(bool pause){
+        if(pause){
+            pause=false;
+            Time.timeScale=1;
+            pauseUI.SetActive(false);
+        }else{
+            pause=true;
+            Time.timeScale=0;
+            pauseUI.SetActive(true);
+        }
     }
 
 }

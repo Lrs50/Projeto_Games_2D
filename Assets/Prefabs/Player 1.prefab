@@ -292,8 +292,10 @@ MonoBehaviour:
   rotationSpeed: 8
   dashMag: 20
   dashTimer: 0.2
+  attackFlag: 0
   rb: {fileID: 1989262117353386326}
   playerUI: {fileID: 0}
+  pauseUI: {fileID: 0}
   stamina: 100
   elementsUI:
   - {fileID: 7389598976340231931, guid: 40d20248429e757428e45ea039819163, type: 3}
@@ -305,6 +307,7 @@ MonoBehaviour:
   - {fileID: -8490929786312914279, guid: 40d20248429e757428e45ea039819163, type: 3}
   - {fileID: 3258390483890048815, guid: 40d20248429e757428e45ea039819163, type: 3}
   - {fileID: -904383593905977048, guid: 40d20248429e757428e45ea039819163, type: 3}
+  flash: {fileID: 2100000, guid: d3f1a33f49f86f545b74e1e038ede221, type: 2}
   shootingOrigin: {fileID: 1989262118155671004}
   bullet: {fileID: 9123797642374834258, guid: a10e6a92aaea8fb459d9d372b3fed607, type: 3}
   walkInput: {x: 0, y: 0}
@@ -573,6 +576,7 @@ MonoBehaviour:
   animationOrientation: 0
   health: 100
   mana: 100
+  animationMode: normal
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0
