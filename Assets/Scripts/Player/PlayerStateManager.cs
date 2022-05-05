@@ -320,9 +320,7 @@ public class PlayerStateManager : MonoBehaviour
         float animationCooldown=0.1f;
         spriteRenderer.material=flash;
 
-
-
-        for(int i=0;i<15;i++){
+        for(int i=0;i<10;i++){
             spriteRenderer.color=Color.white;
             transform.localScale = escale*1.25f;
             transform.position = pos + (Vector3)UnityEngine.Random.insideUnitCircle.normalized*0.2f;

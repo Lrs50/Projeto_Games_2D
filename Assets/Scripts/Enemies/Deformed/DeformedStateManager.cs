@@ -44,7 +44,7 @@ public class DeformedStateManager : EnemiesStateManager
 
     public override void OnShoot(Vector3 direction) {
         GameObject bulletTemp =Instantiate(Projectile,shootingOrigin.position,Quaternion.identity);
-        Bullet_deformed scriptTemp = bulletTemp.GetComponent<Bullet_deformed>();
+        BulletEnemy scriptTemp = bulletTemp.GetComponent<BulletEnemy>();
         scriptTemp.setDestination((Vector2) direction);
 
     }

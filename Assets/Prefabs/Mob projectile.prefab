@@ -136,4 +136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   rb: {fileID: 0}
+  spriteRenderer: {fileID: 0}
   damage: 5
+  body: {fileID: -9168493028123529245, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  breakAnimation:
+  - {fileID: -3137357063068628894, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  explosion: {fileID: 5765017642573606177, guid: 4efab50ddb129c347b54d434e82937bb, type: 3}

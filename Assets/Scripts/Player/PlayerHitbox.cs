@@ -17,7 +17,7 @@ public class PlayerHitbox : MonoBehaviour
                 damageValue = enemy.damage;
             }
             if(other.gameObject.tag.Equals("Projectile")){
-                Bullet_deformed enemy = other.gameObject.GetComponent<Bullet_deformed>();
+                BulletEnemy enemy = other.gameObject.GetComponent<BulletEnemy>();
                 damageValue = enemy.damage;
                 
             }
@@ -35,7 +35,7 @@ public class PlayerHitbox : MonoBehaviour
                 damageValue = enemy.damage;
             }
             if(other.gameObject.tag.Equals("Projectile")){
-                Bullet_deformed enemy = other.gameObject.GetComponent<Bullet_deformed>();
+                BulletEnemy enemy = other.gameObject.GetComponent<BulletEnemy>();
                 damageValue = enemy.damage;
                 
             }
