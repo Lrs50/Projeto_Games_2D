@@ -32,15 +32,30 @@ public class PlayerMoveState : BaseStatePlayer {
 
     public override void FixedUpdateState(PlayerStateManager player){
 
+
+
         if(dashCounter<1){
             dashCounter+= 1/(50f*dashCooldown);
         }
 
         if(canRun==1){
+            player.numFrames=4;
+            if(player.animationFrame>=player.numFrames) player.animationFrame=0;
             player.spriteRenderer.sprite = player.runAnimation[player.animationOrientation + player.animationFrame*4];
             player.stamina -= 0.25f; 
         }else{
-            player.spriteRenderer.sprite = player.walkAnimation[player.animationOrientation + player.animationFrame*4];
+            
+            if(player.attackFlag){
+                player.numFrames=8;
+                if(player.animationFrame>=player.numFrames) player.animationFrame=0;
+                player.spriteRenderer.sprite = player.walkAttackAnimation[player.animationOrientation + player.animationFrame*4];
+            }else{
+                player.numFrames=4;
+                if(player.animationFrame>=player.numFrames) player.animationFrame=0;
+                    
+                player.spriteRenderer.sprite = player.walkAnimation[player.animationOrientation + player.animationFrame*4];
+            }
+            
             player.stamina+= 50f/200f; // 4sec
         }
     

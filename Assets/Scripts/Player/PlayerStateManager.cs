@@ -18,6 +18,9 @@ public class PlayerStateManager : MonoBehaviour
 
     float shootCooldown = 0.2f;
     float shootCounter = 1;
+    float attackAnimationCooldown = 0.2f;
+    public bool attackFlag = false;
+    float attackCounter =0;
 
     BaseStatePlayer currentState;
 
@@ -162,6 +165,15 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     void FixedUpdate() {
+    
+        if(attackFlag){
+            attackCounter += 1/(50*attackAnimationCooldown);
+            if(attackCounter>=1){
+                attackFlag=false;
+            }
+        }
+        
+
 
         if(shootCounter<1){
             shootCounter += 1/(50*shootCooldown);
@@ -186,11 +198,12 @@ public class PlayerStateManager : MonoBehaviour
             animationCount=0;
             animationFrame++;
         }
-        if(animationFrame==numFrames){
+
+        if(animationFrame>=numFrames){
             animationFrame=0;
         }
 
-        currentState.FixedUpdateState(this);
+        currentState.FixedUpdateState(this);        
         
     }
 
@@ -213,7 +226,8 @@ public class PlayerStateManager : MonoBehaviour
     }
     
     public void OnShoot(InputAction.CallbackContext context) {
-
+        attackFlag = true;
+        attackCounter = 0;
         if(context.ReadValue<float>()!=0 && shootCounter>=1){
             shootCounter=0;
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
