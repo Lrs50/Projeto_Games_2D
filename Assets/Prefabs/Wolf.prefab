@@ -191,7 +191,7 @@ GameObject:
   - component: {fileID: -6421616116469372304}
   m_Layer: 2
   m_Name: Wolf
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,6 +367,46 @@ MonoBehaviour:
   acaiDropChance: 0.3
   coco: {fileID: 6177288368399812868, guid: 99c1393445b63fc42a71f4b32d081ab2, type: 3}
   cocoDropChance: 1
+  idle:
+  - {fileID: -7949999185410663371, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 5657553903419564796, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -5127623164980697346, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 4393042604580313856, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -7019253229899825288, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 608846820990333544, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 337120232982728575, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -5401111057399978989, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 283180239098162308, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -3013831250626892246, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -8878149438353788175, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 1989942590733325780, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -4594235570956854535, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -3696751414564434794, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 2085161248202534273, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 4962463879046938343, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  attack:
+  - {fileID: -7985899116395166096, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3359639707164887079, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 317963515853441458, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 1567813505431073099, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -8586357906280822100, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3200343444231850351, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -7865103102223813542, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -6282818079969972336, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 9042123299707547459, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 4059687931926726800, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 8685516604010542438, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 3143390614704442077, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -5074870786723333402, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -5961986115309406365, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 4910090871581090235, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -4984572136350429032, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -115978376060880497, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: 2270180294961626901, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -3611340781185076626, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  - {fileID: -3432775399910657345, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
+  count: 0
+  index: 0
 --- !u!1 &2746842192870115663
 GameObject:
   m_ObjectHideFlags: 0

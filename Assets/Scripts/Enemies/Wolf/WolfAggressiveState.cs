@@ -15,11 +15,13 @@ public class WolfAggressiveState : BaseStateEnemies {
             enemy.aggro = 100f;
             if (Vector3.Distance(enemy.target.position, enemy.transform.position) < enemy.minRange) {
                 //Debug.Log("flee");
+                enemy.animationState="idle";
                 flee = true;
                 enemy.agent.isStopped = false;
             }
             else {
                 //Debug.Log("shoot");
+                enemy.animationState="attack";
                 flee = false;          
                 chase = false;
                 enemy.agent.isStopped = true;
@@ -28,6 +30,7 @@ public class WolfAggressiveState : BaseStateEnemies {
         }
         else {
           //  Debug.Log("chase");
+            enemy.animationState="idle";
             chase = true;
             enemy.agent.isStopped = false;
 
@@ -38,15 +41,12 @@ public class WolfAggressiveState : BaseStateEnemies {
                 ExitState(enemy);
             }
 
-
         }
        
-
-
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
-        //enemy.Animate();
+        enemy.Animate();
         if (flee){
             Vector3 wolfPosition = enemy.transform.position;
             Vector3 playerPosition = enemy.target.transform.position;

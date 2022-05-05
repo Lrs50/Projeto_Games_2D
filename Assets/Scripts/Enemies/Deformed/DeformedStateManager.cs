@@ -11,7 +11,6 @@ public class DeformedStateManager : EnemiesStateManager
     DeformedAggressiveState aggressiveState = new DeformedAggressiveState();
     
     public GameObject Projectile;
-    public Transform shootOrigin;
     public Sprite[] idle;
     public Sprite[] attack;
     
