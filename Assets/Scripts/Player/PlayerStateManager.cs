@@ -181,6 +181,12 @@ public class PlayerStateManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             Pause(false);
         }
+        if(Input.GetKeyDown(KeyCode.B)){
+            rb.velocity = new Vector3(0,5,0);
+            Collider2D temp = GetComponent<Collider2D>();
+            temp.enabled = false;
+            rb.isKinematic = true;
+        }
 
         UpdateUI();
 
@@ -285,7 +291,7 @@ public class PlayerStateManager : MonoBehaviour
        }
 
         if(other.gameObject.tag.Equals("Item")) {
-            Debug.Log("Got an item!");
+            //Debug.Log("Got an item!");
         }
    }
 

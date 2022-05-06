@@ -39,7 +39,7 @@ public class BossDashAttackState: BaseStateBoss {
 
     public override void FixedUpdateState(BossStateManager enemy){
         if(prepare){
-            Debug.Log(enemy.index);
+            //Debug.Log(enemy.index);
             if(enemy.index >= enemy.transformAnimation.Length){
                 enemy.index=0;
                 prepare=false;
@@ -78,10 +78,10 @@ public class BossDashAttackState: BaseStateBoss {
 
     }
     private IEnumerator Dash(BossStateManager enemy){
-        Debug.Log("enterei1");
+        
         for (int i = 0; i < enemy.qtdDash; i++)
         {
-            Debug.Log("enterei2");
+            
             Vector3 fromPosition = enemy.transform.position;
             Vector3 toPosition = enemy.target.transform.position;
             Vector3 direction = toPosition - fromPosition;

@@ -50,7 +50,7 @@ public class EnemiesMoveState : BaseStateEnemies {
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position,enemy.transform.forward,20,enemy.obstacles.value);
         if(hit.collider != null && hit.collider.transform != enemy.transform && hit.collider.tag != "Player"){
             Debug.DrawLine(enemy.transform.position, hit.point, Color.red);
-            Debug.Log(hit.collider.tag);
+            //Debug.Log(hit.collider.tag);
         }
     }
    

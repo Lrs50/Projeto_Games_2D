@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.AI;
 using System.Collections;
 public class BossStateManager : MonoBehaviour{
@@ -45,6 +46,7 @@ public class BossStateManager : MonoBehaviour{
     public int qtdDashDrillAttack;
     public int qtdDash;
 
+    public Slider health_slider;
     public int dashCounter = 0;
 
     public Vector3 goBack;
@@ -176,7 +178,7 @@ public class BossStateManager : MonoBehaviour{
         for (int i = 0; i < hitColliders.Length && !hitPlayer; i++)
         {
             if(hitColliders[i].CompareTag("Player")){
-                Debug.Log("Acertou o player");
+                //Debug.Log("Acertou o player");
                 PlayerStateManager temp = target.GetComponent<PlayerStateManager>();  
                 temp.TakeDamage(flyAttackDamage);          
                 hitPlayer = true;
@@ -198,7 +200,8 @@ public class BossStateManager : MonoBehaviour{
         if(other.gameObject.tag == "Player Attack"){
             Bullet bullet = other.gameObject.GetComponent<Bullet>();
             currHealth -= bullet.damage;
-            Debug.Log(currHealth);
+            //Debug.Log(currHealth);
+            health_slider.value = currHealth/maxHealth;
         }
     }
 
@@ -206,7 +209,8 @@ public class BossStateManager : MonoBehaviour{
         if(other.gameObject.tag == "Player Attack"){
             Bullet bullet = other.gameObject.GetComponent<Bullet>();
             currHealth -= bullet.damage;
-            Debug.Log(currHealth);
+            //Debug.Log(currHealth);
+            health_slider.value = currHealth/maxHealth;
             StartCoroutine(DamageAnimation());
         }
     }
