@@ -37,7 +37,7 @@ public class PlayerDeathState : BaseStatePlayer{
         count++;
         if(userInput){
             SpriteRenderer background = player.deathUI.transform.GetChild(1).GetComponent<SpriteRenderer>();
-            if(background.color.a<=255){
+            if(background.color.a <= 1){
                 if(background.color.a+0.05f>1){
                     background.color = new Color(0,0,0,1);
                 }else{
