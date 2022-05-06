@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -3197849101219104266}
   m_Layer: 0
   m_Name: Tracking Feather
-  m_TagString: Untagged
+  m_TagString: TrackingFeather
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +142,9 @@ MonoBehaviour:
   _bossPosition: {x: 2.3306947, y: -4.4183774, z: 0}
   startTime: 0
   liveTime: 1
+  spriteRenderer: {fileID: 0}
+  damage: 20
+  body: {fileID: -7091258162247991437, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  breakAnimation:
+  - {fileID: -3137357063068628894, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  explosion: {fileID: 5919021406222908205, guid: 0278ccc4cccaa4445a9def3f9fa9a7e2, type: 3}

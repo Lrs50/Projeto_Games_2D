@@ -13,8 +13,16 @@ public class TrackingProjectile : MonoBehaviour
     public Vector3 _bossPosition;
     public float startTime;
     public float liveTime = 1f;
+    public SpriteRenderer spriteRenderer;
+    public float damage = 1;
+    public Sprite body;
+    public Sprite[] breakAnimation;
+    public GameObject explosion;
+    bool done = false;
     void Start()
     {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = body;
         startTime = Time.time;
         GameObject boss = GameObject.FindGameObjectWithTag("Boss");
         Physics2D.IgnoreCollision(boss.GetComponent<Collider2D>(),GetComponent<Collider2D>());
@@ -22,14 +30,26 @@ public class TrackingProjectile : MonoBehaviour
     void Update()
     {
         if((Time.time-startTime)>=liveTime){
-            Destroy(gameObject);
+            StartCoroutine(Break());
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Target" || other.gameObject.name == "Collider" || other.gameObject.tag == "Wall")
+        if (other.gameObject.tag == "World" || other.gameObject.tag == "Player")
         {
-            Destroy(gameObject);
+            StartCoroutine(Break());
+        }
+    }
+
+    IEnumerator Break(){
+        if(!done){
+            done = true;
+            yield return new WaitForSeconds(0.02f);
+            Destroy(spriteRenderer);
+            GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
+            yield return new WaitForSeconds(1f);
+            Destroy(explosionAnimation);
+            Destroy(gameObject);  
         }
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 public class BossStateManager : MonoBehaviour{
     public Transform target;
     BaseStateBoss currentState;
@@ -19,6 +20,11 @@ public class BossStateManager : MonoBehaviour{
     public FeatherProjectile bulletProperties;
     public TrackingProjectile trackingBulletProperties;
     public NormalProjectile normalBulletProperties;
+    public float maxHealth;
+    public float currHealth;
+    public float damage = 15f;
+    public float flyAttackDamage = 20f;
+    public int randomAttackInterval;
     public float baseSpeed = 5f;
     public SpriteRenderer spriteRenderer;
     public Sprite shadowSprite;
@@ -128,9 +134,9 @@ public class BossStateManager : MonoBehaviour{
 
     void Start()
     {        
-
+        randomAttackInterval = Random.Range(1,3);
+        currHealth = maxHealth;
         SetAnimation();
-
         Physics2D.IgnoreLayerCollision(2,7);
         target = GameObject.FindWithTag("Player").transform;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
@@ -171,6 +177,8 @@ public class BossStateManager : MonoBehaviour{
         {
             if(hitColliders[i].CompareTag("Player")){
                 Debug.Log("Acertou o player");
+                PlayerStateManager temp = target.GetComponent<PlayerStateManager>();  
+                temp.TakeDamage(flyAttackDamage);          
                 hitPlayer = true;
             }
         }
@@ -185,9 +193,30 @@ public class BossStateManager : MonoBehaviour{
     {
         if(other.gameObject.CompareTag("Player")){
             this.rb.velocity=Vector2.zero;
+            
+        }
+        if(other.gameObject.tag == "Player Attack"){
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            currHealth -= bullet.damage;
+            Debug.Log(currHealth);
         }
     }
 
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "Player Attack"){
+            Bullet bullet = other.gameObject.GetComponent<Bullet>();
+            currHealth -= bullet.damage;
+            Debug.Log(currHealth);
+            StartCoroutine(DamageAnimation());
+        }
+    }
+
+    IEnumerator DamageAnimation(){
+        
+        spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.3f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
     
 
 }

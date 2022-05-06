@@ -8,7 +8,7 @@ public class BossGoingBackState: BaseStateBoss {
         if(Vector3.Distance(enemy.transform.position, enemy.goBack) > enemy.baseSpeed * Time.deltaTime){
             enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.goBack, (enemy.baseSpeed+5) * Time.deltaTime);
         }else{
-            Debug.Log("1");
+            //Debug.Log("1");
             enemy.rb.velocity = Vector2.zero;
             enemy.SwitchState(enemy.drillAttack);
         }

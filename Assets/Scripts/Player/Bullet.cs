@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "World" || other.gameObject.tag == "Enemy" || other.gameObject.tag == "Target"){
+        if(other.gameObject.name == "World" || other.gameObject.tag == "Enemy" || other.gameObject.tag == "Target" || other.gameObject.tag == "Boss"){
             StartCoroutine(Break());
         }
     }

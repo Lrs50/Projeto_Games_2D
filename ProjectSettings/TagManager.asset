@@ -14,6 +14,9 @@ TagManager:
   - Player Attack
   - Projectile
   - Item
+  - TrackingFeather
+  - Feather360
+  - NormalFeather
   layers:
   - Default
   - TransparentFX
