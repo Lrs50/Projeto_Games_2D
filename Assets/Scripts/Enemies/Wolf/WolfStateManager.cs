@@ -40,6 +40,12 @@ public class WolfStateManager : EnemiesStateManager
                 index=0;
             }
             spriteRenderer.sprite = idle[index*4+direction];
+        }else if(animationState.Equals("attack")){
+            if(index>=Mathf.Floor((attack.Length)/4)){
+                index=0;
+                animationState="idle";
+            }
+            spriteRenderer.sprite = attack[index*4+direction];   
         }
         
     }

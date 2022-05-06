@@ -283,7 +283,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &-6597242485846453905
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -338,8 +338,8 @@ MonoBehaviour:
   baseSpeed: 15
   maxSpeed: 20
   rotationSpeed: 8
-  maxRange: 15
-  minRange: 10
+  maxRange: 10
+  minRange: 5
   healthBar: {fileID: 0}
   walkInput: {x: 0, y: 0}
   obstacles:
@@ -432,7 +432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2746842192870115663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.068, y: -0.027, z: 0}
+  m_LocalPosition: {x: -0.013, y: -0.023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5419232858433476416}
