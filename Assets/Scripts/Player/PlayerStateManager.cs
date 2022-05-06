@@ -137,6 +137,7 @@ public class PlayerStateManager : MonoBehaviour
     private void Awake()
     {
         Time.timeScale=1f;
+        FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
         spriteRenderer = GetComponent<SpriteRenderer>();
         wingsSR = wings.GetComponent<SpriteRenderer>();
@@ -163,7 +164,6 @@ public class PlayerStateManager : MonoBehaviour
         
     }
     void Start() {
-
         currentState = idleState;
 
         currentState.EnterState(this);
