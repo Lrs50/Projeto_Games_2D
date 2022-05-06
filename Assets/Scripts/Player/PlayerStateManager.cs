@@ -29,6 +29,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerMoveState moveState = new PlayerMoveState();
     public PlayerDashState dashState = new PlayerDashState();
     public PlayerEvolveState evolveState= new PlayerEvolveState();
+    public PlayerDeathState deathState = new PlayerDeathState();
 
     public Rigidbody2D rb;
 
@@ -36,6 +37,7 @@ public class PlayerStateManager : MonoBehaviour
     //UI
     public GameObject playerUI;
     public GameObject pauseUI;
+    public GameObject deathUI;
     public float stamina = 100f;
     Image[] staminaImages;
     Image[] healthImages;
@@ -70,6 +72,10 @@ public class PlayerStateManager : MonoBehaviour
     [System.NonSerialized] public Sprite[] idleAttackAnimation;
     [System.NonSerialized] public Sprite[] walkAttackAnimation;
     public Sprite[] wingsAnimation;
+    
+    public Sprite[] death1;
+    public Sprite[] death2;
+    public Sprite[] death3;
 
     public GameObject wings;
     public SpriteRenderer wingsSR;
@@ -130,6 +136,7 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale=1f;
         SetAnimationMode();
         spriteRenderer = GetComponent<SpriteRenderer>();
         wingsSR = wings.GetComponent<SpriteRenderer>();
@@ -180,8 +187,9 @@ public class PlayerStateManager : MonoBehaviour
         if(stamina>=100f){
             stamina=100f;
         }
-        if(health<=0){
+        if(health<=0 && currentState!=deathState){
             health=0;
+            SwitchState(deathState);
         }  
     }
 

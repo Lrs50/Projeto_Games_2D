@@ -25,7 +25,7 @@ public class WolfAggressiveState : BaseStateEnemies {
                 Flee();
             }
             else {
-                Debug.Log("shoot");
+                //Debug.Log("shoot");
                 enemy.animationState="attack";
                 Stop();
                 isShootable(enemy);
@@ -117,7 +117,7 @@ public class WolfAggressiveState : BaseStateEnemies {
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, shootDirection, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
            // Debug.Log("Shootable! Pew pew");
-            Debug.DrawLine(toPosition, fromPosition);
+            //Debug.DrawLine(toPosition, fromPosition);
             Stop();
             Shoot();
         }
@@ -128,7 +128,7 @@ public class WolfAggressiveState : BaseStateEnemies {
     }
 
     public void ExitState(EnemiesStateManager enemy){
-        Debug.Log("Lost aggro on opponent");
+        //Debug.Log("Lost aggro on opponent");
         enemy.agent.isStopped = true;
         enemy.SwitchState(enemy.searchState);
     }

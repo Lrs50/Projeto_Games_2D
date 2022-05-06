@@ -294,7 +294,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -407,7 +407,7 @@ MonoBehaviour:
   - {fileID: -3432775399910657345, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
   count: 0
   index: 0
-  Projectile: {fileID: 5737861312730213513, guid: bcf8cfde60b97a84391bcc5e4820d0ea, type: 3}
+  Projectile: {fileID: 7495279363602918482, guid: bf131a13d37838a458ec6a3aa7a6854e, type: 3}
 --- !u!1 &2746842192870115663
 GameObject:
   m_ObjectHideFlags: 0
