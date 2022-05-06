@@ -30,6 +30,7 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerDashState dashState = new PlayerDashState();
     public PlayerEvolveState evolveState= new PlayerEvolveState();
     public PlayerDeathState deathState = new PlayerDeathState();
+    public PlayerSkillState skillState = new PlayerSkillState();
 
     public Rigidbody2D rb;
 
@@ -72,10 +73,11 @@ public class PlayerStateManager : MonoBehaviour
     [System.NonSerialized] public Sprite[] idleAttackAnimation;
     [System.NonSerialized] public Sprite[] walkAttackAnimation;
     public Sprite[] wingsAnimation;
-    
     public Sprite[] death1;
     public Sprite[] death2;
     public Sprite[] death3;
+    public Sprite[] abilities;
+    public Sprite[] itens;
 
     public GameObject wings;
     public SpriteRenderer wingsSR;
@@ -269,7 +271,24 @@ public class PlayerStateManager : MonoBehaviour
         }
     }
 
-    
+    public void OnSkill1(InputAction.CallbackContext context) {
+        if(context.ReadValue<float>()!=0){
+            Debug.Log("habilidade 1");
+        }
+    }
+
+    public void OnSkill2(InputAction.CallbackContext context) {
+        if(context.ReadValue<float>()!=0){
+            Debug.Log("habilidade 2");
+        }
+    }
+
+    public void OnSkill3(InputAction.CallbackContext context) {
+        if(context.ReadValue<float>()!=0){
+            Debug.Log("habilidade 3");
+        }
+    }
+
     public void OnDash(InputAction.CallbackContext context) {
         dashInput = context.ReadValue<float>();
     }
@@ -383,11 +402,17 @@ public class PlayerStateManager : MonoBehaviour
 
         if(animationMode=="normal"){
             animationMode="1";
+            Image logo = playerUI.transform.GetChild(1).GetChild(0).GetComponent<Image>();
+            logo.sprite = abilities[0];
             SetAnimationMode();
         }else if(animationMode=="1"){
+            Image logo = playerUI.transform.GetChild(1).GetChild(1).GetComponent<Image>();
+            logo.sprite = abilities[1];
             animationMode="2";
             SetAnimationMode();
         }else if(animationMode=="2"){
+            Image logo = playerUI.transform.GetChild(1).GetChild(2).GetComponent<Image>();
+            logo.sprite = abilities[2];
             wings.SetActive(true);
         }
 

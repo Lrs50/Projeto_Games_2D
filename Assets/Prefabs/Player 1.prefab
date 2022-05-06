@@ -353,6 +353,54 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 92b2c6e8-1d0f-403c-bdf2-3d26a2df8e26
     m_ActionName: Movement/Shoot[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnSkill1
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: bab80ba7-0d36-4b06-8447-603ae8fc1039
+    m_ActionName: Movement/Skill 1[/Keyboard/1]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnSkill2
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: decd37cb-be27-4783-b79c-06deb78761ae
+    m_ActionName: Movement/Skill 2[/Keyboard/2]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnSkill3
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0041935b-a567-4f94-b5e2-0212267ff4c3
+    m_ActionName: Movement/Skill 3[/Keyboard/3]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Movement
@@ -704,6 +752,13 @@ MonoBehaviour:
   - {fileID: -8995937619908978006, guid: ce9aa68a4d2087f47907ca89942c5693, type: 3}
   - {fileID: -2212085212303917568, guid: ce9aa68a4d2087f47907ca89942c5693, type: 3}
   - {fileID: 2797667055761977782, guid: ce9aa68a4d2087f47907ca89942c5693, type: 3}
+  abilities:
+  - {fileID: 1510759463698811622, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -2576553966046737348, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -6171749362424735134, guid: 40d20248429e757428e45ea039819163, type: 3}
+  itens:
+  - {fileID: -973878324751644737, guid: 40d20248429e757428e45ea039819163, type: 3}
+  - {fileID: -8750342136066974795, guid: 40d20248429e757428e45ea039819163, type: 3}
   wings: {fileID: 107582033}
   wingsSR: {fileID: 0}
   enemy: {fileID: 0}
