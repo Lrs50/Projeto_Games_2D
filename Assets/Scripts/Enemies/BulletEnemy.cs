@@ -30,8 +30,8 @@ public class BulletEnemy : MonoBehaviour
 
         Vector2 direction = goal;
         direction = new Vector2(direction.x,direction.y);
-        
         direction = direction.normalized;
+        rotateTowardsPlayer(direction);
         rb.velocity = direction*speed;
         go=true;
 
@@ -55,6 +55,12 @@ public class BulletEnemy : MonoBehaviour
     IEnumerator Break(){
         if(!done){
             done = true;
+            for(int i=0;i<breakAnimation.Length;i++){
+                spriteRenderer.sprite=breakAnimation[i];
+                yield return new WaitForSeconds(0.1f);
+            }
+
+            
             yield return new WaitForSeconds(0.05f);
             Destroy(spriteRenderer);
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
@@ -62,5 +68,12 @@ public class BulletEnemy : MonoBehaviour
             Destroy(explosionAnimation);
             Destroy(gameObject);  
         }
+    }
+
+    public void rotateTowardsPlayer(Vector2 direction){
+        var offset = 90f;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;       
+        transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
     }
 }

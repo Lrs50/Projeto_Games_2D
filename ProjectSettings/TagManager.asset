@@ -17,6 +17,7 @@ TagManager:
   - TrackingFeather
   - Feather360
   - NormalFeather
+  - Interactable
   layers:
   - Default
   - TransparentFX

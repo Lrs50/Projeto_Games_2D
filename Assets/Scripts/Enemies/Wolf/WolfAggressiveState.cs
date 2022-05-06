@@ -8,7 +8,9 @@ public class WolfAggressiveState : BaseStateEnemies {
     private bool chase;
 
     private bool shoot;
-
+    int count =0;
+    int shootTimer = 50;
+    private bool delay = true;
     private Vector3 shootDirection;
 
     public override void EnterState(EnemiesStateManager enemy){
@@ -23,7 +25,7 @@ public class WolfAggressiveState : BaseStateEnemies {
                 Flee();
             }
             else {
-                Debug.Log("shoot");
+                //Debug.Log("shoot");
                 enemy.animationState="attack";
                 Stop();
                 isShootable(enemy);
@@ -69,6 +71,13 @@ public class WolfAggressiveState : BaseStateEnemies {
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
         enemy.Animate();
+        if(shoot){
+            count++;
+            if(count>=shootTimer){
+                count=0;
+                delay=false;
+            }
+        }
         if (flee){
             enemy.agent.isStopped = false;
             Vector3 wolfPosition = enemy.transform.position;
@@ -81,9 +90,11 @@ public class WolfAggressiveState : BaseStateEnemies {
             enemy.agent.isStopped = false;
             enemy.agent.SetDestination(enemy.target.position);
         }
-        else if (shoot){
+        else if (shoot && !delay){
+            enemy.animationState="attack";
             enemy.agent.isStopped = true;
-            //enemy.OnShoot(shootDirection);
+            delay=true;
+            enemy.OnShoot(shootDirection);
         }
         else {
             enemy.agent.isStopped = true;
@@ -106,7 +117,7 @@ public class WolfAggressiveState : BaseStateEnemies {
         RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, shootDirection, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
            // Debug.Log("Shootable! Pew pew");
-            Debug.DrawLine(toPosition, fromPosition);
+            //Debug.DrawLine(toPosition, fromPosition);
             Stop();
             Shoot();
         }
@@ -117,7 +128,7 @@ public class WolfAggressiveState : BaseStateEnemies {
     }
 
     public void ExitState(EnemiesStateManager enemy){
-        Debug.Log("Lost aggro on opponent");
+        //Debug.Log("Lost aggro on opponent");
         enemy.agent.isStopped = true;
         enemy.SwitchState(enemy.searchState);
     }

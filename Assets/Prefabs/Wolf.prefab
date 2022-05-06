@@ -283,7 +283,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &-6597242485846453905
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -294,7 +294,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -338,8 +338,8 @@ MonoBehaviour:
   baseSpeed: 15
   maxSpeed: 20
   rotationSpeed: 8
-  maxRange: 15
-  minRange: 10
+  maxRange: 10
+  minRange: 5
   healthBar: {fileID: 0}
   walkInput: {x: 0, y: 0}
   obstacles:
@@ -407,7 +407,7 @@ MonoBehaviour:
   - {fileID: -3432775399910657345, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
   count: 0
   index: 0
-  Projectile: {fileID: 5737861312730213513, guid: bcf8cfde60b97a84391bcc5e4820d0ea, type: 3}
+  Projectile: {fileID: 7495279363602918482, guid: bf131a13d37838a458ec6a3aa7a6854e, type: 3}
 --- !u!1 &2746842192870115663
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,7 +432,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2746842192870115663}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.068, y: -0.027, z: 0}
+  m_LocalPosition: {x: -0.013, y: -0.023, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5419232858433476416}
