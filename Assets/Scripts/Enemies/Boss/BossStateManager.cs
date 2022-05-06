@@ -29,7 +29,6 @@ public class BossStateManager : MonoBehaviour{
     public Collider2D cd;
     public float dashMag;
     public float dashTimer;
-    public NavMeshAgent agent;
     public float timerForAttacks;
     public float flySpeed;
     public float searchSpeed;
@@ -45,17 +44,95 @@ public class BossStateManager : MonoBehaviour{
     public Vector3 goBack;
     // Sprites
 
-    
+    public Sprite[] animations1;
+    public Sprite[] animations2; 
+    public Sprite[] wings;
 
+    [System.NonSerialized] public Sprite[] idleAnimation;
+    [System.NonSerialized] public Sprite[] simpleAttackAnimation1;
+    [System.NonSerialized] public Sprite[] simpleAttackAnimation2;
+    [System.NonSerialized] public Sprite[] Animation360;
+    [System.NonSerialized] public Sprite[] transformAnimation;
+    [System.NonSerialized] public Sprite[] loopPreAttackAnimation;
+    [System.NonSerialized] public Sprite[] initAttackAnimation;
+    [System.NonSerialized] public Sprite[] attackAnimation;
+    [System.NonSerialized] public Sprite[] undoTransformAnimation;
 
+    [System.NonSerialized] public Sprite[] idleWingsAnimation;
+    [System.NonSerialized] public Sprite[] Animation360Wings;
+    [System.NonSerialized] public Sprite[] transformWingsAnimation;
+    [System.NonSerialized] public Sprite[] undoTransWingsformAnimation;
+
+    int counter =0;
+    int animationTime=9;
+    public int index = 0;
+    public int indexWings = 0;
+
+    public GameObject wings_object;
+    public SpriteRenderer wingsSR;
+
+    public void SetAnimation(){
+        idleAnimation = new Sprite[8];
+        simpleAttackAnimation1= new Sprite[8];
+        simpleAttackAnimation2= new Sprite[8];
+        Animation360 = new Sprite[8];
+        transformAnimation= new Sprite[4];
+        loopPreAttackAnimation= new Sprite[4];
+        initAttackAnimation= new Sprite[2];
+        attackAnimation= new Sprite[2];
+        undoTransformAnimation= new Sprite[4];
+        idleWingsAnimation= new Sprite[8];
+        Animation360Wings= new Sprite[8];
+        transformWingsAnimation= new Sprite[3];
+        undoTransWingsformAnimation= new Sprite[3];
+
+        wingsSR = wings_object.GetComponent<SpriteRenderer>();
+
+        for(int i=0;i<wings.Length;i++){
+            if(i<8){
+                idleWingsAnimation[i]=wings[i];
+            }else if(i<16){
+                Animation360Wings[i-8]=wings[i];
+            }else if(i<19){
+                transformWingsAnimation[i-16]=wings[i];
+            }else if(i<22){
+                undoTransWingsformAnimation[i-19]=wings[i];
+            }
+        }
+
+        for(int i=0;i<animations1.Length;i++){
+            if(i<8){
+                idleAnimation[i]=animations1[i];
+            }else if(i<16){
+                simpleAttackAnimation1[i-8]=animations1[i];
+            }else if(i<24){
+                simpleAttackAnimation2[i-16]=animations1[i];
+            }else if(i<32){
+                Animation360[i-24]=animations1[i];
+            }
+        }
+        for(int i=0;i<animations2.Length;i++){
+            if(i<4){
+                transformAnimation[i]=animations2[i];
+            }else if(i<8){
+                loopPreAttackAnimation[i-4]=animations2[i];
+            }else if(i<10){
+                initAttackAnimation[i-8]=animations2[i];
+            }else if(i<12){
+                attackAnimation[i-10]=animations2[i];
+            }else if(i<16){
+                undoTransformAnimation[i-12]=animations2[i];
+            }
+        }
+    }
 
     void Start()
     {        
+
+        SetAnimation();
+
         Physics2D.IgnoreLayerCollision(2,7);
         target = GameObject.FindWithTag("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
         shadow = instanceOfShadow.GetComponent<BossShadow>();
         //shadow = transform.GetChild(0).gameObject.GetComponent<BossShadow>();
@@ -72,6 +149,12 @@ public class BossStateManager : MonoBehaviour{
     }
 
     void FixedUpdate() {
+        counter++;
+        if(counter>=animationTime){
+            counter=0;
+            index++;
+            indexWings++;
+        }
         currentState.FixedUpdateState(this);
     }
 

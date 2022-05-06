@@ -4,7 +4,6 @@ using UnityEngine;
 public class BossSearchState: BaseStateBoss {
     public override void EnterState(BossStateManager enemy){
         enemy.rb.velocity = Vector2.zero;
-        enemy.agent.speed = enemy.searchSpeed;
         enemy.timerForAttacks = 0;
     }
 
@@ -21,7 +20,7 @@ public class BossSearchState: BaseStateBoss {
         }
         enemy.timerForAttacks += Time.deltaTime;
         if(enemy.timerForAttacks > 5){
-            int whichAttack = 3;//Random.Range(1,4);
+            int whichAttack = 5;//Random.Range(1,4);
             Debug.Log(whichAttack);
             if(whichAttack <= 1){
                 enemy.SwitchState(enemy.attackState);
@@ -40,6 +39,16 @@ public class BossSearchState: BaseStateBoss {
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
+        if(enemy.index>=enemy.idleAnimation.Length){
+            enemy.index = 0;
+        }
+        if(enemy.indexWings>=enemy.idleWingsAnimation.Length){
+            enemy.indexWings = 0;
+        }
+        enemy.wingsSR.sprite = enemy.idleWingsAnimation[enemy.index];
+        enemy.spriteRenderer.sprite = enemy.idleAnimation[enemy.index];
+
+
 
     }
 

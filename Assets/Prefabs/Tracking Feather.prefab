@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2771463670074540107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3625043607559282579, guid: 045b15ec09bba42448d89db77fa6f20a, type: 3}
+  m_Sprite: {fileID: -7091258162247991437, guid: d8924338d93dd8442a03574824e529a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -116,11 +116,11 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 0.5}
+  m_Size: {x: 0.05, y: 0.15}
   m_Direction: 0
 --- !u!114 &-3197849101219104266
 MonoBehaviour:
@@ -139,6 +139,6 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 2771463670074540107}
   _enemyPrefab: {fileID: 1129998390985450837, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
   _spawnRadius: 0.2
-  _bossPosition: {x: 1.5867004, y: -1.2187301, z: -1.0833294}
+  _bossPosition: {x: 2.3306947, y: -4.4183774, z: 0}
   startTime: 0
   liveTime: 1

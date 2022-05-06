@@ -1,0 +1,1656 @@
+fileFormatVersion: 2
+guid: 9045bbb8804db9d41bb30a56a9aefc2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6896212101873777617
+    second: Tileset_Boss_0
+  - first:
+      213: 4333647091116974012
+    second: Tileset_Boss_1
+  - first:
+      213: -7277969747960984422
+    second: Tileset_Boss_2
+  - first:
+      213: -5190925126606835447
+    second: Tileset_Boss_3
+  - first:
+      213: 7564103671129483657
+    second: Tileset_Boss_4
+  - first:
+      213: 4428534907317191551
+    second: Tileset_Boss_5
+  - first:
+      213: 6401315925430794526
+    second: Tileset_Boss_6
+  - first:
+      213: 753518018178431868
+    second: Tileset_Boss_7
+  - first:
+      213: -5048069994640504373
+    second: Tileset_Boss_8
+  - first:
+      213: -2948427113103606283
+    second: Tileset_Boss_9
+  - first:
+      213: -5425653673308366550
+    second: Tileset_Boss_10
+  - first:
+      213: 3976958165709173221
+    second: Tileset_Boss_11
+  - first:
+      213: 4384258683163546751
+    second: Tileset_Boss_12
+  - first:
+      213: -8952990232366009274
+    second: Tileset_Boss_13
+  - first:
+      213: -479165158863661471
+    second: Tileset_Boss_14
+  - first:
+      213: 7102256217880989363
+    second: Tileset_Boss_15
+  - first:
+      213: -4590055722544250879
+    second: Tileset_Boss_16
+  - first:
+      213: -8787505534070889426
+    second: Tileset_Boss_17
+  - first:
+      213: -4362454924511815591
+    second: Tileset_Boss_18
+  - first:
+      213: -2593319638933312965
+    second: Tileset_Boss_19
+  - first:
+      213: 3638202773596749957
+    second: Tileset_Boss_20
+  - first:
+      213: -5334889993741989526
+    second: Tileset_Boss_21
+  - first:
+      213: 2744165197608397208
+    second: Tileset_Boss_22
+  - first:
+      213: -5634816001070288219
+    second: Tileset_Boss_23
+  - first:
+      213: 402956371925201603
+    second: Tileset_Boss_24
+  - first:
+      213: 600974156010635353
+    second: Tileset_Boss_25
+  - first:
+      213: -8254403384978175499
+    second: Tileset_Boss_26
+  - first:
+      213: -3378959831731259822
+    second: Tileset_Boss_27
+  - first:
+      213: -7282624401134388862
+    second: Tileset_Boss_28
+  - first:
+      213: -8053847153991749207
+    second: Tileset_Boss_29
+  - first:
+      213: 1725021780698234650
+    second: Tileset_Boss_30
+  - first:
+      213: -4368286274336627799
+    second: Tileset_Boss_31
+  - first:
+      213: -1407373986852442311
+    second: Tileset_Boss_32
+  - first:
+      213: 918452906041175645
+    second: Tileset_Boss_33
+  - first:
+      213: 5709747090100237502
+    second: Tileset_Boss_34
+  - first:
+      213: -4883115709182569967
+    second: Tileset_Boss_35
+  - first:
+      213: 7609717992892776519
+    second: Tileset_Boss_36
+  - first:
+      213: -2461583124601193603
+    second: Tileset_Boss_37
+  - first:
+      213: -3482070755591252618
+    second: Tileset_Boss_38
+  - first:
+      213: -6231533426764187399
+    second: Tileset_Boss_39
+  - first:
+      213: -2927435774488246509
+    second: Tileset_Boss_40
+  - first:
+      213: 2230735771699675962
+    second: Tileset_Boss_41
+  - first:
+      213: 2963459577156794578
+    second: Tileset_Boss_42
+  - first:
+      213: 1602356248021542279
+    second: Tileset_Boss_43
+  - first:
+      213: -2501448168388581984
+    second: Tileset_Boss_44
+  - first:
+      213: -2294644293951844926
+    second: Tileset_Boss_45
+  - first:
+      213: 229736862827001420
+    second: Tileset_Boss_46
+  - first:
+      213: 5662399586542837999
+    second: Tileset_Boss_47
+  - first:
+      213: -1430602343583456330
+    second: Tileset_Boss_48
+  - first:
+      213: 8389733693122380890
+    second: Tileset_Boss_49
+  - first:
+      213: -3338444493113680660
+    second: Tileset_Boss_50
+  - first:
+      213: 727816051829762735
+    second: Tileset_Boss_51
+  - first:
+      213: 3928192863247773347
+    second: Tileset_Boss_52
+  - first:
+      213: -5742988664637511329
+    second: Tileset_Boss_53
+  - first:
+      213: 7740127998209378548
+    second: Tileset_Boss_54
+  - first:
+      213: -3356352612336282758
+    second: Tileset_Boss_55
+  - first:
+      213: -1055899338730609340
+    second: Tileset_Boss_56
+  - first:
+      213: -8932337714810415111
+    second: Tileset_Boss_57
+  - first:
+      213: -296189854970523363
+    second: Tileset_Boss_58
+  - first:
+      213: 172223377489096001
+    second: Tileset_Boss_59
+  - first:
+      213: 847728800808110498
+    second: Tileset_Boss_60
+  - first:
+      213: -8834873926530259864
+    second: Tileset_Boss_61
+  - first:
+      213: 7917853513331737248
+    second: Tileset_Boss_62
+  - first:
+      213: 7748026519686107234
+    second: Tileset_Boss_63
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset_Boss_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 327
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24401c81abbb40a0800000000000000
+      internalID: -6896212101873777617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 327
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf9ee79115342c30800000000000000
+      internalID: 4333647091116974012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 327
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c0fb613157ffa90800000000000000
+      internalID: -7277969747960984422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 327
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90133fc991126f7b0800000000000000
+      internalID: -5190925126606835447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 328
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989a6e9663819f860800000000000000
+      internalID: 7564103671129483657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 328
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f730f0ae801557d30800000000000000
+      internalID: 4428534907317191551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 328
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e197a562bea06d850800000000000000
+      internalID: 6401315925430794526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 328
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bb16d25a8057a00800000000000000
+      internalID: 753518018178431868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 279
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc90520f517a1f9b0800000000000000
+      internalID: -5048069994640504373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_9
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 279
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd345d79251517d0800000000000000
+      internalID: -2948427113103606283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 280
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2959200bb434b4b0800000000000000
+      internalID: -5425653673308366550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_11
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 280
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e13fa1816ef03730800000000000000
+      internalID: 3976958165709173221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 280
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7492652b0408dc30800000000000000
+      internalID: 4384258683163546751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 280
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644384291d690c380800000000000000
+      internalID: -8952990232366009274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_14
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 279
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1661035a3d9a959f0800000000000000
+      internalID: -479165158863661471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_15
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 279
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be0b9a9668409260800000000000000
+      internalID: 7102256217880989363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 231
+        width: 28
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1004086b3a8dc40c0800000000000000
+      internalID: -4590055722544250879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_17
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 231
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24ece366428c0680800000000000000
+      internalID: -8787505534070889426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_18
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 232
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958d1d30c527573c0800000000000000
+      internalID: -4362454924511815591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_19
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 232
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ae554478da20cd0800000000000000
+      internalID: -2593319638933312965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_20
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 232
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804315852e7d7230800000000000000
+      internalID: 3638202773596749957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_21
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 232
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69093fe0d9a6f5b0800000000000000
+      internalID: -5334889993741989526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_22
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 231
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 899207045bb351620800000000000000
+      internalID: 2744165197608397208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_23
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 231
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2b48993bc1dc1b0800000000000000
+      internalID: -5634816001070288219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_24
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 189
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2f4907fa6979500800000000000000
+      internalID: 402956371925201603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_25
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 190
+        width: 10
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95044309fc6175800800000000000000
+      internalID: 600974156010635353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 189
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f90895ead7727d80800000000000000
+      internalID: -8254403384978175499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 188
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256385f7fe58b11d0800000000000000
+      internalID: -3378959831731259822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 188
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289fac131bbeeea90800000000000000
+      internalID: -7282624401134388862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_29
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 187
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1f70f3facfa3090800000000000000
+      internalID: -8053847153991749207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_30
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 182
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f74548b2280f710800000000000000
+      internalID: 1725021780698234650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_31
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 180
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a363f417cab063c0800000000000000
+      internalID: -4368286274336627799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 151
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fe887c0d0087ce0800000000000000
+      internalID: -1407373986852442311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_33
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 153
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e62874d000fbc00800000000000000
+      internalID: 918452906041175645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_34
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 155
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4beb61ab81d3f40800000000000000
+      internalID: 5709747090100237502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_35
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 155
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1121b056220bb3cb0800000000000000
+      internalID: -4883115709182569967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_36
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 155
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 740c54f42362b9960800000000000000
+      internalID: 7609717992892776519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_37
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 153
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bbc01b033b6ddd0800000000000000
+      internalID: -2461583124601193603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_38
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 151
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 675153ab8133dafc0800000000000000
+      internalID: -3482070755591252618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_39
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 151
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f87fbb4d552589a0800000000000000
+      internalID: -6231533426764187399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 103
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3178bde5ca8af57d0800000000000000
+      internalID: -2927435774488246509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_41
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 105
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a338aeb8d5a25fe10800000000000000
+      internalID: 2230735771699675962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_42
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 107
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8f8aac8c2502920800000000000000
+      internalID: 2963459577156794578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_43
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 107
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785a3f69486bc3610800000000000000
+      internalID: 1602356248021542279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_44
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 107
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a523e422194dd0800000000000000
+      internalID: -2501448168388581984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_45
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 105
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd8f151c29c720e0800000000000000
+      internalID: -2294644293951844926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_46
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 103
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46bd94a570303300800000000000000
+      internalID: 229736862827001420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_47
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 103
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0643c5c62e49e40800000000000000
+      internalID: 5662399586542837999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 55
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3edd78fba752ce0800000000000000
+      internalID: -1430602343583456330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_49
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 57
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a548faad7525e6470800000000000000
+      internalID: 8389733693122380890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_50
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 59
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec999ddb667ba1d0800000000000000
+      internalID: -3338444493113680660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_51
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 59
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faae32fc7d8b91a00800000000000000
+      internalID: 727816051829762735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_52
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 59
+        width: 36
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aeab1fb89eb38630800000000000000
+      internalID: 3928192863247773347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_53
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 57
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59af27bc3ecc40b0800000000000000
+      internalID: -5742988664637511329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_54
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 55
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f84359c7657a6b60800000000000000
+      internalID: 7740127998209378548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_55
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 55
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73ddb0f417db61d0800000000000000
+      internalID: -3356352612336282758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_56
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 17
+        width: 32
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44564645521b851f0800000000000000
+      internalID: -1055899338730609340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_57
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 12
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f796e68c26f90480800000000000000
+      internalID: -8932337714810415111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_58
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 12
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11586c65e8b3ebf0800000000000000
+      internalID: -296189854970523363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_59
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 12
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d6145df3cd36200800000000000000
+      internalID: 172223377489096001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_60
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 12
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a909065adcb3cb00800000000000000
+      internalID: 847728800808110498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_61
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 17
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864adc519f8346580800000000000000
+      internalID: -8834873926530259864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_62
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 26
+        width: 48
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a287bdd1ddd1ed60800000000000000
+      internalID: 7917853513331737248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset_Boss_63
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 23
+        width: 46
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2605230a115868b60800000000000000
+      internalID: 7748026519686107234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
