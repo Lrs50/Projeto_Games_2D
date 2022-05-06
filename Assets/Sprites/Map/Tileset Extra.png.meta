@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 196424f84d76611469c66a7386c5fbc6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5889565963670070762
+    second: Tileset Extra_0
+  - first:
+      213: -572250278013740823
+    second: Tileset Extra_1
+  - first:
+      213: 2249281575066599286
+    second: Tileset Extra_2
+  - first:
+      213: 7373570740215498225
+    second: Tileset Extra_3
+  - first:
+      213: -3027274362134811184
+    second: Tileset Extra_4
+  - first:
+      213: -170507544058233439
+    second: Tileset Extra_5
+  - first:
+      213: -3291453692566933117
+    second: Tileset Extra_6
+  - first:
+      213: 3335056029801535623
+    second: Tileset Extra_7
+  - first:
+      213: -4499857551152818530
+    second: Tileset Extra_8
+  - first:
+      213: 4747708619719597455
+    second: Tileset Extra_9
+  - first:
+      213: -7405536232621189936
+    second: Tileset Extra_10
+  - first:
+      213: 544117396496037444
+    second: Tileset Extra_11
+  - first:
+      213: -2599294490619990447
+    second: Tileset Extra_12
+  - first:
+      213: -2593400406458468987
+    second: Tileset Extra_13
+  - first:
+      213: 6408337235526739296
+    second: Tileset Extra_14
+  - first:
+      213: -4755154582595790105
+    second: Tileset Extra_15
+  - first:
+      213: -445291574292413499
+    second: Tileset Extra_16
+  - first:
+      213: -4453277031524922065
+    second: Tileset Extra_17
+  - first:
+      213: -3186027645640623359
+    second: Tileset Extra_18
+  - first:
+      213: 9167293058536996781
+    second: Tileset Extra_19
+  - first:
+      213: -3005732339726240857
+    second: Tileset Extra_20
+  - first:
+      213: 2079809480039418467
+    second: Tileset Extra_21
+  - first:
+      213: 8751583513794322144
+    second: Tileset Extra_22
+  - first:
+      213: -1998369346718587208
+    second: Tileset Extra_23
+  - first:
+      213: -3613021226298113035
+    second: Tileset Extra_24
+  - first:
+      213: -4464887156764066599
+    second: Tileset Extra_25
+  - first:
+      213: -5249227936681930413
+    second: Tileset Extra_26
+  - first:
+      213: 948511149964299848
+    second: Tileset Extra_27
+  - first:
+      213: 4838205335234951725
+    second: Tileset Extra_28
+  - first:
+      213: -7622353072912892764
+    second: Tileset Extra_29
+  - first:
+      213: 8932543643631745440
+    second: Tileset Extra_30
+  - first:
+      213: -1410093521610413550
+    second: Tileset Extra_31
+  - first:
+      213: 587991745567777304
+    second: Tileset Extra_32
+  - first:
+      213: 3319785519140076978
+    second: Tileset Extra_33
+  - first:
+      213: -9117889540763854989
+    second: Tileset Extra_34
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset Extra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ad636d5fe044ea0800000000000000
+      internalID: -5889565963670070762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Extra_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e85f507765fe08f0800000000000000
+      internalID: -572250278013740823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Extra_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ffca1ecad073f10800000000000000
+      internalID: 2249281575066599286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

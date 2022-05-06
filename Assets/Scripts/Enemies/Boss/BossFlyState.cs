@@ -2,17 +2,20 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 public class BossFlyState: BaseStateBoss {
+    Vector3 initWingPosition;
     public override void EnterState(BossStateManager enemy){
+        initWingPosition = enemy.wings_object.transform.position;
         enemy.shadow.transform.position = enemy.transform.position;
         enemy.shadow.gameObject.SetActive(true);
         enemy.rb.isKinematic = true;
         enemy.cd.enabled = false;
         Vector3 rotateVector = new Vector3(0, enemy.shadow.transform.eulerAngles.y, 0);
         enemy.shadow.transform.rotation = Quaternion.Euler(rotateVector);
-        enemy.shadow.spriteRenderer.sprite = enemy.bossSprite;
+        enemy.shadow.spriteRenderer.sprite = enemy.idleAnimation[0];
         enemy.spriteRenderer.sprite = enemy.shadowSprite;
         enemy.transform.localScale = new Vector3(0.5f,0.5f,1f);
-        enemy.shadow.transform.localScale = new Vector3(2f,2f,1f);
+        enemy.shadow.transform.localScale = new Vector3(12f,12f,12f);
+        enemy.wings_object.transform.localScale= new Vector3(12f,12f,12f);;
         enemy.startFollowingTime = 0;
         
     }
@@ -38,7 +41,7 @@ public class BossFlyState: BaseStateBoss {
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
-
+        enemy.wings_object.transform.position = new Vector3(enemy.shadow.transform.position.x,enemy.shadow.transform.position.y+1f,enemy.shadow.transform.position.z);
     }
 
     public override void OnCollisionEnter(BossStateManager enemy){

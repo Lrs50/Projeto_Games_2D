@@ -74,7 +74,7 @@ public class PlayerStateManager : MonoBehaviour
     public GameObject wings;
     public SpriteRenderer wingsSR;
 
-    //enemy information
+    //Enemy Information
     public Transform enemy;
     bool evolved = false;
 
@@ -156,14 +156,12 @@ public class PlayerStateManager : MonoBehaviour
         }
         
     }
-    // Start is called before the first frame update
     void Start() {
         currentState = idleState;
 
         currentState.EnterState(this);
     }
 
-    // Update is called once per frame
     void Update() {
         currentState.UpdateState(this);
         
@@ -279,7 +277,7 @@ public class PlayerStateManager : MonoBehaviour
        }
 
         if(other.gameObject.tag.Equals("Item")) {
-            Debug.Log("got an item!");
+            Debug.Log("Got an item!");
         }
    }
 
