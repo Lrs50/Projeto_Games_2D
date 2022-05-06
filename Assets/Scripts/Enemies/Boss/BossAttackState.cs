@@ -2,16 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class BossAttackState: BaseStateBoss {
+    ProjectileAttackTemplate data;
     public override void EnterState(BossStateManager enemy){
         enemy.bulletProperties._bossPosition = enemy.transform.position;
-        ProjectileAttackTemplate data = new ProjectileAttackTemplate(enemy.bulletProperties._projectilePrefab,enemy.bulletProperties._numberOfProjectiles,enemy.bulletProperties._projectileSpeed,enemy.bulletProperties._spawnRadius);
-        SpawnProjectiles(data,enemy);
+        data = new ProjectileAttackTemplate(enemy.bulletProperties._projectilePrefab,enemy.bulletProperties._numberOfProjectiles,enemy.bulletProperties._projectileSpeed,enemy.bulletProperties._spawnRadius);
+        
     }
 
     public override void UpdateState(BossStateManager enemy){
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
+        if(enemy.index>=enemy.Animation360.Length){
+            enemy.index=0;
+            SpawnProjectiles(data,enemy);
+        }
+        if(enemy.indexWings>=enemy.Animation360Wings.Length){
+            enemy.indexWings = 0;
+        }
+        enemy.wingsSR.sprite = enemy.Animation360Wings[enemy.index];
+        enemy.spriteRenderer.sprite = enemy.Animation360[enemy.index];
 
     }
 
