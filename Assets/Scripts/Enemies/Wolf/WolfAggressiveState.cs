@@ -7,32 +7,32 @@ public class WolfAggressiveState : BaseStateEnemies {
     private bool flee;
     private bool chase;
 
+    private bool shoot;
+
+    private Vector3 shootDirection;
+
     public override void EnterState(EnemiesStateManager enemy){
     }
 
     public override void UpdateState(EnemiesStateManager enemy){
         if(Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.maxRange) {
             enemy.aggro = 100f;
-            if (Vector3.Distance(enemy.target.position, enemy.transform.position) < enemy.minRange) {
+            if (Vector3.Distance(enemy.target.position, enemy.transform.position) <= enemy.minRange) {
                 //Debug.Log("flee");
                 enemy.animationState="idle";
-                flee = true;
-                enemy.agent.isStopped = false;
+                Flee();
             }
             else {
-                //Debug.Log("shoot");
+                Debug.Log("shoot");
                 enemy.animationState="attack";
-                flee = false;          
-                chase = false;
-                enemy.agent.isStopped = true;
+                Stop();
                 isShootable(enemy);
             }      
         }
         else {
           //  Debug.Log("chase");
             enemy.animationState="idle";
-            chase = true;
-            enemy.agent.isStopped = false;
+            Chase();
 
             enemy.aggro -= 50f * Time.deltaTime;
 
@@ -40,23 +40,53 @@ public class WolfAggressiveState : BaseStateEnemies {
                 enemy.aggro = 0;
                 ExitState(enemy);
             }
-
         }
-       
+    }
+
+    public void Chase() {
+        chase = true;
+        flee = false;
+        shoot = false;
+    }
+
+    public void Flee() {
+        flee = true;
+        chase = false;
+        shoot = false;
+    }
+
+    public void Stop(){
+        flee = false;
+        chase = false;
+        shoot = false;
+    }
+
+    public void Shoot(){
+        flee = false;
+        chase = false;
+        shoot = true;
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
         enemy.Animate();
         if (flee){
+            enemy.agent.isStopped = false;
             Vector3 wolfPosition = enemy.transform.position;
             Vector3 playerPosition = enemy.target.transform.position;
             Vector3 direction = wolfPosition - playerPosition;
             Vector3 newPos = wolfPosition + direction;  
             enemy.agent.SetDestination(newPos);
         }
-
-        if (chase){
+        else if (chase){
+            enemy.agent.isStopped = false;
             enemy.agent.SetDestination(enemy.target.position);
+        }
+        else if (shoot){
+            enemy.agent.isStopped = true;
+            //enemy.OnShoot(shootDirection);
+        }
+        else {
+            enemy.agent.isStopped = true;
         }
     }
 
@@ -68,17 +98,21 @@ public class WolfAggressiveState : BaseStateEnemies {
         Vector3 fromPosition = enemy.transform.position;
         Vector3 toPosition = enemy.target.transform.position;
         // linha para atirar
-        Vector3 direction = toPosition - fromPosition;
+        shootDirection = toPosition - fromPosition;
 
-        direction.Normalize();
-        enemy.angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg; 
+        shootDirection.Normalize();
+        enemy.angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg; 
 
-        RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction, Mathf.Infinity);
+        RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, shootDirection, Mathf.Infinity);
         if(hit.rigidbody != null && hit.rigidbody.gameObject.tag == "Player"){
            // Debug.Log("Shootable! Pew pew");
-        }else{
-            //Debug.Log(hit);
-          //  Debug.Log("Encontrei o Jogador, mas tem um obstaculo na frente!");
+            Debug.DrawLine(toPosition, fromPosition);
+            Stop();
+            Shoot();
+        }
+        else{
+            //Debug.Log(hit);            
+            Chase();   
         }
     }
 

@@ -100,7 +100,11 @@ public abstract class EnemiesStateManager : MonoBehaviour
 
             if(health<=0){
                 MaybeDropItem();
-                Instantiate(soul, transform.position, Quaternion.identity);
+                var numSouls = (Mathf.FloorToInt(Random.value * 10) / 3) + 1;
+                Debug.Log(numSouls);
+                for (var i = 0; i < numSouls; i++){
+                    Instantiate(soul, transform.position, Quaternion.identity);
+                }
                 Destroy(gameObject);
             }
 
