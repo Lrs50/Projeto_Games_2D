@@ -130,6 +130,7 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
+        FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
         spriteRenderer = GetComponent<SpriteRenderer>();
         wingsSR = wings.GetComponent<SpriteRenderer>();
@@ -157,7 +158,6 @@ public class PlayerStateManager : MonoBehaviour
     }
     // Start is called before the first frame update
     void Start() {
-
         currentState = idleState;
 
         currentState.EnterState(this);
