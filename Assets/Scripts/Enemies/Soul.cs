@@ -14,6 +14,7 @@ public class Soul : MonoBehaviour
     
     void Start() {
         target = GameObject.FindWithTag("Player").transform;
+        rb.AddForce((transform.position - (Vector3) Random.insideUnitCircle.normalized).normalized * 500, ForceMode2D.Force);
     }
 
     // Update is called once per frame

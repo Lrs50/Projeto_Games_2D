@@ -12,8 +12,9 @@ public class WolfStateManager : EnemiesStateManager
     public int count=0;
     public int index=0;
     int animationSpeed=10;
-    
 
+    public GameObject Projectile;
+    
     public override void BecomeAggresive()
     {
         shootingOrigin = reference.GetChild(1); 
@@ -58,5 +59,11 @@ public class WolfStateManager : EnemiesStateManager
             //back
             direction = 0;
         }
+    }
+
+    public override void OnShoot(Vector3 direction) {
+        GameObject bulletTemp =Instantiate(Projectile,shootingOrigin.position,Quaternion.identity);
+        BulletEnemy scriptTemp = bulletTemp.GetComponent<BulletEnemy>();
+        scriptTemp.setDestination((Vector2) direction);
     }
 }
