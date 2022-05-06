@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8830808100310375221}
   m_Layer: 0
   m_Name: Feather
-  m_TagString: Projectile
+  m_TagString: NormalFeather
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,3 +142,9 @@ MonoBehaviour:
   _bossPosition: {x: 2.3327022, y: -4.422187, z: 0}
   startTime: 0
   liveTime: 4
+  spriteRenderer: {fileID: 0}
+  damage: 10
+  body: {fileID: -1503834095101694962, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  breakAnimation:
+  - {fileID: -3137357063068628894, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  explosion: {fileID: 6100422543085488885, guid: 630d50d862f67084abf40b918628a6be, type: 3}

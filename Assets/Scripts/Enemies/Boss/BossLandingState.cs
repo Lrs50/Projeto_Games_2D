@@ -27,9 +27,11 @@ public class BossLandingState: BaseStateBoss {
     }
 
     private IEnumerator aoeDamage(BossStateManager enemy){
-        enemy.AreaDamage(enemy.transform.position,5);
+        enemy.AreaDamage(enemy.transform.position,2);
         enemy.wings_object.transform.localScale = Vector3.one;
-        enemy.wings_object.transform.position = new Vector3(0,0.085f*6,0);
+        Vector3 aux = new Vector3(enemy.transform.position.x,enemy.transform.position.y + 0.085f*6,enemy.transform.position.z);
+        enemy.wings_object.transform.position = aux;
+        //enemy.wings_object.transform.position = new Vector3(0,0.085f*6,0);
         yield return new WaitForSeconds(0.5f);
         enemy.SwitchState(enemy.searchState);
     } 

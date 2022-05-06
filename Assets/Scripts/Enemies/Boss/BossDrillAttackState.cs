@@ -12,7 +12,7 @@ public class BossDrillAttackState: BaseStateBoss {
     }
 
     public override void UpdateState(BossStateManager enemy){
-        if(enemy.followingTime <= 0){
+        if(enemy.followingTime <= 0 && !dashed){
             followPlayerX(enemy);
             Vector3 forward = Vector3.up * 10;
             if((enemy.target.transform.position.y - enemy.transform.position.y) <= 0){
@@ -55,9 +55,17 @@ public class BossDrillAttackState: BaseStateBoss {
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position,dest, enemy.baseSpeed * Time.deltaTime);
     }
 
-    private IEnumerator Dash(BossStateManager enemy, Vector3 forward){    
-        enemy.rb.AddForce(forward * (enemy.dashMag + 2f), ForceMode2D.Impulse);
-        yield return new WaitForSeconds(enemy.dashTimer);      
+    private IEnumerator Dash(BossStateManager enemy, Vector3 forward){  
+        Vector3 fromPosition = enemy.transform.position;
+        Vector3 toPosition = enemy.target.transform.position;
+        Vector3 direction = toPosition - fromPosition;
+        //direction.Normalize();        
+        enemy.rb.AddForce(direction * (enemy.dashMag+2f), ForceMode2D.Impulse);
+        yield return new WaitForSeconds(0.5f);
+        enemy.rb.velocity = Vector2.zero;
+        yield return new WaitForSeconds(0.5f);  
+        //enemy.rb.AddForce(forward * (enemy.dashMag + 2f), ForceMode2D.Impulse);   
+        
         enemy.SwitchState(enemy.backState);
     }
 }

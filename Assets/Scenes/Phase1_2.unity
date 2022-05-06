@@ -11099,6 +11099,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2045856370}
     m_Modifications:
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: dashTimer
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: maxHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: dashCounter
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1129998390985450837, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_Name
       value: Boss

@@ -19,21 +19,61 @@ public class BossSearchState: BaseStateBoss {
             //enemy.agent.SetDestination((enemy.target.transform.position - enemy.transform.position).normalized * 5);
         }
         enemy.timerForAttacks += Time.deltaTime;
-        if(enemy.timerForAttacks > 5){
-            int whichAttack = 5;//Random.Range(1,4);
-            Debug.Log(whichAttack);
-            if(whichAttack <= 1){
-                enemy.SwitchState(enemy.attackState);
-            }else if(whichAttack > 1 && whichAttack <= 2){
+        if(enemy.timerForAttacks > enemy.randomAttackInterval){
+            //int whichAttack = 6;//Random.Range(1,4);
+            //Debug.Log(whichAttack);
+            if(enemy.maxHealth*0.9 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth){
                 enemy.SwitchState(enemy.flyingState);
-            }else if(whichAttack > 2 && whichAttack <= 3){
-                enemy.SwitchState(enemy.dashAttack);
-            }else if (whichAttack > 2 && whichAttack <= 4){
-                enemy.SwitchState(enemy.trackAttack);
-            }else if (whichAttack > 3 && whichAttack <= 5){
-                enemy.SwitchState(enemy.normalAttack);
+            }else if(enemy.maxHealth*0.7 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth *0.9){
+                int whichAttack = Random.Range(1,3);
+                if( whichAttack == 1){
+                    enemy.SwitchState(enemy.normalAttack);
+                }else{
+                    enemy.SwitchState(enemy.trackAttack);
+                }
+            }else if(enemy.maxHealth*0.5 <= enemy.currHealth && enemy.currHealth < enemy.maxHealth *0.7){
+                float whichAttack = Random.Range(0f,1f);
+                if(whichAttack<=0.40f){
+                    enemy.SwitchState(enemy.trackAttack);
+                }else if(0.40f < whichAttack && whichAttack <= 0.70f){
+                    enemy.SwitchState(enemy.normalAttack);
+                }else if(0.70f < whichAttack && whichAttack <= 0.90f){
+                    enemy.SwitchState(enemy.dashAttack);
+                }else{
+                    enemy.SwitchState(enemy.flyingState);
+                }
+            }else if (enemy.maxHealth*0.4 <= enemy.currHealth && enemy.currHealth < enemy.maxHealth *0.5){
+                float whichAttack = Random.Range(0f,1f);
+                if(whichAttack<=0.50f){
+                    enemy.SwitchState(enemy.attackState);
+                }else if(0.50f < whichAttack && whichAttack <= 0.85f){
+                    enemy.SwitchState(enemy.dashAttack);
+                }else{
+                    enemy.SwitchState(enemy.flyingState);
+                }
+            }else if (enemy.maxHealth*0.2 <= enemy.currHealth && enemy.currHealth < enemy.maxHealth *0.4){
+                float whichAttack = Random.Range(0f,1f);
+                if(whichAttack<=0.20f){
+                    enemy.SwitchState(enemy.trackAttack);
+                }else if(0.20f < whichAttack && whichAttack <= 0.40f){
+                    enemy.SwitchState(enemy.attackState);
+                }else if(0.40f < whichAttack && whichAttack <= 0.60f){
+                    enemy.SwitchState(enemy.flyingState);
+                }else if(0.60f < whichAttack && whichAttack <= 0.80f){
+                    enemy.SwitchState(enemy.dashAttack);//um 
+                }else{
+                    enemy.SwitchState(enemy.dashAttack);//random 2 e 5
+                }
             }else{
-                enemy.SwitchState(enemy.drillAttack);
+                //boss mais rápido
+                float whichAttack = Random.Range(1,4);
+                if(whichAttack == 1){
+                    enemy.SwitchState(enemy.attackState);
+                }else if(whichAttack == 2){
+                    enemy.SwitchState(enemy.dashAttack);//varios dashes
+                }else{
+                    enemy.SwitchState(enemy.drillAttack);
+                }
             }
         }
     }
