@@ -13,6 +13,7 @@ public class PlayerDashState: BaseStatePlayer {
 
     public override void FixedUpdateState(PlayerStateManager player){
         player.spriteRenderer.sprite = player.dashAnimation[player.animationOrientation];
+        player.wingsSR.sprite = player.wingsAnimation[player.animationOrientation + 8];
     }
 
     public override void OnCollisionEnter(PlayerStateManager player){

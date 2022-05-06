@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using System;
+using UnityEngine.SceneManagement;
 
 public class PlayerStateManager : MonoBehaviour
 {
@@ -68,7 +69,14 @@ public class PlayerStateManager : MonoBehaviour
     [System.NonSerialized] public Sprite[] dashAnimation;
     [System.NonSerialized] public Sprite[] idleAttackAnimation;
     [System.NonSerialized] public Sprite[] walkAttackAnimation;
+    public Sprite[] wingsAnimation;
 
+    public GameObject wings;
+    public SpriteRenderer wingsSR;
+
+    //enemy information
+    public Transform enemy;
+    bool evolved = false;
 
     //Animation config
     public SpriteRenderer spriteRenderer;
@@ -124,7 +132,7 @@ public class PlayerStateManager : MonoBehaviour
     {
         SetAnimationMode();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
+        wingsSR = wings.GetComponent<SpriteRenderer>();
         staminaImages = new Image[4];
         healthImages = new Image[5];
         manaImages = new Image[5];
@@ -206,6 +214,13 @@ public class PlayerStateManager : MonoBehaviour
             animationOrientation = 2;
         }
         
+        if(animationOrientation==3){
+            wingsSR.sortingOrder=spriteRenderer.sortingOrder+1;
+        }else{
+            wingsSR.sortingOrder=spriteRenderer.sortingOrder-1;
+        }
+
+
         animationCount++;
         if(animationCount==animationSpeed){
             animationCount=0;
@@ -218,6 +233,12 @@ public class PlayerStateManager : MonoBehaviour
 
         currentState.FixedUpdateState(this);        
         
+        if(enemy.childCount==0 && evolved==false){
+            evolved=true;
+            //if(Scene.name==) 
+            SwitchState(evolveState);
+        }
+
     }
 
     public void SwitchState(BaseStatePlayer state){
@@ -323,7 +344,10 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     IEnumerator Evolve(){
-
+        animationOrientation = 0;
+        spriteRenderer.sprite = idleAnimation[0];
+        yield return new WaitForSeconds(0.5f);
+        
         Material old = spriteRenderer.material;
         Vector3 escale = transform.localScale;
         Vector3 pos = transform.position;
@@ -351,6 +375,8 @@ public class PlayerStateManager : MonoBehaviour
         }else if(animationMode=="1"){
             animationMode="2";
             SetAnimationMode();
+        }else if(animationMode=="2"){
+            wings.SetActive(true);
         }
 
         transform.localScale = escale;
@@ -362,6 +388,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void StartEvolve(){
+        rb.velocity=Vector2.zero;
         StartCoroutine(Evolve());
     }
 
