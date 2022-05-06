@@ -19,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update() {
         if (interactable && !interacting) {
-            if (Input.GetButton("Fire3")){
+            if (Input.GetButtonDown("Fire3")){
                 TriggerDialogue();
             }  
         }
