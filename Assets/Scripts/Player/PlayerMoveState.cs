@@ -43,6 +43,7 @@ public class PlayerMoveState : BaseStatePlayer {
             player.numFrames=4;
             if(player.animationFrame>=player.numFrames) player.animationFrame=0;
             player.spriteRenderer.sprite = player.runAnimation[player.animationOrientation + player.animationFrame*4];
+            player.wingsSR.sprite = player.wingsAnimation[player.animationOrientation + 4];
             player.stamina -= 0.25f; 
         }else{
             
@@ -56,6 +57,7 @@ public class PlayerMoveState : BaseStatePlayer {
                     
                 player.spriteRenderer.sprite = player.walkAnimation[player.animationOrientation + player.animationFrame*4];
             }
+            player.wingsSR.sprite = player.wingsAnimation[player.animationOrientation];
             player.stamina+= 50f/200f; // 4sec
         }
     
