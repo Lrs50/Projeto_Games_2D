@@ -306,7 +306,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.7
-  m_Text: "Ini\xE1!!!\nA sua vida foi curta...\nPrecione enter para renascer"
+  m_Text: "Ini\xE1!!!\nA sua vida foi curta...\nPressione Enter para renascer."
 --- !u!114 &1177654876314630166
 MonoBehaviour:
   m_ObjectHideFlags: 0
