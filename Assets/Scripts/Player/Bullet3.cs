@@ -8,13 +8,15 @@ public class Bullet3 : Bullet
     override public void SetStats(){
         speed = 15f;
         damage = 3;
-        transform.localScale*=1.5f;
+        transform.localScale*=1.3f;
         direction = direction.normalized;
         rotateTowardsPlayer(direction);
     }
 
     override public IEnumerator Break(){
         if(!done){
+            Collider2D temp= GetComponent<Collider2D>();
+            Destroy(temp);
             done = true;
             rb.velocity /=3;
             for(int i=0;i<endAnimation.Length;i++){
@@ -28,6 +30,7 @@ public class Bullet3 : Bullet
             Destroy(explosionAnimation);
             Destroy(gameObject);
         }
+            
     }
 
 }
