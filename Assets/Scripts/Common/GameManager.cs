@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static HubState hubState = new HubState();
-    static MenuState menuState = new MenuState();
-    static BaseStateScenes currentState = menuState;
-    static GameManager gameManager;
+    static public HubState hubState = new HubState();
+    static public MenuState menuState = new MenuState();
+    static public PreStartState preStart = new PreStartState();
+    //static public CreditsStates 
+    static public BaseStateScenes currentState = menuState;
+    static public GameManager gameManager;
 
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
@@ -30,10 +32,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
-        if(Input.GetKeyDown("escape")){
-            currentState = menuState;
-            currentState.EnterState(this);
-        }
     }
 
     /// <summary>
@@ -54,8 +52,19 @@ public class GameManager : MonoBehaviour
         currentState.OnCollisionEnter(this);
     }
 
+
+    public void SwitchState(BaseStateScenes next){
+        currentState = next;
+        currentState.EnterState(this);
+    }
+
     public void MenuToHub(){
         currentState = hubState;
+        currentState.EnterState(this);
+    }
+
+    public void ShowCredits(){
+        //currentState = CreditsStates;
         currentState.EnterState(this);
     }
 

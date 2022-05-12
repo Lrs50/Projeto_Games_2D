@@ -39375,6 +39375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1989262117353386313, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -39425,7 +39429,7 @@ PrefabInstance:
       objectReference: {fileID: 2045856370}
     - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: health
-      value: 100000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: deathUI
@@ -39439,5 +39443,13 @@ PrefabInstance:
       propertyPath: playerUI
       value: 
       objectReference: {fileID: 1946692748}
+    - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
+      propertyPath: guaranaQty
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
+      propertyPath: jabuticabaQty
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}

@@ -5144,7 +5144,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1989262117353386313, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_Name
-      value: Player 1
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_RootOrder
@@ -5225,11 +5225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_RootOrder
@@ -5253,11 +5253,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_LocalPosition.x
