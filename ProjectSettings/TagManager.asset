@@ -19,6 +19,7 @@ TagManager:
   - Interactable
   - Guarana
   - Coco
+  - World Hitbox
   layers:
   - Default
   - TransparentFX
@@ -29,7 +30,7 @@ TagManager:
   - Bullet
   - Collider
   - World
-  - 
+  - Player
   - 
   - 
   - 

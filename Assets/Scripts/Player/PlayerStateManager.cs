@@ -119,6 +119,21 @@ public class PlayerStateManager : MonoBehaviour
 
     private bool canHeal = true;
 
+    //world manipulation
+    public Transform enemyBarrier;
+    public Transform enemyGroup;
+
+    void CheckWorldEnemies(){
+        int i = 0;
+        foreach(Transform child in enemyGroup){
+            if(!(child.childCount>0)){
+                Debug.Log(i);
+                Destroy(child.gameObject);
+                Destroy(enemyBarrier.GetChild(i).gameObject);
+            }
+            i++;
+        }
+    }
 
     public void SetAnimationMode(){
         Sprite[] reference = normalAnimation;
@@ -231,6 +246,8 @@ public class PlayerStateManager : MonoBehaviour
 
     void FixedUpdate() {
     
+        CheckWorldEnemies();
+
         if(attackFlag){
             attackCounter += 1/(50*attackAnimationCooldown);
             if(attackCounter>=1){

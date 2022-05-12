@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 6395776295639276329}
   - component: {fileID: 8502713041653447780}
   - component: {fileID: 791994013}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -813,6 +813,8 @@ MonoBehaviour:
   jabuticabaImg: {fileID: 0}
   jabuticabaQtyText: {fileID: 0}
   jabuticabaQty: 0
+  enemyBarrier: {fileID: 0}
+  enemyGroup: {fileID: 0}
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0
