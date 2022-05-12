@@ -52,18 +52,19 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public float acaiDropChance;
     public GameObject coco;
     public float cocoDropChance;
+    bool isSetted = false;
 
     // Start is called before the first frame update
     void Start() {
         //a
+        StartCoroutine(SetUP());
         SetProperties();
         maxHealth = health;
         healthBar = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Slider>(); 
 
         reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        player = GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
-        target = player.gameObject.transform;
+        
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -73,13 +74,24 @@ public abstract class EnemiesStateManager : MonoBehaviour
         currentState.EnterState(this);
     }
 
+    public IEnumerator SetUP(){
+        
+        while(player==null){
+            yield return new WaitForSeconds(0.02f);
+            player = GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
+        }
+        Debug.Log("oi");
+        target = player.gameObject.transform;
+        isSetted=true;
+    }
+
     // Update is called once per frame
     void Update() {
-        currentState.UpdateState(this);        
+        if(isSetted) currentState.UpdateState(this);        
     }
 
     void FixedUpdate() {
-        currentState.FixedUpdateState(this);
+        if(isSetted) currentState.FixedUpdateState(this);
     }
 
     public void SwitchState(BaseStateEnemies state){

@@ -91,4 +91,8 @@ public class GameManager : MonoBehaviour
         player.setWings(player.wings.activeSelf);
     }
 
+    public void Exit(){
+        Application.Quit();
+    }
+
 }

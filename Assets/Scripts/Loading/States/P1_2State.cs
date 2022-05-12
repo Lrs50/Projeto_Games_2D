@@ -22,7 +22,7 @@ public class P1_2State  : BaseStateScenes
         }else if(scene.name=="Phase1_2"){
             PlayerStateManager old = GameManager.player;
             GameManager.player=GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
-            gameManager.UpdatePlayer(old);
+            if(GameManager.player!=null) gameManager.UpdatePlayer(old);
         }else if(scene.name!="Phase1_2"){
             scene= SceneManager.GetActiveScene();
         }
