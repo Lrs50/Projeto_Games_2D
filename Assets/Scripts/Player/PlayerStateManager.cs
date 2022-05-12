@@ -125,9 +125,9 @@ public class PlayerStateManager : MonoBehaviour
 
     void CheckWorldEnemies(){
         int i = 0;
-        if(enemyBarrier!=null && enemyGroup!=null){
+        if(enemyBarrier != null && enemyGroup != null){
             foreach(Transform child in enemyGroup){
-                if(!(child.childCount>0)){
+                if(!(child.childCount > 0)){
                     Destroy(child.gameObject);
                     Destroy(enemyBarrier.GetChild(i).gameObject);
                 }
