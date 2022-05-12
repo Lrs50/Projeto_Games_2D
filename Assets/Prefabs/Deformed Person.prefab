@@ -553,6 +553,7 @@ MonoBehaviour:
   rotationSpeed: 8
   maxRange: 7
   minRange: 0
+  player: {fileID: 0}
   healthBar: {fileID: 0}
   walkInput: {x: 0, y: 0}
   obstacles:

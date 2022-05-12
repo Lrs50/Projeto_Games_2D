@@ -104,7 +104,7 @@ public class PlayerStateManager : MonoBehaviour
     public float health =100;
     public float mana = 100;
     public String animationMode = "2";
-
+    bool skill3Flag = false;
 
     /**
     *   Items
@@ -119,6 +119,22 @@ public class PlayerStateManager : MonoBehaviour
 
     private bool canHeal = true;
 
+    //world manipulation
+    public Transform enemyBarrier;
+    public Transform enemyGroup;
+
+    void CheckWorldEnemies(){
+        int i = 0;
+        if(enemyBarrier!=null && enemyGroup!=null){
+            foreach(Transform child in enemyGroup){
+                if(!(child.childCount>0)){
+                    Destroy(child.gameObject);
+                    Destroy(enemyBarrier.GetChild(i).gameObject);
+                }
+                i++;
+            }
+        }
+    }
 
     public void SetAnimationMode(){
         Sprite[] reference = normalAnimation;
@@ -161,6 +177,9 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
+
+
+
         Time.timeScale=1f;
         FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
@@ -186,12 +205,13 @@ public class PlayerStateManager : MonoBehaviour
         for(int i=0;i<5;i++){
             manaImages[i] = mana.GetChild(i+1).gameObject.GetComponent<Image>();
         }
-
+        
         guaranaImg=playerUI.transform.GetChild(2).GetChild(0).GetChild(0).gameObject.GetComponent<Image>();
         guaranaQtyText=playerUI.transform.GetChild(2).GetChild(0).GetChild(1).gameObject.GetComponent<Text>();
         jabuticabaImg=playerUI.transform.GetChild(2).GetChild(1).GetChild(0).gameObject.GetComponent<Image>();
         jabuticabaQtyText=playerUI.transform.GetChild(2).GetChild(1).GetChild(1).gameObject.GetComponent<Text>();
     }
+    
     void Start() {
         currentState = idleState;
 
@@ -230,6 +250,12 @@ public class PlayerStateManager : MonoBehaviour
 
     void FixedUpdate() {
     
+        if(skill3Flag){
+            return;
+        }
+
+        CheckWorldEnemies();
+
         if(attackFlag){
             attackCounter += 1/(50*attackAnimationCooldown);
             if(attackCounter>=1){
@@ -343,8 +369,10 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill3(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 3");
+        Scene scene = SceneManager.GetActiveScene();
+        if(animationMode=="2" && scene.name=="Phase1_2" && context.ReadValue<float>()!=0 && wings.activeSelf && skill3Flag==false){
+            skill3Flag=true;
+            StartCoroutine(Skill3());
         }
     }
 
@@ -588,6 +616,15 @@ public class PlayerStateManager : MonoBehaviour
             Time.timeScale=0;
             pauseUI.SetActive(true);
         }
+    }
+
+    IEnumerator Skill3(){
+        rb.velocity = new Vector3(0,5,0);
+        Collider2D temp = GetComponent<Collider2D>();
+        temp.enabled = false;
+        rb.isKinematic = true;
+        yield return new WaitForSeconds(10f);
+        rb.velocity = new Vector3(0,0,0);
     }
 
 }
