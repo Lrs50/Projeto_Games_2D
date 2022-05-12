@@ -10,8 +10,7 @@ public class PlayerHitbox : MonoBehaviour
     private  void OnCollisionEnter2D(Collision2D other)
     {
         //Debug.Log(other.gameObject.tag);
-        if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile") || other.gameObject.tag.Equals("Boss") ||
-         other.gameObject.tag.Equals("NormalFeather") || other.gameObject.tag.Equals("TrackingFeather") || other.gameObject.tag.Equals("Feather360")){
+        if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile") || other.gameObject.tag.Equals("Boss")){
             if(other.gameObject.tag.Equals("Enemy")){
                 
                 EnemiesStateManager enemy = other.gameObject.GetComponent<EnemiesStateManager>();
@@ -26,22 +25,23 @@ public class PlayerHitbox : MonoBehaviour
                 damageValue = enemy.damage;
                 
             }
-            if(other.gameObject.tag.Equals("NormalFeather")){
-                NormalProjectile enemy = other.gameObject.GetComponent<NormalProjectile>();
-                Debug.Log(enemy.damage);
-                damageValue = enemy.damage;
+            // if(other.gameObject.tag.Equals("NormalFeather")){
+            //     NormalProjectile enemy = other.gameObject.GetComponent<NormalProjectile>();
+            //     Debug.Log(enemy.damage);
+            //     damageValue = enemy.damage;
                 
-            }
-            if(other.gameObject.tag.Equals("TrackingFeather")){
-                TrackingProjectile enemy = other.gameObject.GetComponent<TrackingProjectile>();
-                damageValue = enemy.damage;
+            // }
+            // if(other.gameObject.tag.Equals("TrackingFeather")){
+            //     TrackingProjectile enemy = other.gameObject.GetComponent<TrackingProjectile>();
+            //     Debug.Log(enemy.damage);
+            //     damageValue = enemy.damage;
                 
-            }
-            if(other.gameObject.tag.Equals("Feather360")){
-                FeatherProjectile enemy = other.gameObject.GetComponent<FeatherProjectile>();
-                damageValue = enemy.damage;
+            // }
+            // if(other.gameObject.tag.Equals("Feather360")){
+            //     FeatherProjectile enemy = other.gameObject.GetComponent<FeatherProjectile>();
+            //     damageValue = enemy.damage;
                 
-            }
+            // }
             
             player.TakeDamage(damageValue);
         }
@@ -67,12 +67,13 @@ public class PlayerHitbox : MonoBehaviour
             }
             if(other.gameObject.tag.Equals("NormalFeather")){
                 NormalProjectile enemy = other.gameObject.GetComponent<NormalProjectile>();
-                Debug.Log(enemy.damage);
+                //Debug.Log(enemy.damage);
                 damageValue = enemy.damage;
                 
             }
             if(other.gameObject.tag.Equals("TrackingFeather")){
                 TrackingProjectile enemy = other.gameObject.GetComponent<TrackingProjectile>();
+                //Debug.Log(enemy.damage);
                 damageValue = enemy.damage;
                 
             }

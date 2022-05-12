@@ -55,8 +55,8 @@ public class NormalProjectile : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
             Destroy(spriteRenderer);
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
-            yield return new WaitForSeconds(1f);
-            Destroy(explosionAnimation);
+            //yield return new WaitForSeconds(1f);
+            Destroy(explosionAnimation,1);
             Destroy(gameObject);  
         }
     }

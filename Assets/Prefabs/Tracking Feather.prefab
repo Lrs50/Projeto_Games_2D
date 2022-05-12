@@ -139,11 +139,11 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 2771463670074540107}
   _enemyPrefab: {fileID: 1129998390985450837, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
   _spawnRadius: 0.2
-  _bossPosition: {x: 2.3306947, y: -4.4183774, z: 0}
+  _bossPosition: {x: 10.227419, y: -6.0803747, z: 0}
   startTime: 0
   liveTime: 1
   spriteRenderer: {fileID: 0}
-  damage: 20
+  damage: 0
   body: {fileID: -7091258162247991437, guid: d8924338d93dd8442a03574824e529a5, type: 3}
   breakAnimation:
   - {fileID: -3137357063068628894, guid: d8924338d93dd8442a03574824e529a5, type: 3}

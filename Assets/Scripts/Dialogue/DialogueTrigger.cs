@@ -11,14 +11,26 @@ public class DialogueTrigger : MonoBehaviour
     public bool interactable = false;
 
     public bool interacting = false;
+    [SerializeField] private bool isMain;
+    private bool done;
 
     public void TriggerDialogue() {
+        Debug.Log("teste");
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
         interacting = true;
     }
 
+    void Start()
+    {
+        done = false;
+    }
+
     void Update() {
-        if (interactable && !interacting) {
+        if(isMain && !done){
+            TriggerDialogue(); 
+            done = true;           
+        }
+        if (interactable && !interacting && !isMain) {
             if (Input.GetButtonDown("Fire3")){
                 TriggerDialogue();
             }  

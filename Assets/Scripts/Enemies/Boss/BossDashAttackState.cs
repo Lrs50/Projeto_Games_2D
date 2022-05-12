@@ -5,11 +5,13 @@ public class BossDashAttackState: BaseStateBoss {
     bool prepare = true;
     bool attack = false;
     bool normal = false;
+    bool firstRot = true;
     Quaternion originalRotation;
     public override void EnterState(BossStateManager enemy){
         prepare = true;
         attack = false;
         normal = false;
+        firstRot = true;
         enemy.startDelayDashAttack = 0;
         enemy.rb.velocity = Vector2.zero;
         dashed = false;
@@ -57,7 +59,10 @@ public class BossDashAttackState: BaseStateBoss {
             if(enemy.index >= enemy.attackAnimation.Length){
                 enemy.index=0;
             }
-            rotateTowardsPlayer(enemy);
+            if(enemy.rb.velocity == Vector2.zero || firstRot){
+                rotateTowardsPlayer(enemy);
+                firstRot = false;
+            }
             enemy.spriteRenderer.sprite = enemy.attackAnimation[enemy.index];
         }else if(normal){
             if(enemy.indexWings>=enemy.undoTransWingsformAnimation.Length){
@@ -78,8 +83,8 @@ public class BossDashAttackState: BaseStateBoss {
 
     }
     private IEnumerator Dash(BossStateManager enemy){
-        
-        for (int i = 0; i < enemy.qtdDash; i++)
+        //for (int i = 0; i < enemy.qtdDash; i++)
+        for (int i = 0; i < Random.Range(2,6); i++)
         {
             
             Vector3 fromPosition = enemy.transform.position;

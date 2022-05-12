@@ -18,9 +18,13 @@ public class DialogueManager : MonoBehaviour
     public Queue<string> sentences;
 
     public DialogueTrigger trigger;
+    public bool dialogueIsOver;
+    public int counter;
 
     void Start()
     {
+        counter = 0;
+        dialogueIsOver = false;
         sentences = new Queue<string>();
     }
 
@@ -47,6 +51,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence() {
+        counter++;
         if (sentences.Count == 0){
             StartCoroutine(EndDialogue());
             return;
@@ -67,6 +72,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     IEnumerator EndDialogue() {
+        this.dialogueIsOver = true;
         animator.SetBool("isOpen", false);
             yield return new WaitForSeconds(0.75f);
         if (this.trigger != null){

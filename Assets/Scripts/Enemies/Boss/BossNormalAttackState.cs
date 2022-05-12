@@ -11,6 +11,7 @@ public class BossNormalAttackState: BaseStateBoss {
         counter=0;
         animationType = Random.Range(0,2);
         enemy.normalBulletProperties._bossPosition = enemy.transform.position;
+        enemy.normalBulletProperties._numberOfProjectiles = Random.Range(2,6);
         data = new ProjectileAttackTemplate(enemy.normalBulletProperties._projectilePrefab,enemy.normalBulletProperties._numberOfProjectiles,enemy.normalBulletProperties._projectileSpeed,enemy.normalBulletProperties._spawnRadius);
     }
 

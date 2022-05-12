@@ -25,13 +25,16 @@ public class BossStateManager : MonoBehaviour{
     public float currHealth;
     public float damage = 15f;
     public float flyAttackDamage = 20f;
-    public int randomAttackInterval;
+    public float minAttackInterval;
+    public float maxAttackInterval;
+    public bool rageMode;
     public float baseSpeed = 5f;
     public SpriteRenderer spriteRenderer;
     public Sprite shadowSprite;
     public Sprite bossSprite;
     public float startFollowingTime;
     public float followingTime = 5f;
+    public float followingDistance;
     public Rigidbody2D rb;
     public Collider2D cd;
     public float dashMag;
@@ -135,15 +138,16 @@ public class BossStateManager : MonoBehaviour{
     }
 
     void Start()
-    {        
-        randomAttackInterval = Random.Range(1,3);
+    {
+        minAttackInterval = 1f;
+        maxAttackInterval = 2f;
+        rageMode = false;
         currHealth = maxHealth;
         SetAnimation();
         Physics2D.IgnoreLayerCollision(2,7);
         target = GameObject.FindWithTag("Player").transform;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
         shadow = instanceOfShadow.GetComponent<BossShadow>();
-        //shadow = transform.GetChild(0).gameObject.GetComponent<BossShadow>();
         trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
         normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
         currentState = searchState;

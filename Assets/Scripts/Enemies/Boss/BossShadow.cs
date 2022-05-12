@@ -7,4 +7,5 @@ using UnityEngine.AI;
 public class BossShadow : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
+    GameObject boss;
 }

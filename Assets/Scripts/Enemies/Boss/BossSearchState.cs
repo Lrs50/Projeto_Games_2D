@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class BossSearchState: BaseStateBoss {
+    public float attackInterval;
     public override void EnterState(BossStateManager enemy){
+        attackInterval = Random.Range(enemy.minAttackInterval,enemy.maxAttackInterval);
+        enemy.followingDistance = Random.Range(5,7);
         enemy.rb.velocity = Vector2.zero;
         enemy.timerForAttacks = 0;
     }
@@ -10,18 +13,21 @@ public class BossSearchState: BaseStateBoss {
     public override void UpdateState(BossStateManager enemy){
         //rotateTowardsPlayer(enemy);
         float dist = Vector3.Distance(enemy.transform.position,enemy.target.transform.position);
-        if(dist > 5f){
+        if(dist > enemy.followingDistance){
             followPlayer(enemy);
             //enemy.agent.SetDestination(enemy.target.position);
-        }else if(dist < 4.95f){
+        }else if(dist < enemy.followingDistance - 0.05f){
             Vector3 flee = (enemy.target.transform.position - enemy.transform.position).normalized;
+            if(flee == Vector3.zero){
+                flee = Vector3.up;
+            }
             followPoint(enemy,flee);
             //enemy.agent.SetDestination((enemy.target.transform.position - enemy.transform.position).normalized * 5);
         }
         enemy.timerForAttacks += Time.deltaTime;
-        if(enemy.timerForAttacks > enemy.randomAttackInterval){
+        if(enemy.timerForAttacks > attackInterval){
             //int whichAttack = 6;//Random.Range(1,4);
-            //Debug.Log(whichAttack);
+            Debug.Log(attackInterval);
             if(enemy.maxHealth*0.9 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth){
                 enemy.SwitchState(enemy.normalAttack);
             }else if(enemy.maxHealth*0.7 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth *0.9){
@@ -65,8 +71,13 @@ public class BossSearchState: BaseStateBoss {
                     enemy.SwitchState(enemy.dashAttack);//random 2 e 5
                 }
             }else{
+                if(!enemy.rageMode){
+                    enemy.minAttackInterval = 0.75f;
+                    enemy.maxAttackInterval = 1.25f;
+                    enemy.rageMode = true;
+                }
                 //boss mais rápido
-                float whichAttack = Random.Range(1,4);
+                int whichAttack = Random.Range(1,4);
                 if(whichAttack == 1){
                     enemy.SwitchState(enemy.attackState);
                 }else if(whichAttack == 2){
