@@ -21,8 +21,8 @@ public class transitionScript : MonoBehaviour
     {
         camScript = cam.GetComponent<CameraMov>();
         dManager = FindObjectOfType<DialogueManager>();
-        verdeMov = false;
-        triggered = false;
+        // verdeMov = false;
+        // triggered = false;
     }
 
     // Update is called once per frame
@@ -30,20 +30,22 @@ public class transitionScript : MonoBehaviour
     {
         if(dManager.counter >= 3){
             //Change
+            //Debug.Log("once");
             fadeOut();
-            dManager.counter = 0;
+            dManager.bloquearDialogo = true;
+            dManager.gameObject.transform.parent.transform.localScale = new Vector3(0,0,0);            
         }
         // if(Input.GetMouseButtonDown(0)){
         //     fadeOut();
         // }else if(Input.GetMouseButtonDown(1)){
         //     fadeIn();
         // }
-        if(verdeMov && cam.transform.position.y > nextObj.transform.position.y){
-            nextObj.transform.position = new Vector3(nextObj.transform.position.x,nextObj.transform.position.y+(0.1f*Time.deltaTime),nextObj.transform.position.z);
-        }else if(verdeMov){
-            triggered = true;
-            verdeMov = false;
-        }
+        // if(verdeMov && cam.transform.position.y > nextObj.transform.position.y){
+        //     nextObj.transform.position = new Vector3(nextObj.transform.position.x,nextObj.transform.position.y+(0.1f*Time.deltaTime),nextObj.transform.position.z);
+        // }else if(verdeMov){
+        //     triggered = true;
+        //     verdeMov = false;
+        // }
     }
 
     public void fadeOut(){
@@ -63,6 +65,10 @@ public class transitionScript : MonoBehaviour
         camScript.velV = 0;
         //camScript.velV = -0.1f;
         nextObj.SetActive(true);
+        gameObject.SetActive(false);
         fadeIn();
+        dManager.bloquearDialogo = false;
+        dManager.gameObject.transform.parent.transform.localScale = new Vector3(10,10,1);
+        dManager.counter = 0;
     }
 }
