@@ -122,6 +122,7 @@ public class PlayerStateManager : MonoBehaviour
     //world manipulation
     public Transform enemyBarrier;
     public Transform enemyGroup;
+    public bool nextStage = false;
 
     void CheckWorldEnemies(){
         int i = 0;
@@ -424,10 +425,6 @@ public class PlayerStateManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name=="Door"){
-            Loader.Load(Loader.Scene.Phase1_0);
-        }
-
         if(other.gameObject.tag.Equals("Guarana")) {
             GetGuarana();
         }
@@ -642,6 +639,24 @@ public class PlayerStateManager : MonoBehaviour
         rb.isKinematic = true;
         yield return new WaitForSeconds(10f);
         rb.velocity = new Vector3(0,0,0);
+        yield return new WaitForSeconds(1f);
+        nextStage=true;
+    }
+
+    public void setWings(bool set){
+        wings.SetActive(set);
+        if(animationMode=="1"||animationMode=="2"||wings.activeSelf){
+            Image logo = playerUI.transform.GetChild(1).GetChild(0).GetComponent<Image>();
+            logo.sprite = abilities[0];
+            if(animationMode=="2"){
+                logo = playerUI.transform.GetChild(1).GetChild(1).GetComponent<Image>();
+                logo.sprite = abilities[1];
+                if(wings.activeSelf){
+                    logo = playerUI.transform.GetChild(1).GetChild(2).GetComponent<Image>();
+                    logo.sprite = abilities[2];
+                }
+            }
+        }
     }
 
 }

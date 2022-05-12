@@ -9,6 +9,9 @@ public class PlayerHitbox : MonoBehaviour
 
     private  void OnCollisionEnter2D(Collision2D other)
     {
+        if(other.gameObject.name=="Door"){
+            player.nextStage = true;
+        }
         //Debug.Log(other.gameObject.tag);
         if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile") || other.gameObject.tag.Equals("Boss")){
             if(other.gameObject.tag.Equals("Enemy")){
@@ -49,6 +52,10 @@ public class PlayerHitbox : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.name=="Door"){
+            player.nextStage = true;
+        }
+
         //Debug.Log($"{other.gameObject.tag} {damageValue}");
         if(other.gameObject.tag.Equals("Enemy") || other.gameObject.tag.Equals("Projectile") || other.gameObject.tag.Equals("Boss") ||
          other.gameObject.tag.Equals("NormalFeather") || other.gameObject.tag.Equals("TrackingFeather") || other.gameObject.tag.Equals("Feather360")){

@@ -11109,6 +11109,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 2045856370}
     m_Modifications:
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: maxHealth
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: dashCounter
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: instanceOfShadow
       value: 
       objectReference: {fileID: 1827728593}
@@ -11134,11 +11142,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.523741
+      value: 24.43
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.303769
+      value: -16.45
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38768,11 +38776,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_RootOrder
@@ -38796,11 +38804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38943,7 +38951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820388843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 23.6, y: -20.08, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39377,7 +39385,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386313, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_RootOrder
@@ -39385,11 +39393,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 23.6
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -20.08
       objectReference: {fileID: 0}
     - target: {fileID: 1989262117353386324, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39429,7 +39437,7 @@ PrefabInstance:
       objectReference: {fileID: 2045856370}
     - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: health
-      value: 100
+      value: 1000000
       objectReference: {fileID: 0}
     - target: {fileID: 8502713041653447780, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: deathUI

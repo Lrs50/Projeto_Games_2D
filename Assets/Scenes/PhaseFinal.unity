@@ -8016,11 +8016,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_RootOrder
@@ -8044,11 +8044,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1920
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1080
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609896, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8108,7 +8108,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 831446975585609902, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fbdb0bf890b19248bf449a3674f6904, type: 3}

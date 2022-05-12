@@ -30,7 +30,7 @@ public class BossSearchState: BaseStateBoss {
             //int whichAttack = 6;//Random.Range(1,4);
             //Debug.Log(attackInterval);
             if(enemy.maxHealth*0.9 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth){
-                enemy.SwitchState(enemy.drillAttack);
+                enemy.SwitchState(enemy.normalAttack);
             }else if(enemy.maxHealth*0.7 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth *0.9){
                 int whichAttack = Random.Range(1,3);
                 if( whichAttack == 1){
