@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class CameraMov : MonoBehaviour
 {
-    private bool changeScene;
     public float velH;
     public float velV;
 
     void Start()
     {
-        changeScene = false;
     }
 
     void Update()
