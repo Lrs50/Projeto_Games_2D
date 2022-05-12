@@ -813,7 +813,6 @@ MonoBehaviour:
   jabuticabaImg: {fileID: 0}
   jabuticabaQtyText: {fileID: 0}
   jabuticabaQty: 0
-  walkSkill2: {fileID: 5844532922907754116, guid: c5aaa32f28af8d649b75561e93dd31e4, type: 3}
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0

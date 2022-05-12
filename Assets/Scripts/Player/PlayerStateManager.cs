@@ -187,6 +187,11 @@ public class PlayerStateManager : MonoBehaviour
             manaImages[i] = mana.GetChild(i+1).gameObject.GetComponent<Image>();
         }
         
+        guaranaImg=playerUI.transform.GetChild(2).GetChild(0).GetChild(0).gameObject.GetComponent<Image>();
+        guaranaQtyText=playerUI.transform.GetChild(2).GetChild(0).GetChild(1).gameObject.GetComponent<Text>();
+        jabuticabaImg=playerUI.transform.GetChild(2).GetChild(1).GetChild(0).gameObject.GetComponent<Image>();
+        jabuticabaQtyText=playerUI.transform.GetChild(2).GetChild(1).GetChild(1).gameObject.GetComponent<Text>();
+
     }
     void Start() {
         currentState = idleState;
