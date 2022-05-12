@@ -10955,7 +10955,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 1989262117353386327, guid: f74a36ccb030c1c4eb12d8f4bbb65402, type: 3}
       propertyPath: m_SortingOrder
       value: 0
@@ -10994,9 +10993,6 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-=======
-    - target: {fileID: 1177654876186804196, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
->>>>>>> 77b090fce480602e065d67ff90a5c84533736bee
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
