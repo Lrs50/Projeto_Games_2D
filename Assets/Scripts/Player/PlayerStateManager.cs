@@ -104,7 +104,7 @@ public class PlayerStateManager : MonoBehaviour
     public float health =100;
     public float mana = 100;
     public String animationMode = "2";
-
+    bool skill3Flag = false;
 
     /**
     *   Items
@@ -125,13 +125,14 @@ public class PlayerStateManager : MonoBehaviour
 
     void CheckWorldEnemies(){
         int i = 0;
-        foreach(Transform child in enemyGroup){
-            if(!(child.childCount>0)){
-                Debug.Log(i);
-                Destroy(child.gameObject);
-                Destroy(enemyBarrier.GetChild(i).gameObject);
+        if(enemyBarrier!=null && enemyGroup!=null){
+            foreach(Transform child in enemyGroup){
+                if(!(child.childCount>0)){
+                    Destroy(child.gameObject);
+                    Destroy(enemyBarrier.GetChild(i).gameObject);
+                }
+                i++;
             }
-            i++;
         }
     }
 
@@ -176,6 +177,9 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
+
+
+
         Time.timeScale=1f;
         FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
@@ -246,6 +250,10 @@ public class PlayerStateManager : MonoBehaviour
 
     void FixedUpdate() {
     
+        if(skill3Flag){
+            return;
+        }
+
         CheckWorldEnemies();
 
         if(attackFlag){
@@ -361,8 +369,10 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill3(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 3");
+        Scene scene = SceneManager.GetActiveScene();
+        if(animationMode=="2" && scene.name=="Phase1_2" && context.ReadValue<float>()!=0 && wings.activeSelf && skill3Flag==false){
+            skill3Flag=true;
+            StartCoroutine(Skill3());
         }
     }
 
@@ -606,6 +616,15 @@ public class PlayerStateManager : MonoBehaviour
             Time.timeScale=0;
             pauseUI.SetActive(true);
         }
+    }
+
+    IEnumerator Skill3(){
+        rb.velocity = new Vector3(0,5,0);
+        Collider2D temp = GetComponent<Collider2D>();
+        temp.enabled = false;
+        rb.isKinematic = true;
+        yield return new WaitForSeconds(10f);
+        rb.velocity = new Vector3(0,0,0);
     }
 
 }
