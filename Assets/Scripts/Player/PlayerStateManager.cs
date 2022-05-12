@@ -22,6 +22,12 @@ public class PlayerStateManager : MonoBehaviour
     float attackAnimationCooldown = 0.2f;
     public bool attackFlag = false;
     float attackCounter =0;
+    float skill1Counter =0;
+    float skill1Cooldown = 0.5f;
+    float skill2Counter =0;
+    float skill2Cooldown = 10;
+    bool skill2flag = false;
+    public float damageMultiplier = 1;
 
     BaseStatePlayer currentState;
 
@@ -30,10 +36,9 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerDashState dashState = new PlayerDashState();
     public PlayerEvolveState evolveState= new PlayerEvolveState();
     public PlayerDeathState deathState = new PlayerDeathState();
-    public PlayerSkillState skillState = new PlayerSkillState();
 
     public Rigidbody2D rb;
-
+    public Transform feet;
 
     //UI
     public GameObject playerUI;
@@ -52,7 +57,10 @@ public class PlayerStateManager : MonoBehaviour
 
     //Shooting
     public Transform shootingOrigin;
+    public GameObject defaultBullet;
     public GameObject bullet;
+    public GameObject bullet2;
+    public GameObject bullet3;
 
     public Vector2 walkInput;
     public float sprintInput;
@@ -95,7 +103,8 @@ public class PlayerStateManager : MonoBehaviour
     public int animationOrientation = 0;
     public float health =100;
     public float mana = 100;
-    public String animationMode = "normal";
+    public String animationMode = "2";
+
 
     /**
     *   Items
@@ -223,10 +232,31 @@ public class PlayerStateManager : MonoBehaviour
                 attackFlag=false;
             }
         }
-        
+
+        if(skill2flag){
+            if(skill2Counter<1){
+                skill2Counter+= 2/(50*skill2Cooldown);
+                
+            }else{
+                damageMultiplier = 1;
+                skill2Counter = 0;
+                skill2flag = false;
+                bullet = defaultBullet;
+                maxSpeed = 5;
+                spriteRenderer.color = Color.white;
+                
+            }
+        }
+
         if(shootCounter<1){
             shootCounter += 1/(50*shootCooldown);
         }
+
+        
+        if(skill1Counter<=1){
+            skill1Counter+= 1/(50*skill1Cooldown);
+        }
+
 
         if(walkInput.y>0){
             //UP
@@ -286,14 +316,25 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill1(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 1");
+        if(context.ReadValue<float>()!=0 && (animationMode=="1"||animationMode=="2") && shootCounter>=1 && skill1Counter>=1 && mana>=10){
+            mana -=10;
+            attackFlag = true;
+            skill1Counter = 0;
+            attackCounter = 0;
+            Instantiate(bullet2,shootingOrigin.position,Quaternion.identity);
         }
     }
 
     public void OnSkill2(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 2");
+        if(context.ReadValue<float>()!=0 && animationMode=="2" && !skill2flag && mana>=50){
+            mana -=50;
+            damageMultiplier = 0.5f;
+            skill2flag = true;
+            defaultBullet = bullet;
+            bullet = bullet3;
+            spriteRenderer.color = new Color(153f/255f,255f/255f,239f/255f,1);
+            maxSpeed *= 1.25f;
+           
         }
     }
 

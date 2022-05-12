@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     public Sprite[] breakAnimation;
     public GameObject explosion;
     public bool done = false;
-    public int health = 1;
+    public int health = 3;
     public Vector2 direction;
 
     void Start()
@@ -56,6 +56,8 @@ public class Bullet : MonoBehaviour
 
     virtual public IEnumerator Break(){
         if(!done){
+            Collider2D temp= GetComponent<Collider2D>();
+            Destroy(temp);
             done = true;
             Destroy(spriteRenderer);
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);

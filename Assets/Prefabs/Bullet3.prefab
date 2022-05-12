@@ -138,14 +138,13 @@ MonoBehaviour:
   rb: {fileID: 3281520563841743593}
   spriteRenderer: {fileID: 0}
   damage: 1
-  body: {fileID: 7957691588537194549, guid: d8924338d93dd8442a03574824e529a5, type: 3}
+  body: {fileID: -3137357063068628894, guid: d8924338d93dd8442a03574824e529a5, type: 3}
   breakAnimation:
   - {fileID: 266329736449802861, guid: d8924338d93dd8442a03574824e529a5, type: 3}
   explosion: {fileID: 1370498115134523515, guid: 5d392efe765c8fc418496a297159ac5a, type: 3}
   done: 0
   health: 1
   direction: {x: 0, y: 0}
-  customBreak: 0
   endAnimation:
   - {fileID: 2969360068976741452, guid: d8924338d93dd8442a03574824e529a5, type: 3}
   - {fileID: 6669833841031761055, guid: d8924338d93dd8442a03574824e529a5, type: 3}
