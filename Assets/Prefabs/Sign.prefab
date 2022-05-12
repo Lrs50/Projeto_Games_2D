@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6295972289271649488}
   - component: {fileID: 3367209208300980108}
   - component: {fileID: 1705147189927792525}
-  - component: {fileID: 1847188801669797330}
+  - component: {fileID: 1377523745}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Interactable
@@ -137,7 +137,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.6377678}
   m_EdgeRadius: 0
---- !u!114 &1847188801669797330
+--- !u!114 &1377523745
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,8 +150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    npcName: ' '
+    npcName: Ruinas
     sentences:
-    - ' '
+    - "##N\xE3o escreva aqui##"
+    - 
   interactable: 0
   interacting: 0
