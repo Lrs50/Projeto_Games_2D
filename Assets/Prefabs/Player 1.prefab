@@ -401,9 +401,41 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0041935b-a567-4f94-b5e2-0212267ff4c3
     m_ActionName: Movement/Skill 3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnHeal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d38d303e-38c5-4f0b-b5ca-14acf370dc81
+    m_ActionName: Default Map/Heal[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnHealMana
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fca5adc6-9048-4397-becf-8e70cc02c98b
+    m_ActionName: Default Map/Heal Mana[/Keyboard/g]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Movement
+  m_DefaultActionMap: Default Map
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &8502713041653447780
@@ -769,6 +801,12 @@ MonoBehaviour:
   health: 100
   mana: 100
   animationMode: normal
+  guaranaImg: {fileID: 0}
+  guaranaQtyText: {fileID: 0}
+  guaranaQty: 0
+  jabuticabaImg: {fileID: 0}
+  jabuticabaQtyText: {fileID: 0}
+  jabuticabaQty: 0
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -13,11 +13,12 @@ TagManager:
   - Enemy
   - Player Attack
   - Projectile
-  - Item
   - TrackingFeather
   - Feather360
   - NormalFeather
   - Interactable
+  - Guarana
+  - Coco
   layers:
   - Default
   - TransparentFX

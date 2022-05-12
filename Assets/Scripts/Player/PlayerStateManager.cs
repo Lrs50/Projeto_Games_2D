@@ -97,6 +97,20 @@ public class PlayerStateManager : MonoBehaviour
     public float mana = 100;
     public String animationMode = "normal";
 
+    /**
+    *   Items
+    */
+    public Image guaranaImg;
+    public Text guaranaQtyText;
+    public int guaranaQty;
+
+    public Image jabuticabaImg;
+    public Text jabuticabaQtyText;
+    public int jabuticabaQty;
+
+    private bool canHeal = true;
+
+
     public void SetAnimationMode(){
         Sprite[] reference = normalAnimation;
 
@@ -303,18 +317,58 @@ public class PlayerStateManager : MonoBehaviour
         
     }
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
-       if(other.gameObject.name=="Door"){
-           Loader.Load(Loader.Scene.Phase1_0);
-       }
-
-        if(other.gameObject.tag.Equals("Item")) {
-            //Debug.Log("Got an item!");
+    public void OnHeal(InputAction.CallbackContext context) {
+        if(context.ReadValue<float>()!=0){
+            if (guaranaQty > 0 && canHeal){
+                Heal(50);
+            }
         }
-   }
+    }
 
-   private void UpdateUI(){
+    public void OnHealMana(InputAction.CallbackContext context) {
+         if(context.ReadValue<float>()!=0){
+             if (jabuticabaQty > 0 && canHeal){
+                HealMana(50);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.name=="Door"){
+            Loader.Load(Loader.Scene.Phase1_0);
+        }
+
+        if(other.gameObject.tag.Equals("Guarana")) {
+            GetGuarana();
+        }
+
+        if(other.gameObject.tag.Equals("Coco")) {
+            GetCoco();
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other){
+        if (other.tag != "Interactable") return;
+
+        canHeal = false;  
+    }
+
+    void OnTriggerExit2D(Collider2D other){
+        if (other.tag != "Interactable") return;
+
+        canHeal = true;
+    }
+
+    private void GetGuarana() {
+        guaranaQty += 1;
+    }
+
+    private void GetCoco() {
+        jabuticabaQty += 1;
+    }
+
+    private void UpdateUI(){
 
        Sprite estaminaFull = elementsUI[6];
        Sprite estaminaHalf = elementsUI[7];
@@ -360,16 +414,66 @@ public class PlayerStateManager : MonoBehaviour
                staminaImages[i].sprite = estaminaFull;
            }
         }
-   }
 
-   public void TakeDamage(float amount){
-       health -= amount;
-       StartCoroutine(DamageAnimation());
-   }
+        if (guaranaQty <= 0){
+            guaranaQtyText.enabled = false;
+            guaranaImg.color = new Vector4(50/255f, 50/255f, 50/255f, 0.7f);
+        }
+        else {
+            guaranaQtyText.enabled = true;
+            guaranaQtyText.text = ""+guaranaQty;
+            guaranaImg.color = Color.white;
+        }
+
+        if (jabuticabaQty <= 0) {
+            jabuticabaQtyText.enabled = false;
+            jabuticabaImg.color = new Vector4(50/255f, 50/255f, 50/255f, 0.7f);
+        }
+        else {
+            jabuticabaQtyText.enabled = true;
+            jabuticabaQtyText.text = ""+jabuticabaQty;
+            jabuticabaImg.color = Color.white;
+        }
+    }
+
+    public void TakeDamage(float amount){
+        health -= amount;
+        StartCoroutine(DamageAnimation());
+    }
 
     IEnumerator DamageAnimation(){
         
         spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
+
+    public void Heal(float amount){
+       health += amount;
+       guaranaQty -= 1;
+       if (health > 100){
+           health = 100;
+       }
+       StartCoroutine(HealAnimation());
+    }
+
+    IEnumerator HealAnimation(){
+        spriteRenderer.color=new Vector4(0/255f, 255/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
+
+    public void HealMana(float amount){
+        mana += amount;
+        jabuticabaQty -= 1;
+        if (mana > 100){
+            mana = 100;
+        }
+        StartCoroutine(HealManaAnimation());
+    }
+
+    IEnumerator HealManaAnimation(){
+        spriteRenderer.color=new Vector4(0/255f, 255/255f, 255/255f, 0.7f);
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color=Color.white;
     }

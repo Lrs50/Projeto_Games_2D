@@ -575,9 +575,9 @@ MonoBehaviour:
   dropChance: 0.05
   soul: {fileID: 5826202563129593795, guid: 00a31346ef9f15f4cbc9114cac941c21, type: 3}
   guarana: {fileID: 6177288368399812868, guid: f0e4a5811db9a3c4db0056521221b469, type: 3}
-  guaranaDropChance: 0.9
+  guaranaDropChance: 0.6
   acai: {fileID: 6177288368399812868, guid: d20632b63c912b54fb6be6d1f0dd5d26, type: 3}
-  acaiDropChance: 0.4
+  acaiDropChance: 0
   coco: {fileID: 6177288368399812868, guid: 99c1393445b63fc42a71f4b32d081ab2, type: 3}
   cocoDropChance: 1
   run:
