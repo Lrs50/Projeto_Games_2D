@@ -22,6 +22,12 @@ public class PlayerStateManager : MonoBehaviour
     float attackAnimationCooldown = 0.2f;
     public bool attackFlag = false;
     float attackCounter =0;
+    float skill1Counter =0;
+    float skill1Cooldown = 0.5f;
+    float skill2Counter =0;
+    float skill2Cooldown = 10;
+    bool skill2flag = false;
+    public float damageMultiplier = 1;
 
     BaseStatePlayer currentState;
 
@@ -30,10 +36,9 @@ public class PlayerStateManager : MonoBehaviour
     public PlayerDashState dashState = new PlayerDashState();
     public PlayerEvolveState evolveState= new PlayerEvolveState();
     public PlayerDeathState deathState = new PlayerDeathState();
-    public PlayerSkillState skillState = new PlayerSkillState();
 
     public Rigidbody2D rb;
-
+    public Transform feet;
 
     //UI
     public GameObject playerUI;
@@ -52,7 +57,10 @@ public class PlayerStateManager : MonoBehaviour
 
     //Shooting
     public Transform shootingOrigin;
+    public GameObject defaultBullet;
     public GameObject bullet;
+    public GameObject bullet2;
+    public GameObject bullet3;
 
     public Vector2 walkInput;
     public float sprintInput;
@@ -95,7 +103,38 @@ public class PlayerStateManager : MonoBehaviour
     public int animationOrientation = 0;
     public float health =100;
     public float mana = 100;
-    public String animationMode = "normal";
+    public String animationMode = "2";
+    bool skill3Flag = false;
+
+    /**
+    *   Items
+    */
+    public Image guaranaImg;
+    public Text guaranaQtyText;
+    public int guaranaQty;
+
+    public Image jabuticabaImg;
+    public Text jabuticabaQtyText;
+    public int jabuticabaQty;
+
+    private bool canHeal = true;
+
+    //world manipulation
+    public Transform enemyBarrier;
+    public Transform enemyGroup;
+
+    void CheckWorldEnemies(){
+        int i = 0;
+        if(enemyBarrier!=null && enemyGroup!=null){
+            foreach(Transform child in enemyGroup){
+                if(!(child.childCount>0)){
+                    Destroy(child.gameObject);
+                    Destroy(enemyBarrier.GetChild(i).gameObject);
+                }
+                i++;
+            }
+        }
+    }
 
     public void SetAnimationMode(){
         Sprite[] reference = normalAnimation;
@@ -138,6 +177,9 @@ public class PlayerStateManager : MonoBehaviour
 
     private void Awake()
     {
+
+
+
         Time.timeScale=1f;
         FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
@@ -164,7 +206,12 @@ public class PlayerStateManager : MonoBehaviour
             manaImages[i] = mana.GetChild(i+1).gameObject.GetComponent<Image>();
         }
         
+        guaranaImg=playerUI.transform.GetChild(2).GetChild(0).GetChild(0).gameObject.GetComponent<Image>();
+        guaranaQtyText=playerUI.transform.GetChild(2).GetChild(0).GetChild(1).gameObject.GetComponent<Text>();
+        jabuticabaImg=playerUI.transform.GetChild(2).GetChild(1).GetChild(0).gameObject.GetComponent<Image>();
+        jabuticabaQtyText=playerUI.transform.GetChild(2).GetChild(1).GetChild(1).gameObject.GetComponent<Text>();
     }
+    
     void Start() {
         currentState = idleState;
 
@@ -203,16 +250,43 @@ public class PlayerStateManager : MonoBehaviour
 
     void FixedUpdate() {
     
+        if(skill3Flag){
+            return;
+        }
+
+        CheckWorldEnemies();
+
         if(attackFlag){
             attackCounter += 1/(50*attackAnimationCooldown);
             if(attackCounter>=1){
                 attackFlag=false;
             }
         }
-        
+
+        if(skill2flag){
+            if(skill2Counter<1){
+                skill2Counter+= 2/(50*skill2Cooldown);
+                
+            }else{
+                damageMultiplier = 1;
+                skill2Counter = 0;
+                skill2flag = false;
+                bullet = defaultBullet;
+                maxSpeed = 5;
+                spriteRenderer.color = Color.white;
+                
+            }
+        }
+
         if(shootCounter<1){
             shootCounter += 1/(50*shootCooldown);
         }
+
+        
+        if(skill1Counter<=1){
+            skill1Counter+= 1/(50*skill1Cooldown);
+        }
+
 
         if(walkInput.y>0){
             //UP
@@ -272,20 +346,33 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill1(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 1");
+        if(context.ReadValue<float>()!=0 && (animationMode=="1"||animationMode=="2") && shootCounter>=1 && skill1Counter>=1 && mana>=10){
+            mana -=10;
+            attackFlag = true;
+            skill1Counter = 0;
+            attackCounter = 0;
+            Instantiate(bullet2,shootingOrigin.position,Quaternion.identity);
         }
     }
 
     public void OnSkill2(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 2");
+        if(context.ReadValue<float>()!=0 && animationMode=="2" && !skill2flag && mana>=50){
+            mana -=50;
+            damageMultiplier = 0.5f;
+            skill2flag = true;
+            defaultBullet = bullet;
+            bullet = bullet3;
+            spriteRenderer.color = new Color(153f/255f,255f/255f,239f/255f,1);
+            maxSpeed *= 1.25f;
+           
         }
     }
 
     public void OnSkill3(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
-            Debug.Log("habilidade 3");
+        Scene scene = SceneManager.GetActiveScene();
+        if(animationMode=="2" && scene.name=="Phase1_2" && context.ReadValue<float>()!=0 && wings.activeSelf && skill3Flag==false){
+            skill3Flag=true;
+            StartCoroutine(Skill3());
         }
     }
 
@@ -303,18 +390,58 @@ public class PlayerStateManager : MonoBehaviour
         
     }
 
-   private void OnTriggerEnter2D(Collider2D other)
-   {
-       if(other.gameObject.name=="Door"){
-           Loader.Load(Loader.Scene.Phase1_0);
-       }
-
-        if(other.gameObject.tag.Equals("Item")) {
-            //Debug.Log("Got an item!");
+    public void OnHeal(InputAction.CallbackContext context) {
+        if(context.ReadValue<float>()!=0){
+            if (guaranaQty > 0 && canHeal){
+                Heal(50);
+            }
         }
-   }
+    }
 
-   private void UpdateUI(){
+    public void OnHealMana(InputAction.CallbackContext context) {
+         if(context.ReadValue<float>()!=0){
+             if (jabuticabaQty > 0 && canHeal){
+                HealMana(50);
+            }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.name=="Door"){
+            Loader.Load(Loader.Scene.Phase1_0);
+        }
+
+        if(other.gameObject.tag.Equals("Guarana")) {
+            GetGuarana();
+        }
+
+        if(other.gameObject.tag.Equals("Coco")) {
+            GetCoco();
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other){
+        if (other.tag != "Interactable") return;
+
+        canHeal = false;  
+    }
+
+    void OnTriggerExit2D(Collider2D other){
+        if (other.tag != "Interactable") return;
+
+        canHeal = true;
+    }
+
+    private void GetGuarana() {
+        guaranaQty += 1;
+    }
+
+    private void GetCoco() {
+        jabuticabaQty += 1;
+    }
+
+    private void UpdateUI(){
 
        Sprite estaminaFull = elementsUI[6];
        Sprite estaminaHalf = elementsUI[7];
@@ -360,16 +487,66 @@ public class PlayerStateManager : MonoBehaviour
                staminaImages[i].sprite = estaminaFull;
            }
         }
-   }
 
-   public void TakeDamage(float amount){
-       health -= amount;
-       StartCoroutine(DamageAnimation());
-   }
+        if (guaranaQty <= 0){
+            guaranaQtyText.enabled = false;
+            guaranaImg.color = new Vector4(50/255f, 50/255f, 50/255f, 0.7f);
+        }
+        else {
+            guaranaQtyText.enabled = true;
+            guaranaQtyText.text = ""+guaranaQty;
+            guaranaImg.color = Color.white;
+        }
+
+        if (jabuticabaQty <= 0) {
+            jabuticabaQtyText.enabled = false;
+            jabuticabaImg.color = new Vector4(50/255f, 50/255f, 50/255f, 0.7f);
+        }
+        else {
+            jabuticabaQtyText.enabled = true;
+            jabuticabaQtyText.text = ""+jabuticabaQty;
+            jabuticabaImg.color = Color.white;
+        }
+    }
+
+    public void TakeDamage(float amount){
+        health -= amount;
+        StartCoroutine(DamageAnimation());
+    }
 
     IEnumerator DamageAnimation(){
         
         spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
+
+    public void Heal(float amount){
+       health += amount;
+       guaranaQty -= 1;
+       if (health > 100){
+           health = 100;
+       }
+       StartCoroutine(HealAnimation());
+    }
+
+    IEnumerator HealAnimation(){
+        spriteRenderer.color=new Vector4(0/255f, 255/255f, 0/255f,0.7f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color=Color.white;
+    }
+
+    public void HealMana(float amount){
+        mana += amount;
+        jabuticabaQty -= 1;
+        if (mana > 100){
+            mana = 100;
+        }
+        StartCoroutine(HealManaAnimation());
+    }
+
+    IEnumerator HealManaAnimation(){
+        spriteRenderer.color=new Vector4(0/255f, 255/255f, 255/255f, 0.7f);
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color=Color.white;
     }
@@ -439,6 +616,15 @@ public class PlayerStateManager : MonoBehaviour
             Time.timeScale=0;
             pauseUI.SetActive(true);
         }
+    }
+
+    IEnumerator Skill3(){
+        rb.velocity = new Vector3(0,5,0);
+        Collider2D temp = GetComponent<Collider2D>();
+        temp.enabled = false;
+        rb.isKinematic = true;
+        yield return new WaitForSeconds(10f);
+        rb.velocity = new Vector3(0,0,0);
     }
 
 }

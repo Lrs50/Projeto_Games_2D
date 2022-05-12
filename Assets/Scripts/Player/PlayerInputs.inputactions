@@ -2,7 +2,7 @@
     "name": "PlayerInputs",
     "maps": [
         {
-            "name": "Movement",
+            "name": "Default Map",
             "id": "7d2f9a20-472e-449e-9748-8e7ca32e6bf9",
             "actions": [
                 {
@@ -63,6 +63,24 @@
                     "name": "Skill 3",
                     "type": "Button",
                     "id": "0041935b-a567-4f94-b5e2-0212267ff4c3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Heal",
+                    "type": "Button",
+                    "id": "d38d303e-38c5-4f0b-b5ca-14acf370dc81",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Heal Mana",
+                    "type": "Button",
+                    "id": "fca5adc6-9048-4397-becf-8e70cc02c98b",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Tap",
@@ -188,6 +206,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Skill 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d128a30d-b861-489a-8b7a-9c1746454c4f",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b0a4f14-186c-45ca-a19e-69ddf53e79c9",
+                    "path": "<Keyboard>/g",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Heal Mana",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -167,7 +167,7 @@ GameObject:
   - component: {fileID: 6395776295639276329}
   - component: {fileID: 8502713041653447780}
   - component: {fileID: 791994013}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Player 1
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -189,6 +189,7 @@ Transform:
   - {fileID: 992919252}
   - {fileID: 107582034}
   - {fileID: 1989262117288416840}
+  - {fileID: 2091978885908434657}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -401,9 +402,41 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 0041935b-a567-4f94-b5e2-0212267ff4c3
     m_ActionName: Movement/Skill 3[/Keyboard/3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnHeal
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: d38d303e-38c5-4f0b-b5ca-14acf370dc81
+    m_ActionName: Default Map/Heal[/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8502713041653447780}
+        m_TargetAssemblyTypeName: PlayerStateManager, Assembly-CSharp
+        m_MethodName: OnHealMana
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: fca5adc6-9048-4397-becf-8e70cc02c98b
+    m_ActionName: Default Map/Heal Mana[/Keyboard/g]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Movement
+  m_DefaultActionMap: Default Map
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &8502713041653447780
@@ -425,7 +458,9 @@ MonoBehaviour:
   dashMag: 20
   dashTimer: 0.2
   attackFlag: 0
+  damageMultiplier: 1
   rb: {fileID: 1989262117353386326}
+  feet: {fileID: 2091978885908434657}
   playerUI: {fileID: 0}
   pauseUI: {fileID: 0}
   deathUI: {fileID: 0}
@@ -442,7 +477,10 @@ MonoBehaviour:
   - {fileID: -904383593905977048, guid: 40d20248429e757428e45ea039819163, type: 3}
   flash: {fileID: 2100000, guid: d3f1a33f49f86f545b74e1e038ede221, type: 2}
   shootingOrigin: {fileID: 1989262118155671004}
+  defaultBullet: {fileID: 0}
   bullet: {fileID: 9123797642374834258, guid: a10e6a92aaea8fb459d9d372b3fed607, type: 3}
+  bullet2: {fileID: 1464722303590585781, guid: dde75ff7d6f451241853ee5b06e2e8cc, type: 3}
+  bullet3: {fileID: 3281520563841743572, guid: 43c895ca371ef0c48ba993b18d1a40d2, type: 3}
   walkInput: {x: 0, y: 0}
   sprintInput: 0
   dashInput: 0
@@ -769,6 +807,14 @@ MonoBehaviour:
   health: 100
   mana: 100
   animationMode: normal
+  guaranaImg: {fileID: 0}
+  guaranaQtyText: {fileID: 0}
+  guaranaQty: 0
+  jabuticabaImg: {fileID: 0}
+  jabuticabaQtyText: {fileID: 0}
+  jabuticabaQty: 0
+  enemyBarrier: {fileID: 0}
+  enemyGroup: {fileID: 0}
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -824,6 +870,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1989262117353386324}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6889297280242871757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2091978885908434657}
+  m_Layer: 8
+  m_Name: feet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2091978885908434657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6889297280242871757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.1273, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1989262117353386324}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6586387671040563455
 PrefabInstance:

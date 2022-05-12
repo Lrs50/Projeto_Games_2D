@@ -22,7 +22,7 @@ public class WolfStateManager : EnemiesStateManager
     }
 
     public override void SetProperties(){
-        health = 10f;
+        health = 11f;
         damage = 0;
 
    }

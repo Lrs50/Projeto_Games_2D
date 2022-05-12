@@ -13,7 +13,9 @@ public class Bullet : MonoBehaviour
     public Sprite body;
     public Sprite[] breakAnimation;
     public GameObject explosion;
-    bool done = false;
+    public bool done = false;
+    public int health = 3;
+    public Vector2 direction;
 
     void Start()
     {
@@ -23,10 +25,12 @@ public class Bullet : MonoBehaviour
 
         startTime = Time.time;
 
-        Vector2 direction = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        direction = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = new Vector2(direction.x - transform.position.x,direction.y-transform.position.y);
         
         direction = direction.normalized;
+        SetStats();
+
         rb.velocity = direction*speed;
     }
 
@@ -34,18 +38,26 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         if((Time.time-startTime)>=liveTime){
-            StartCoroutine(Break());
+           StartCoroutine(Break());
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.gameObject.tag == "Enemy"){
+            CollisionAction();
+        }
         if(other.gameObject.name == "World" || other.gameObject.tag == "Enemy" || other.gameObject.tag == "Target" || other.gameObject.tag == "Collider" || other.gameObject.tag == "Boss"){
-            StartCoroutine(Break());
+            health--;
+            if(health<=0){
+                StartCoroutine(Break()); 
+            }
         }
     }
 
-    IEnumerator Break(){
+    virtual public IEnumerator Break(){
         if(!done){
+            Collider2D temp= GetComponent<Collider2D>();
+            Destroy(temp);
             done = true;
             Destroy(spriteRenderer);
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
@@ -54,5 +66,21 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);  
         }
     }
+
+    virtual public void SetStats(){
+        speed = 20f;
+        liveTime = 1f;
+        damage = 1;
+    }
+    virtual public void CollisionAction(){
+
+    }
     
+    public void rotateTowardsPlayer(Vector2 direction){
+        var offset = 90f;
+        direction.Normalize();
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;       
+        transform.rotation = Quaternion.Euler(Vector3.forward * (angle+offset));
+    }
+
 }

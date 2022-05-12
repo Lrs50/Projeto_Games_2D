@@ -14,6 +14,7 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public float rotationSpeed = 8f;
     public float maxRange;
     public float minRange;
+    public PlayerStateManager player;
 
     BaseStateEnemies currentState;
 
@@ -61,8 +62,8 @@ public abstract class EnemiesStateManager : MonoBehaviour
 
         reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
-        target = GameObject.FindWithTag("Player").transform;
-        
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
+        target = player.gameObject.transform;
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -105,6 +106,10 @@ public abstract class EnemiesStateManager : MonoBehaviour
                 for (var i = 0; i < numSouls; i++){
                     Instantiate(soul, transform.position, Quaternion.identity);
                 }
+                if(player.mana<100){
+                    player.mana+=1;
+                }
+                
                 Destroy(gameObject);
             }
 

@@ -43,6 +43,7 @@ public class PlayerHitbox : MonoBehaviour
                 
             // }
             
+            damageValue *= player.damageMultiplier;
             player.TakeDamage(damageValue);
         }
     }
@@ -82,7 +83,8 @@ public class PlayerHitbox : MonoBehaviour
                 damageValue = enemy.damage;
                 
             }
-            
+
+            damageValue *= player.damageMultiplier;
             player.TakeDamage(damageValue);
         }
     }

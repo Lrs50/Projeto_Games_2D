@@ -8,7 +8,7 @@ public class BulletEnemy : MonoBehaviour
     public Rigidbody2D rb;
     public SpriteRenderer spriteRenderer;
     float startTime;
-    float liveTime = 1f;
+    float liveTime = 3f;
     Vector2 direction;
     bool go = false;
     public float damage = 5;

@@ -13,11 +13,13 @@ TagManager:
   - Enemy
   - Player Attack
   - Projectile
-  - Item
   - TrackingFeather
   - Feather360
   - NormalFeather
   - Interactable
+  - Guarana
+  - Coco
+  - World Hitbox
   layers:
   - Default
   - TransparentFX
@@ -28,7 +30,7 @@ TagManager:
   - Bullet
   - Collider
   - World
-  - 
+  - Player
   - 
   - 
   - 
