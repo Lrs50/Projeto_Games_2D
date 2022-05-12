@@ -13,6 +13,9 @@ public static class Loader
         Phase1_1,
         Phase1_2,
         Loading,
+        Pre_start,
+        PhaseFinal,
+        Credits
     }
 
     private static Action onLoaderCallBack; 

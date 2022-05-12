@@ -8,6 +8,7 @@ public class BossSearchState: BaseStateBoss {
         enemy.followingDistance = Random.Range(5,7);
         enemy.rb.velocity = Vector2.zero;
         enemy.timerForAttacks = 0;
+        enemy.transform.rotation = Quaternion.identity;
     }
 
     public override void UpdateState(BossStateManager enemy){
@@ -27,9 +28,9 @@ public class BossSearchState: BaseStateBoss {
         enemy.timerForAttacks += Time.deltaTime;
         if(enemy.timerForAttacks > attackInterval){
             //int whichAttack = 6;//Random.Range(1,4);
-            Debug.Log(attackInterval);
+            //Debug.Log(attackInterval);
             if(enemy.maxHealth*0.9 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth){
-                enemy.SwitchState(enemy.normalAttack);
+                enemy.SwitchState(enemy.drillAttack);
             }else if(enemy.maxHealth*0.7 <= enemy.currHealth && enemy.currHealth <= enemy.maxHealth *0.9){
                 int whichAttack = Random.Range(1,3);
                 if( whichAttack == 1){
@@ -74,6 +75,7 @@ public class BossSearchState: BaseStateBoss {
                 if(!enemy.rageMode){
                     enemy.minAttackInterval = 0.75f;
                     enemy.maxAttackInterval = 1.25f;
+                    enemy.baseSpeed += 5;
                     enemy.rageMode = true;
                 }
                 //boss mais rápido

@@ -14,6 +14,7 @@ public class BossStateManager : MonoBehaviour{
     public BossNormalAttackState normalAttack = new BossNormalAttackState();
     public BossDrillAttackState drillAttack = new BossDrillAttackState();
     public BossGoingBackState backState = new BossGoingBackState();
+    public BossPacificState pacificState = new BossPacificState();
     public GameObject bullet;
     public GameObject trackingBullet;
     public GameObject normalBullet;
@@ -48,6 +49,8 @@ public class BossStateManager : MonoBehaviour{
     public GameObject instanceOfShadow;
     public int qtdDashDrillAttack;
     public int qtdDash;
+
+    public bool readyToAttack;
 
     public Slider health_slider;
     public int dashCounter = 0;
@@ -139,6 +142,7 @@ public class BossStateManager : MonoBehaviour{
 
     void Start()
     {
+        readyToAttack = false;
         minAttackInterval = 1f;
         maxAttackInterval = 2f;
         rageMode = false;
@@ -151,12 +155,17 @@ public class BossStateManager : MonoBehaviour{
         trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
         normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
         currentState = searchState;
+        //currentState = pacificState;
         currentState.EnterState(this);
         
     }
 
      // Update is called once per frame
     void Update() {
+        if(currHealth <= 0){
+            //quando o boss morre
+            Destroy(gameObject);
+        }
         currentState.UpdateState(this);        
     }
 

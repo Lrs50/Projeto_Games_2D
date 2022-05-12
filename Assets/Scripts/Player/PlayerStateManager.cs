@@ -122,6 +122,7 @@ public class PlayerStateManager : MonoBehaviour
     //world manipulation
     public Transform enemyBarrier;
     public Transform enemyGroup;
+    public bool nextStage = false;
 
     void CheckWorldEnemies(){
         int i = 0;
@@ -173,6 +174,20 @@ public class PlayerStateManager : MonoBehaviour
         for(int i=0;i<walkAttackAnimation.Length;i++){
             walkAttackAnimation[i] = reference[52+i];
         }
+
+        if(animationMode=="1"||animationMode=="2"||wings.activeSelf){
+            Image logo = playerUI.transform.GetChild(1).GetChild(0).GetComponent<Image>();
+            logo.sprite = abilities[0];
+            if(animationMode=="2"){
+                logo = playerUI.transform.GetChild(1).GetChild(1).GetComponent<Image>();
+                logo.sprite = abilities[1];
+                if(wings.activeSelf){
+                    logo = playerUI.transform.GetChild(1).GetChild(2).GetComponent<Image>();
+                    logo.sprite = abilities[2];
+                }
+            }
+        }
+        
     }
 
     private void Awake()
@@ -221,21 +236,21 @@ public class PlayerStateManager : MonoBehaviour
     void Update() {
         currentState.UpdateState(this);
         
-        if(Input.GetKeyDown(KeyCode.E)){
-            SwitchState(evolveState);
-        }
+        // if(Input.GetKeyDown(KeyCode.E)){
+        //     SwitchState(evolveState);
+        // }
         if(Input.GetKeyDown(KeyCode.Return)){
             Pause(true);
         }
         if(Input.GetKeyDown(KeyCode.Escape)){
             Pause(false);
         }
-        if(Input.GetKeyDown(KeyCode.B)){
-            rb.velocity = new Vector3(0,5,0);
-            Collider2D temp = GetComponent<Collider2D>();
-            temp.enabled = false;
-            rb.isKinematic = true;
-        }
+        // if(Input.GetKeyDown(KeyCode.B)){
+        //     rb.velocity = new Vector3(0,5,0);
+        //     Collider2D temp = GetComponent<Collider2D>();
+        //     temp.enabled = false;
+        //     rb.isKinematic = true;
+        // }
 
         UpdateUI();
 
@@ -321,10 +336,12 @@ public class PlayerStateManager : MonoBehaviour
 
         currentState.FixedUpdateState(this);        
         
-        if(enemy.childCount==0 && evolved==false){
-            evolved=true;
-            //if(Scene.name==) 
-            SwitchState(evolveState);
+        if(enemy!=null){
+            if(enemy.childCount==0 && evolved==false){
+                evolved=true;
+                //if(Scene.name==) 
+                SwitchState(evolveState);
+            }
         }
 
     }
@@ -346,7 +363,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill1(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0 && (animationMode=="1"||animationMode=="2") && shootCounter>=1 && skill1Counter>=1 && mana>=10){
+        if(context.ReadValue<float>()!=0 && (animationMode=="1"||animationMode=="2") && shootCounter>=1 && skill1Counter>=1 && mana>=10 && Time.timeScale>=0.5){
             mana -=10;
             attackFlag = true;
             skill1Counter = 0;
@@ -356,7 +373,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnSkill2(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0 && animationMode=="2" && !skill2flag && mana>=50){
+        if(context.ReadValue<float>()!=0 && animationMode=="2" && !skill2flag && mana>=50 && Time.timeScale>=0.5){
             mana -=50;
             damageMultiplier = 0.5f;
             skill2flag = true;
@@ -370,20 +387,20 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnSkill3(InputAction.CallbackContext context) {
         Scene scene = SceneManager.GetActiveScene();
-        if(animationMode=="2" && scene.name=="Phase1_2" && context.ReadValue<float>()!=0 && wings.activeSelf && skill3Flag==false){
+        if(animationMode=="2" && scene.name=="Phase1_2" && context.ReadValue<float>()!=0 && wings.activeSelf && skill3Flag==false && Time.timeScale>=0.5){
             skill3Flag=true;
             StartCoroutine(Skill3());
         }
     }
 
     public void OnDash(InputAction.CallbackContext context) {
-        dashInput = context.ReadValue<float>();
+        if(Time.timeScale>=0.5) dashInput = context.ReadValue<float>();
     }
     
     public void OnShoot(InputAction.CallbackContext context) {
         attackFlag = true;
         attackCounter = 0;
-        if(context.ReadValue<float>()!=0 && shootCounter>=1){
+        if(context.ReadValue<float>()!=0 && shootCounter>=1 && Time.timeScale>=0.5){
             shootCounter=0;
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
         }
@@ -391,7 +408,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnHeal(InputAction.CallbackContext context) {
-        if(context.ReadValue<float>()!=0){
+        if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
             if (guaranaQty > 0 && canHeal){
                 Heal(50);
             }
@@ -399,7 +416,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void OnHealMana(InputAction.CallbackContext context) {
-         if(context.ReadValue<float>()!=0){
+         if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
              if (jabuticabaQty > 0 && canHeal){
                 HealMana(50);
             }
@@ -408,10 +425,6 @@ public class PlayerStateManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name=="Door"){
-            Loader.Load(Loader.Scene.Phase1_0);
-        }
-
         if(other.gameObject.tag.Equals("Guarana")) {
             GetGuarana();
         }
@@ -607,6 +620,7 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void Pause(bool pause){
+        
         if(pause){
             pause=false;
             Time.timeScale=1;
@@ -625,6 +639,24 @@ public class PlayerStateManager : MonoBehaviour
         rb.isKinematic = true;
         yield return new WaitForSeconds(10f);
         rb.velocity = new Vector3(0,0,0);
+        yield return new WaitForSeconds(1f);
+        nextStage=true;
+    }
+
+    public void setWings(bool set){
+        wings.SetActive(set);
+        if(animationMode=="1"||animationMode=="2"||wings.activeSelf){
+            Image logo = playerUI.transform.GetChild(1).GetChild(0).GetComponent<Image>();
+            logo.sprite = abilities[0];
+            if(animationMode=="2"){
+                logo = playerUI.transform.GetChild(1).GetChild(1).GetComponent<Image>();
+                logo.sprite = abilities[1];
+                if(wings.activeSelf){
+                    logo = playerUI.transform.GetChild(1).GetChild(2).GetComponent<Image>();
+                    logo.sprite = abilities[2];
+                }
+            }
+        }
     }
 
 }
