@@ -36,7 +36,7 @@ public class DialogueTrigger : MonoBehaviour
             }  
         }
 
-        if (interacting){
+        if (interacting && !isMain){
             if(Vector3.Distance(FindObjectOfType<PlayerStateManager>().transform.position, transform.position) >= 10){
                 FindObjectOfType<DialogueManager>().FinishDialogue(this);
             }

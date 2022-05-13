@@ -1448,6 +1448,7 @@ GameObject:
   - component: {fileID: 1109895952}
   - component: {fileID: 1109895951}
   - component: {fileID: 1109895950}
+  - component: {fileID: 1109895953}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -1569,6 +1570,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109895948}
   m_CullTransparentMesh: 1
+--- !u!114 &1109895953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109895948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb1bcbfd5bbe064981d380a71982351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 96b9da28f6fe1a64db1f907a068226ac, type: 3}
 --- !u!1 &1112031762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,6 +2093,7 @@ GameObject:
   - component: {fileID: 1852614127}
   - component: {fileID: 1852614126}
   - component: {fileID: 1852614125}
+  - component: {fileID: 1852614128}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -2200,6 +2215,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852614123}
   m_CullTransparentMesh: 1
+--- !u!114 &1852614128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852614123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb1bcbfd5bbe064981d380a71982351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 96b9da28f6fe1a64db1f907a068226ac, type: 3}
 --- !u!1 &2004528790
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,6 +2322,7 @@ GameObject:
   - component: {fileID: 2076653444}
   - component: {fileID: 2076653443}
   - component: {fileID: 2076653442}
+  - component: {fileID: 2076653445}
   m_Layer: 5
   m_Name: CreditsButton
   m_TagString: Untagged
@@ -2415,6 +2444,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2076653440}
   m_CullTransparentMesh: 1
+--- !u!114 &2076653445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076653440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb1bcbfd5bbe064981d380a71982351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 96b9da28f6fe1a64db1f907a068226ac, type: 3}
 --- !u!1 &2115638018
 GameObject:
   m_ObjectHideFlags: 0
