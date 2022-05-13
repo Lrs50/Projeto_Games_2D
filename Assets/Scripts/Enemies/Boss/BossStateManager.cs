@@ -85,6 +85,17 @@ public class BossStateManager : MonoBehaviour{
     public GameObject wings_object;
     public SpriteRenderer wingsSR;
 
+    //sound
+
+    public AudioClip assabatendoMenosSound;
+    public AudioClip rangedAttackSound;
+    public AudioClip loadingSound;
+    public AudioClip loading2Sound;
+    public AudioClip dashForteSound;
+    public AudioClip deathSound;
+    
+    public AudioSource audioSource;
+
     public void SetAnimation(){
         idleAnimation = new Sprite[8];
         simpleAttackAnimation1= new Sprite[8];
@@ -148,6 +159,7 @@ public class BossStateManager : MonoBehaviour{
         rageMode = false;
         currHealth = maxHealth;
         SetAnimation();
+        audioSource = GetComponent<AudioSource>();
         Physics2D.IgnoreLayerCollision(2,7);
         target = GameObject.Find("Player").transform;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
