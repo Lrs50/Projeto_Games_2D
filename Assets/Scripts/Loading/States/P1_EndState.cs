@@ -27,6 +27,7 @@ public class P1_EndState  : BaseStateScenes
             GameManager.player=GameObject.Find("Player").GetComponent<PlayerStateManager>();
             if(GameManager.player!=null){
                 gameManager.UpdatePlayer(old);
+                GameManager.player.setWings(true);
             };
         }else if(scene.name!="PhaseFinal"){
             scene= SceneManager.GetActiveScene();
