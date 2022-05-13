@@ -163,6 +163,9 @@ MonoBehaviour:
     - Matar inimigos e ficar forte!
   interactable: 0
   interacting: 0
+  isMain: 0
+  disableDist: 0
+  done: 0
 --- !u!61 &3221167907849490012
 BoxCollider2D:
   m_ObjectHideFlags: 0

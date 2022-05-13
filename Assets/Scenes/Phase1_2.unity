@@ -10920,26 +10920,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Name
-      value: Player Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804194, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -11024,6 +11004,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1820388845}
+    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Name
+      value: Player Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
 --- !u!1 &424513102 stripped
@@ -11120,7 +11120,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: maxHealth
-      value: 0.1
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: deathSound

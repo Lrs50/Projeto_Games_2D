@@ -40,7 +40,6 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue, DialogueTrigger trigger) {
-        Debug.Log("TETS");
         this.trigger = trigger;
         animator.SetBool("isOpen", true);
 
