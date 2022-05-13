@@ -22,7 +22,7 @@ public class HubState : BaseStateScenes
                 gameManager.SwitchState(GameManager.p1_0);
             }
         }else if(scene.name=="MainHub"){
-            GameManager.player=GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
+            GameManager.player=GameObject.Find("Player").GetComponent<PlayerStateManager>();
             gameManager.ResetPlayer();
         }else if(scene.name!="MainHub"){
             scene= SceneManager.GetActiveScene();
