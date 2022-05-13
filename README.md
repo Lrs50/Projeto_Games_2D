@@ -28,7 +28,7 @@ Este projeto foi desenvolvido para a disciplina "<strong>Projetos e Implementaç
 
 <strong>Instruções para jogar: </strong>
 <ul>
-	<li>Após clicar no link, clique em "download"</li>
+	<li>Após o download do jogo</li>
 	<li>Descompacte o arquivo .zip</li>
 	<li>Execute o arquivo "ybymokoi.exe"</li>
 	<li>Divirta-se!!</li>
