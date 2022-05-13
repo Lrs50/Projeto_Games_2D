@@ -5159,6 +5159,7 @@ MonoBehaviour:
   sunBreak1: {fileID: 8104664640358854448, guid: 26eb4599b1bca254ab1e15e8b0084e30, type: 3}
   sunBreak2: {fileID: 3075148263894716826, guid: 26eb4599b1bca254ab1e15e8b0084e30, type: 3}
   sunBreak3: {fileID: 7480711939493277191, guid: 26eb4599b1bca254ab1e15e8b0084e30, type: 3}
+  player: {fileID: 1832375137}
   health: 100
   overlay: {fileID: 1440384962}
 --- !u!1 &770318244
@@ -8124,6 +8125,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1832375137 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8502713041653447780, guid: 90b047f990b3b564883c93bcbe94d2b2, type: 3}
+  m_PrefabInstance: {fileID: 2070378951}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3eb0f642634a24fb94525ca037948a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1856536994
 PrefabInstance:
   m_ObjectHideFlags: 0

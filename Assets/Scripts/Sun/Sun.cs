@@ -11,9 +11,7 @@ public class Sun : MonoBehaviour
     public Sprite sunBreak1;
     public Sprite sunBreak2;
     public Sprite sunBreak3;
-
-    private Transform transform;    
-    
+    public PlayerStateManager player;
     private float shakeMagnitude = 0.7f;
     
     Vector3 initialPosition;
@@ -25,10 +23,8 @@ public class Sun : MonoBehaviour
     public Image overlay;
 
     void Awake() {
-        if (transform == null){
-            transform = GetComponent(typeof(Transform)) as Transform;
-            initialPosition = transform.localPosition;
-        }
+
+        initialPosition = transform.localPosition;
     }
 
     void Start() {
@@ -89,6 +85,7 @@ public class Sun : MonoBehaviour
             overlay.color = new Vector4(i/255f, i/255f, i/255f, 1f);
             yield return new WaitForSeconds(0.1f);
         }
+        player.nextStage = true;
     }
 
 }

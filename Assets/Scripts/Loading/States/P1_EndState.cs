@@ -17,7 +17,7 @@ public class P1_EndState  : BaseStateScenes
    public override void FixedUpdateState(GameManager gameManager){
        if(GameManager.player!=null){
             if(GameManager.player.nextStage){
-                gameManager.SwitchState(GameManager.hubState);
+                gameManager.SwitchState(GameManager.credits);
             }
         }else if(scene.name=="PhaseFinal"){
             PlayerStateManager old = GameManager.player;
