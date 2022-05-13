@@ -15,7 +15,6 @@ public class DialogueTrigger : MonoBehaviour
     private bool done;
 
     public void TriggerDialogue() {
-        Debug.Log("teste");
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
         interacting = true;
     }
