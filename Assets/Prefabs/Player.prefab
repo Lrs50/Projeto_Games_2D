@@ -127,7 +127,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00010346249, y: -0.009948954}
+  m_Offset: {x: -0.00010346249, y: -0.058086462}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -138,7 +138,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.100622095, y: 0.23075563}
+  m_Size: {x: 0.100622095, y: 0.13448061}
   m_EdgeRadius: 0
 --- !u!114 &992919254
 MonoBehaviour:
@@ -832,6 +832,7 @@ MonoBehaviour:
   evolve1Sound: {fileID: 8300000, guid: be9eda66a4a257b4f8c0272e318e71c7, type: 3}
   deathMusic: {fileID: 8300000, guid: 0e8e2e63818016d4cbf1da4ca51348c6, type: 3}
   attackDefaultSound: {fileID: 0}
+  interacting: 0
 --- !u!61 &791994013
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,7 +846,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.11314192}
+  m_Offset: {x: 0, y: -0.063192636}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -856,7 +857,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.025353774}
+  m_Size: {x: 0.1, y: 0.12525234}
   m_EdgeRadius: 0
 --- !u!82 &2995002292651813177
 AudioSource:

@@ -38,8 +38,8 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public Transform reference;
     public int direction = 0;
 
-    public float health = 0;
-    public float damage = 0;
+    public float health = 3;
+    public float damage = 3;
     public float maxHealth = 0;
 
     public float dropChance = 0.1f;
@@ -63,8 +63,8 @@ public abstract class EnemiesStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         //a
-        audioSource = GetComponent<AudioSource>();
         SetProperties();
+        audioSource = GetComponent<AudioSource>();
         maxHealth = health;
         healthBar = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Slider>(); 
 

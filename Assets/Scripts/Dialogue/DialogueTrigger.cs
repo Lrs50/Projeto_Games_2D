@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void Update() {
         if(isMain && !done){
-            Debug.Log("teste");
+            //Debug.Log("teste");
             TriggerDialogue();
             done = true;           
         }
