@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void MenuToHub(){
-        currentState = hubState;
+        currentState = preStart;
         currentState.EnterState(this);
     }
 
