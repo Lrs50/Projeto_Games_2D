@@ -24,11 +24,11 @@ Este projeto foi desenvolvido para a disciplina "<strong>Projetos e Implementaç
 <br>
 
 <h2><strong>Acesso</strong></h2>
-<strong>Download do jogo: </strong> <a href="https://github.com/Lrs50/Projeto_Games_2D/blob/main/Builds.zip"> Clique aqui</a>
+<strong>Download do jogo: </strong> <a href="https://github.com/Lrs50/Projeto_Games_2D/raw/development/Windows_64.zip"> Clique aqui</a>
 
 <strong>Instruções para jogar: </strong>
 <ul>
-	<li>Após clicar no link, clique em "download"</li>
+	<li>Após o download do jogo</li>
 	<li>Descompacte o arquivo .zip</li>
 	<li>Execute o arquivo "ybymokoi.exe"</li>
 	<li>Divirta-se!!</li>
