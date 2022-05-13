@@ -10915,26 +10915,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Name
-      value: Player Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804194, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -11019,6 +10999,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1820388845}
+    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Name
+      value: Player Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
 --- !u!1 &512249737
@@ -38885,6 +38885,7 @@ GameObject:
   - component: {fileID: 1820388845}
   - component: {fileID: 1820388844}
   - component: {fileID: 1820388847}
+  - component: {fileID: 1820388848}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -38991,6 +38992,18 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1820388848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820388843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a57aca8571831c4d8fd6e91de73540e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1827728593
 GameObject:
   m_ObjectHideFlags: 0

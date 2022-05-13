@@ -163,7 +163,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1219, y: 332}
+  m_SizeDelta: {x: 1525, y: 887}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &831446975445069668
 CanvasRenderer:
@@ -208,7 +208,14 @@ MonoBehaviour:
     m_LineSpacing: 0.5
   m_Text: 'Pressione enter para
 
-    retornar ao jogo'
+    retornar ao jogo
+
+
+
+
+
+    [X] para retornar
+    ao menu'
 --- !u!114 &831446975445069658
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class PlayerDeathState : BaseStatePlayer{
         if(userInput){
             if(Input.GetKeyDown(KeyCode.Return)){
                 Time.timeScale=1f;
-                Loader.Load(Loader.Scene.MainHub);
+                player.dead = true;
             }
         }
     }

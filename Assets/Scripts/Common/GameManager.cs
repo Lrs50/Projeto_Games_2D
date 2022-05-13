@@ -38,6 +38,14 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         currentState.UpdateState(this);
+        if(player!=null){
+            if(player.dead){
+                SwitchState(hubState);
+            }
+            if(player.toMenu){
+                SwitchState(menuState);
+            }
+        }
     }
 
     /// <summary>
@@ -81,6 +89,7 @@ public class GameManager : MonoBehaviour
         player.jabuticabaQty=0;
         player.animationMode="normal";
         player.setWings(false);
+        player.SetAnimationMode();
     }
     public void UpdatePlayer(PlayerStateManager old){
         player.health=old.health;
@@ -89,6 +98,7 @@ public class GameManager : MonoBehaviour
         player.jabuticabaQty=old.jabuticabaQty;
         player.animationMode=old.animationMode;
         player.setWings(player.wings.activeSelf);
+        player.SetAnimationMode();
     }
 
     public void Exit(){
