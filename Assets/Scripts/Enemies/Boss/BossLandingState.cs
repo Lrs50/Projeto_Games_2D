@@ -28,15 +28,15 @@ public class BossLandingState: BaseStateBoss {
     }
 
     private IEnumerator aoeDamage(BossStateManager enemy){
+        if(enemy.audioSource.isPlaying){
+            enemy.audioSource.Stop();
+        }
         enemy.AreaDamage(enemy.transform.position,2);
         enemy.wings_object.transform.localScale = Vector3.one;
         Vector3 aux = new Vector3(enemy.transform.position.x,enemy.transform.position.y + 0.085f*6,enemy.transform.position.z);
         enemy.wings_object.transform.position = aux;
         //enemy.wings_object.transform.position = new Vector3(0,0.085f*6,0);
         yield return new WaitForSeconds(0.5f);
-        if(enemy.audioSource.isPlaying){
-            enemy.audioSource.Stop();
-        }
         enemy.SwitchState(enemy.searchState);
     } 
 }

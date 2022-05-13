@@ -56,6 +56,8 @@ public class BossStateManager : MonoBehaviour{
     public int dashCounter = 0;
 
     public Vector3 goBack;
+    public bool morreu;
+    public GameObject disableBossUI;
     // Sprites
 
     public Sprite[] animations1;
@@ -153,6 +155,7 @@ public class BossStateManager : MonoBehaviour{
 
     void Start()
     {
+        morreu = false;
         readyToAttack = false;
         minAttackInterval = 1f;
         maxAttackInterval = 2f;
@@ -166,19 +169,28 @@ public class BossStateManager : MonoBehaviour{
         shadow = instanceOfShadow.GetComponent<BossShadow>();
         trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
         normalBulletProperties = normalBullet.GetComponent<NormalProjectile>();
-        currentState = searchState;
-        //currentState = pacificState;
+        //currentState = searchState;
+        currentState = pacificState;
         currentState.EnterState(this);
         
     }
 
      // Update is called once per frame
     void Update() {
-        if(currHealth <= 0){
-            //quando o boss morre
-            Destroy(gameObject);
+        if(currHealth <= 0 && !morreu){
+            //quando o boss morre    
+            morreu = true;
+            audioSource.clip = deathSound;
+            audioSource.Play();
+            Destroy(cd);
+            disableBossUI.SetActive(false);
+            spriteRenderer.enabled = false;
+            wings_object.SetActive(false);
+            Destroy(gameObject,7f);
+        }else if(!morreu){
+            currentState.UpdateState(this);        
+
         }
-        currentState.UpdateState(this);        
     }
 
     void FixedUpdate() {
@@ -247,5 +259,16 @@ public class BossStateManager : MonoBehaviour{
         spriteRenderer.color=Color.white;
     }
     
+    IEnumerator dying(){
+            morreu = true;
+            audioSource.clip = deathSound;
+            audioSource.Play();
+            Destroy(cd);
+            disableBossUI.SetActive(false);
+            spriteRenderer.enabled = false;
+            wings_object.SetActive(false);
+            yield return new WaitForSeconds(6f);
+            Destroy(gameObject);  
+    }
 
 }

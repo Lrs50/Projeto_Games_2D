@@ -2,6 +2,11 @@ using UnityEngine;
 using System.Collections;
 public class BossGoingBackState: BaseStateBoss {
     public override void EnterState(BossStateManager enemy){
+        if(!enemy.audioSource.isPlaying){
+            enemy.audioSource.clip = enemy.dashForteSound;
+            enemy.audioSource.pitch = 5f;
+            enemy.audioSource.Play();
+        }
     }
 
     public override void UpdateState(BossStateManager enemy){
