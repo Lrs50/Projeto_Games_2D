@@ -40,6 +40,8 @@ public class SheepStateManager : EnemiesStateManager
             spriteRenderer.sprite = run[index*4 + direction];
 
         }else if(animationState.Equals("jump")){
+            audioSource.clip = attackSound;
+            audioSource.Play();
             if(index>=2){
                 index=0;
             }

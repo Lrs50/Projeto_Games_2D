@@ -17,10 +17,23 @@ public class GameManager : MonoBehaviour
     
     static public PlayerStateManager player;
 
+    public AudioSource audioSource;
+    public AudioClip menuSound;
+    public AudioClip bonusSound;
+    public AudioClip fasesSound;
+    public AudioClip combateSound;
+    public AudioClip bossSound;
+
     /// <summary>
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
+
+    void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();    
+    }
+
     void Start()
     {
         if(gameManager==null){
@@ -68,6 +81,8 @@ public class GameManager : MonoBehaviour
 
 
     public void SwitchState(BaseStateScenes next){
+        audioSource.volume=0.07f;
+        audioSource.Pause();
         currentState = next;
         currentState.EnterState(this);
     }

@@ -127,6 +127,22 @@ public class PlayerStateManager : MonoBehaviour
     public bool toMenu = false;
     public bool pauseFlag = false;
 
+    //sounds
+
+    public AudioSource audioSource;
+    public AudioClip pegaItemSound;
+    public AudioClip attack2Sound;
+    public AudioClip dashSound;
+    public AudioClip deathSound;
+    public AudioClip pegaItem2Sound;
+    public AudioClip damageSound;
+    public AudioClip attack3Sound;
+    public AudioClip attack1Sound;
+    public AudioClip evolve1Sound;
+    public AudioClip deathMusic;
+
+    public AudioClip attackDefaultSound;
+
     void CheckWorldEnemies(){
         int i = 0;
         if(enemyBarrier != null && enemyGroup != null){
@@ -196,11 +212,10 @@ public class PlayerStateManager : MonoBehaviour
     private void Awake()
     {
 
-
-
         Time.timeScale=1f;
         FindObjectOfType<DialogueManager>().HideOverlay();
         SetAnimationMode();
+        audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         wingsSR = wings.GetComponent<SpriteRenderer>();
         staminaImages = new Image[4];
@@ -298,6 +313,7 @@ public class PlayerStateManager : MonoBehaviour
                 damageMultiplier = 1;
                 skill2Counter = 0;
                 skill2flag = false;
+                attack1Sound = attackDefaultSound;
                 bullet = defaultBullet;
                 maxSpeed = 5;
                 spriteRenderer.color = Color.white;
@@ -376,6 +392,8 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnSkill1(InputAction.CallbackContext context) {
         if(context.ReadValue<float>()!=0 && (animationMode=="1"||animationMode=="2") && shootCounter>=1 && skill1Counter>=1 && mana>=10 && Time.timeScale>=0.5){
+            audioSource.clip = attack2Sound;
+            audioSource.Play();
             mana -=10;
             attackFlag = true;
             skill1Counter = 0;
@@ -389,6 +407,8 @@ public class PlayerStateManager : MonoBehaviour
             mana -=50;
             damageMultiplier = 0.5f;
             skill2flag = true;
+            attackDefaultSound = attack1Sound;
+            attack1Sound = attack2Sound;
             defaultBullet = bullet;
             bullet = bullet3;
             spriteRenderer.color = new Color(153f/255f,255f/255f,239f/255f,1);
@@ -414,6 +434,8 @@ public class PlayerStateManager : MonoBehaviour
         attackCounter = 0;
         if(context.ReadValue<float>()!=0 && shootCounter>=1 && Time.timeScale>=0.5){
             shootCounter=0;
+            audioSource.clip = attack1Sound;
+            audioSource.Play();
             Instantiate(bullet,shootingOrigin.position,Quaternion.identity);
         }
         
@@ -421,6 +443,8 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnHeal(InputAction.CallbackContext context) {
         if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
+            audioSource.clip = pegaItemSound;
+            audioSource.Play();
             if (guaranaQty > 0 && canHeal){
                 Heal(50);
             }
@@ -429,6 +453,8 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnHealMana(InputAction.CallbackContext context) {
          if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
+            audioSource.clip = pegaItemSound;
+            audioSource.Play();
              if (jabuticabaQty > 0 && canHeal){
                 HealMana(50);
             }
@@ -459,10 +485,14 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     private void GetGuarana() {
+        audioSource.clip = pegaItem2Sound;
+        audioSource.Play();
         guaranaQty += 1;
     }
 
     private void GetCoco() {
+        audioSource.clip = pegaItem2Sound;
+        audioSource.Play();
         jabuticabaQty += 1;
     }
 
@@ -540,7 +570,8 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     IEnumerator DamageAnimation(){
-        
+        audioSource.clip = damageSound;
+        audioSource.Play();
         spriteRenderer.color=new Vector4(255/255f, 0/255f, 0/255f,0.7f);
         yield return new WaitForSeconds(0.1f);
         spriteRenderer.color=Color.white;
@@ -627,6 +658,8 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void StartEvolve(){
+        audioSource.clip = evolve1Sound;
+        audioSource.Play();
         rb.velocity=Vector2.zero;
         StartCoroutine(Evolve());
     }

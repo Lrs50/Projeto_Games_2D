@@ -2,7 +2,8 @@ using UnityEngine;
 using System.Collections;
 public class PlayerDashState: BaseStatePlayer {
     public override void EnterState(PlayerStateManager player){
-
+        player.audioSource.clip = player.dashSound;
+        player.audioSource.Play();
         player.StartCoroutine(Dash(player));
         
     }

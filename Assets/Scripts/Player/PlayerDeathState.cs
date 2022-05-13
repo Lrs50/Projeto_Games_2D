@@ -11,6 +11,9 @@ public class PlayerDeathState : BaseStatePlayer{
     Sprite[] death;
     public override void EnterState(PlayerStateManager player) {
         deathMode= Random.Range(0,3);
+        player.audioSource.clip = player.deathMusic;
+        player.audioSource.Play();
+        
         Time.timeScale=0.05f;
 
         if(deathMode==0){

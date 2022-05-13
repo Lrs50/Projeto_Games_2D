@@ -16,9 +16,12 @@ public class BulletEnemy : MonoBehaviour
     public Sprite[] breakAnimation;
     public GameObject explosion;
     bool done = false;
+    public AudioSource audioSource;
+    
 
     void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = body;
@@ -63,6 +66,7 @@ public class BulletEnemy : MonoBehaviour
             
             yield return new WaitForSeconds(0.05f);
             Destroy(spriteRenderer);
+            audioSource.Play();
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
             yield return new WaitForSeconds(1f);
             Destroy(explosionAnimation);

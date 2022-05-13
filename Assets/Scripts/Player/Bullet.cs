@@ -16,9 +16,11 @@ public class Bullet : MonoBehaviour
     public bool done = false;
     public int health = 1;
     public Vector2 direction;
+    public AudioSource audioSource;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = body;
         transform.localScale *=5;
@@ -48,6 +50,7 @@ public class Bullet : MonoBehaviour
         }
         if(other.gameObject.name == "World" || other.gameObject.tag == "Enemy" || other.gameObject.tag == "Target" || other.gameObject.tag == "Collider" || other.gameObject.tag == "Boss"){
             health--;
+            audioSource.Play();
             if(health<=0){
                 StartCoroutine(Break()); 
             }
@@ -56,6 +59,7 @@ public class Bullet : MonoBehaviour
 
     virtual public IEnumerator Break(){
         if(!done){
+            audioSource.Play();
             Collider2D temp= GetComponent<Collider2D>();
             Destroy(temp);
             done = true;

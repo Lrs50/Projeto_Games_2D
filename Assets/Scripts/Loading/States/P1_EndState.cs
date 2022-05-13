@@ -6,8 +6,11 @@ using UnityEngine.SceneManagement;
 public class P1_EndState  : BaseStateScenes
 {
     Scene scene;
+    bool playSound = true;
     public override void EnterState(GameManager gameManager){
         Loader.Load(Loader.Scene.PhaseFinal);
+        scene= SceneManager.GetActiveScene();
+        playSound = true;
     }
 
    public override void UpdateState(GameManager gameManager){
@@ -25,6 +28,13 @@ public class P1_EndState  : BaseStateScenes
             if(GameManager.player!=null){
                 gameManager.UpdatePlayer(old);
             };
+        }else if(scene.name!="PhaseFinal"){
+            scene= SceneManager.GetActiveScene();
+        }
+        if(scene.name=="PhaseFinal" && playSound){
+            playSound=false;
+            gameManager.audioSource.clip = gameManager.bonusSound;
+            gameManager.audioSource.Play();
         }else if(scene.name!="PhaseFinal"){
             scene= SceneManager.GetActiveScene();
         }

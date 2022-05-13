@@ -15,6 +15,7 @@ public class Bullet3 : Bullet
 
     override public IEnumerator Break(){
         if(!done){
+            audioSource.Play();
             Collider2D temp= GetComponent<Collider2D>();
             Destroy(temp);
             done = true;

@@ -54,9 +54,16 @@ public abstract class EnemiesStateManager : MonoBehaviour
     public float cocoDropChance;
     bool isSetted = false;
 
+    public AudioSource audioSource;
+    public AudioClip attackSound;
+    public AudioClip deathSound;
+
+    public bool isDead = false;
+
     // Start is called before the first frame update
     void Start() {
         //a
+        audioSource = GetComponent<AudioSource>();
         SetProperties();
         maxHealth = health;
         healthBar = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Slider>(); 
@@ -82,7 +89,7 @@ public abstract class EnemiesStateManager : MonoBehaviour
         
         while(player==null){
             yield return new WaitForSeconds(0.02f);
-            player = GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
+            player = GameObject.Find("Player").GetComponent<PlayerStateManager>();
         }
         target = player.gameObject.transform;
         isSetted=true;
@@ -90,11 +97,11 @@ public abstract class EnemiesStateManager : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if(isSetted) currentState.UpdateState(this);        
+        if(isSetted && !isDead) currentState.UpdateState(this);        
     }
 
     void FixedUpdate() {
-        if(isSetted) currentState.FixedUpdateState(this);
+        if(isSetted && !isDead) currentState.FixedUpdateState(this);
     }
 
     public void SwitchState(BaseStateEnemies state){
@@ -125,12 +132,24 @@ public abstract class EnemiesStateManager : MonoBehaviour
                     player.mana+=1;
                 }
                 
-                Destroy(gameObject);
+                StartCoroutine(Die());
             }
 
             healthBar.value = health/maxHealth;
         }
    }
+
+    IEnumerator Die(){
+        isDead = true;
+        healthBar.gameObject.SetActive(false);
+        spriteRenderer.enabled=false;
+        Destroy(GetComponent<Rigidbody2D>());
+        Destroy(GetComponent<Collider2D>());
+        audioSource.clip = deathSound;
+        audioSource.Play();
+        yield return new WaitForSeconds(5f);
+        Destroy(gameObject);
+    }
 
    private void MaybeDropItem() {
        if(Random.value <= dropChance) {

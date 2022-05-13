@@ -22,6 +22,7 @@ public class DeformedAggressiveState : BaseStateEnemies {
     }
 
     public override void FixedUpdateState(EnemiesStateManager enemy){
+        
         enemy.Animate();
         
         count++;
