@@ -19,7 +19,7 @@ public class FakeObject : MonoBehaviour
         if(transform.position.x > length/2){
             transform.position = new Vector3(startpos,transform.position.y,transform.position.z);
         }else{
-            transform.position = new Vector3(transform.position.x+(0.5f*Time.deltaTime),transform.position.y,transform.position.z);
+            transform.position = new Vector3(transform.position.x+((0.5f*0.075f)*Time.deltaTime),transform.position.y,transform.position.z);
         }
     }
 }

@@ -6,7 +6,7 @@ public class NuvemFakeParallax : MonoBehaviour
 {
     private float length, startpos;
     public float parallaxFactor;
-    public GameObject cam;
+    public GameObject obj;
     // Update is called once per frame
     void Start()
     {
@@ -17,8 +17,8 @@ public class NuvemFakeParallax : MonoBehaviour
     }
     void Update()
     {
-        float temp     = cam.transform.position.x * (1 - parallaxFactor);
-        float distance = cam.transform.position.x * parallaxFactor;
+        float temp     = obj.transform.position.x * (1 - parallaxFactor);
+        float distance = obj.transform.position.x * parallaxFactor;
         transform.position = new Vector3(startpos+distance, transform.position.y, transform.position.z);
         //transform.position = newPosition;
     
