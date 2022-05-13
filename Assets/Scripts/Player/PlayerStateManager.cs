@@ -485,10 +485,14 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     private void GetGuarana() {
+        audioSource.clip = pegaItem2Sound;
+        audioSource.Play();
         guaranaQty += 1;
     }
 
     private void GetCoco() {
+        audioSource.clip = pegaItem2Sound;
+        audioSource.Play();
         jabuticabaQty += 1;
     }
 
