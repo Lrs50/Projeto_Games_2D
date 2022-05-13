@@ -123,6 +123,9 @@ public class PlayerStateManager : MonoBehaviour
     public Transform enemyBarrier;
     public Transform enemyGroup;
     public bool nextStage = false;
+    public bool dead = false;
+    public bool toMenu = false;
+    public bool pauseFlag = false;
 
     void CheckWorldEnemies(){
         int i = 0;
@@ -240,10 +243,19 @@ public class PlayerStateManager : MonoBehaviour
         //     SwitchState(evolveState);
         // }
         if(Input.GetKeyDown(KeyCode.Return)){
+            pauseFlag=false;
             Pause(true);
         }
         if(Input.GetKeyDown(KeyCode.Escape)){
+            pauseFlag=true;
             Pause(false);
+        }
+        if(Input.GetKeyDown(KeyCode.X)){
+            if(pauseFlag){
+                pauseFlag=false;
+                Pause(true);
+                toMenu = true;
+            }
         }
         // if(Input.GetKeyDown(KeyCode.B)){
         //     rb.velocity = new Vector3(0,5,0);
@@ -620,7 +632,6 @@ public class PlayerStateManager : MonoBehaviour
     }
 
     public void Pause(bool pause){
-        
         if(pause){
             pause=false;
             Time.timeScale=1;

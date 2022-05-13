@@ -57,18 +57,22 @@ public abstract class EnemiesStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start() {
         //a
-        StartCoroutine(SetUP());
         SetProperties();
         maxHealth = health;
         healthBar = transform.GetChild(0).GetChild(0).gameObject.GetComponent<Slider>(); 
+
+        player = GameObject.Find("Player").GetComponent<PlayerStateManager>();
+        target = player.gameObject.transform;
 
         reference = transform;
         spriteRenderer = GetComponent<SpriteRenderer>();
         
         agent = GetComponent<NavMeshAgent>();
+
         agent.updateRotation = false;
         agent.updateUpAxis = false;
 
+        isSetted=true;
         currentState = searchState;
 
         currentState.EnterState(this);
@@ -80,7 +84,6 @@ public abstract class EnemiesStateManager : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
             player = GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
         }
-        Debug.Log("oi");
         target = player.gameObject.transform;
         isSetted=true;
     }

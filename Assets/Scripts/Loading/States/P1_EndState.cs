@@ -21,8 +21,10 @@ public class P1_EndState  : BaseStateScenes
             }
         }else if(scene.name=="PhaseFinal"){
             PlayerStateManager old = GameManager.player;
-            GameManager.player=GameObject.FindWithTag("Player").GetComponent<PlayerStateManager>();
-            if(GameManager.player!=null) gameManager.UpdatePlayer(old);
+            GameManager.player=GameObject.Find("Player").GetComponent<PlayerStateManager>();
+            if(GameManager.player!=null){
+                gameManager.UpdatePlayer(old);
+            };
         }else if(scene.name!="PhaseFinal"){
             scene= SceneManager.GetActiveScene();
         }

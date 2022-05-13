@@ -149,7 +149,7 @@ public class BossStateManager : MonoBehaviour{
         currHealth = maxHealth;
         SetAnimation();
         Physics2D.IgnoreLayerCollision(2,7);
-        target = GameObject.FindWithTag("Player").transform;
+        target = GameObject.Find("Player").transform;
         bulletProperties = bullet.GetComponent<FeatherProjectile>();
         shadow = instanceOfShadow.GetComponent<BossShadow>();
         trackingBulletProperties = trackingBullet.GetComponent<TrackingProjectile>();
