@@ -24,7 +24,7 @@ Este projeto foi desenvolvido para a disciplina "<strong>Projetos e Implementaç
 <br>
 
 <h2><strong>Acesso</strong></h2>
-<strong>Download do jogo: </strong> <a href="https://github.com/Lrs50/Projeto_Games_2D/blob/main/Windows_64.zip"> Clique aqui</a>
+<strong>Download do jogo: </strong> <a href="https://github.com/Lrs50/Projeto_Games_2D/raw/main/Windows_64.zip"> Clique aqui</a>
 
 <strong>Instruções para jogar: </strong>
 <ul>
