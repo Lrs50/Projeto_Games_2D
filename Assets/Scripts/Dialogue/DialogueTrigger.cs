@@ -12,7 +12,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public bool interacting = false;
     [SerializeField] private bool isMain;
-    private bool done;
+    public bool done;
 
     public void TriggerDialogue() {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
@@ -52,5 +52,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void Reset(){
         interacting = false;
+        done = true;
     }
 }
