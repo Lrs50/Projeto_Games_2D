@@ -34,6 +34,12 @@ public class DialogueTrigger : MonoBehaviour
                 TriggerDialogue();
             }  
         }
+
+        if (interacting){
+            if(Vector3.Distance(FindObjectOfType<PlayerStateManager>().transform.position, transform.position) >= 10){
+                FindObjectOfType<DialogueManager>().FinishDialogue();
+            }
+        }
     }
 
     void OnTriggerStay2D(Collider2D other){
