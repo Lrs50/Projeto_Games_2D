@@ -31,13 +31,14 @@ public class DialogueTrigger : MonoBehaviour
         }
         if (interactable && !interacting && !isMain) {
             if (Input.GetButtonDown("Fire3")){
+                FindObjectOfType<PlayerStateManager>().interacting = true;
                 TriggerDialogue();
             }  
         }
 
         if (interacting){
             if(Vector3.Distance(FindObjectOfType<PlayerStateManager>().transform.position, transform.position) >= 10){
-                FindObjectOfType<DialogueManager>().FinishDialogue();
+                FindObjectOfType<DialogueManager>().FinishDialogue(this);
             }
         }
     }
@@ -45,7 +46,7 @@ public class DialogueTrigger : MonoBehaviour
     void OnTriggerStay2D(Collider2D other){
         if (other.tag != "Player") return;
 
-        interactable = true;       
+        interactable = !FindObjectOfType<PlayerStateManager>().interacting;       
         FindObjectOfType<DialogueManager>().ShowOverlay();     
     }
 
@@ -59,5 +60,6 @@ public class DialogueTrigger : MonoBehaviour
     public void Reset(){
         interacting = false;
         done = true;
+        FindObjectOfType<PlayerStateManager>().interacting = false;
     }
 }

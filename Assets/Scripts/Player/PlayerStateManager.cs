@@ -143,6 +143,9 @@ public class PlayerStateManager : MonoBehaviour
 
     public AudioClip attackDefaultSound;
 
+    //dialogue
+    public bool interacting = false;
+
     void CheckWorldEnemies(){
         int i = 0;
         if(enemyBarrier != null && enemyGroup != null){

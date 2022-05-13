@@ -78,17 +78,18 @@ public class DialogueManager : MonoBehaviour
         arrow.enabled = true;
     }
 
-    public void FinishDialogue() {
+    public void FinishDialogue(DialogueTrigger trigger) {
         dialogueIsOver = true;
         sentences = new Queue<string>();
         StopAllCoroutines();
         StartCoroutine(EndDialogue());
+        trigger.Reset();
     }
 
     IEnumerator EndDialogue() {
         this.dialogueIsOver = true;
         animator.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.75f);
         if (this.trigger != null){
             trigger.Reset();
         }
