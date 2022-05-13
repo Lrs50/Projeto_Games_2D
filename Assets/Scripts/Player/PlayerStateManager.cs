@@ -443,9 +443,9 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnHeal(InputAction.CallbackContext context) {
         if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
-            audioSource.clip = pegaItemSound;
-            audioSource.Play();
             if (guaranaQty > 0 && canHeal){
+                audioSource.clip = pegaItemSound;
+                audioSource.Play();
                 Heal(50);
             }
         }
@@ -453,9 +453,9 @@ public class PlayerStateManager : MonoBehaviour
 
     public void OnHealMana(InputAction.CallbackContext context) {
          if(context.ReadValue<float>()!=0 && Time.timeScale>=0.5){
-            audioSource.clip = pegaItemSound;
-            audioSource.Play();
              if (jabuticabaQty > 0 && canHeal){
+                audioSource.clip = pegaItemSound;
+                audioSource.Play();
                 HealMana(50);
             }
         }
@@ -488,6 +488,12 @@ public class PlayerStateManager : MonoBehaviour
         audioSource.clip = pegaItem2Sound;
         audioSource.Play();
         guaranaQty += 1;
+    }
+
+    public void GetGuaranaX(int qnt) {
+        audioSource.clip = pegaItem2Sound;
+        audioSource.Play();
+        guaranaQty += qnt;
     }
 
     private void GetCoco() {
