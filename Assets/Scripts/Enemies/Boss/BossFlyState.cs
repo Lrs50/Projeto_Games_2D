@@ -17,6 +17,9 @@ public class BossFlyState: BaseStateBoss {
         // enemy.shadow.transform.localScale = new Vector3(12f,12f,12f);
         // enemy.wings_object.transform.localScale= new Vector3(12f,12f,12f);
         enemy.startFollowingTime = 0;
+        enemy.audioSource.clip = enemy.asabatendoMenosSound;
+        enemy.audioSource.Play();
+        enemy.audioSource.loop = true;
         
     }
 

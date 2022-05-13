@@ -22,6 +22,9 @@ public class BossNormalAttackState: BaseStateBoss {
     public override void FixedUpdateState(BossStateManager enemy){
 
         if(counter>=data.Number && enemy.index==0){
+            if(enemy.audioSource.isPlaying){
+                enemy.audioSource.Stop();
+            }
             enemy.SwitchState(enemy.searchState);
         }
 
@@ -37,6 +40,8 @@ public class BossNormalAttackState: BaseStateBoss {
 
         if(enemy.index==5 && shoot){
             shoot=false;
+            enemy.audioSource.clip = enemy.rangedAttackSound;
+            enemy.audioSource.Play();
             GameObject tempBullet = GameObject.Instantiate(data.Prefab, enemy.transform.position, enemy.transform.rotation) as GameObject;    
             counter++;
         }

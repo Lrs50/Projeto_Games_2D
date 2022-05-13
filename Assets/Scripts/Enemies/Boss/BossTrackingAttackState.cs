@@ -23,6 +23,9 @@ public class BossTrackingAttackState: BaseStateBoss {
             var offset = 90f;
             enemy.instanceOfTrackingBullet.transform.rotation = Quaternion.Euler(Vector3.forward * (angle + offset));
         }else if(!shoot){
+            if(enemy.audioSource.isPlaying){
+                enemy.audioSource.Stop();
+            }
             enemy.SwitchState(enemy.searchState);
         }
     }
@@ -54,6 +57,8 @@ public class BossTrackingAttackState: BaseStateBoss {
     }
 
     public GameObject SpawnProjectiles(ProjectileAttackTemplate shotData,BossStateManager enemy){
+        enemy.audioSource.clip = enemy.rangedAttackSound;
+        enemy.audioSource.Play();
         GameObject tempBullet = GameObject.Instantiate(shotData.Prefab, enemy.trackingBulletProperties._bossPosition, Quaternion.identity) as GameObject;
         return tempBullet;
     }

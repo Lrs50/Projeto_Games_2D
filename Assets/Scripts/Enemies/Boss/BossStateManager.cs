@@ -87,7 +87,7 @@ public class BossStateManager : MonoBehaviour{
 
     //sound
 
-    public AudioClip assabatendoMenosSound;
+    public AudioClip asabatendoMenosSound;
     public AudioClip rangedAttackSound;
     public AudioClip loadingSound;
     public AudioClip loading2Sound;
