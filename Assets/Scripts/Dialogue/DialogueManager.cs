@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public int counter;
     public bool bloquearDialogo;
 
+    public Image arrow;
+
     void Start()
     {
         counter = 0;
@@ -38,6 +40,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue, DialogueTrigger trigger) {
+        Debug.Log("TETS");
         this.trigger = trigger;
         animator.SetBool("isOpen", true);
 
@@ -65,18 +68,29 @@ public class DialogueManager : MonoBehaviour
     }
 
     IEnumerator TypeSentence (string sentence){
+        arrow.enabled = false;
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray()) {
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.015f);
         }
+
+        arrow.enabled = true;
+    }
+
+    public void FinishDialogue(DialogueTrigger trigger) {
+        dialogueIsOver = true;
+        sentences = new Queue<string>();
+        StopAllCoroutines();
+        StartCoroutine(EndDialogue());
+        trigger.Reset();
     }
 
     IEnumerator EndDialogue() {
         this.dialogueIsOver = true;
         animator.SetBool("isOpen", false);
-            yield return new WaitForSeconds(0.75f);
+        yield return new WaitForSeconds(0.75f);
         if (this.trigger != null){
             trigger.Reset();
         }

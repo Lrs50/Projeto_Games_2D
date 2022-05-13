@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class BossPacificState: BaseStateBoss {
     public override void EnterState(BossStateManager enemy){
+        enemy.StartCoroutine(startBoss(enemy));
     }
 
     public override void UpdateState(BossStateManager enemy){
@@ -16,5 +17,10 @@ public class BossPacificState: BaseStateBoss {
 
     public override void OnCollisionEnter(BossStateManager enemy){
 
+    }
+
+    private IEnumerator startBoss(BossStateManager enemy){ 
+        yield return new WaitForSeconds(2f);
+        enemy.readyToAttack = true;
     }
 }

@@ -11,35 +11,39 @@ public class DialogueTrigger : MonoBehaviour
     public bool interactable = false;
 
     public bool interacting = false;
-    [SerializeField] private bool isMain;
-    public bool done;
+    [SerializeField] public bool isMain;
+    [SerializeField] private bool disableDist = false;
+    public bool done = false;
 
     public void TriggerDialogue() {
         FindObjectOfType<DialogueManager>().StartDialogue(dialogue, this);
         interacting = true;
     }
 
-    void Start()
-    {
-        done = false;
-    }
-
     void Update() {
         if(isMain && !done){
-            TriggerDialogue(); 
+            Debug.Log("teste");
+            TriggerDialogue();
             done = true;           
         }
         if (interactable && !interacting && !isMain) {
             if (Input.GetButtonDown("Fire3")){
+                FindObjectOfType<PlayerStateManager>().interacting = true;
                 TriggerDialogue();
             }  
+        }
+
+        if (interacting && !disableDist){
+            if(Vector3.Distance(FindObjectOfType<PlayerStateManager>().transform.position, transform.position) >= 10){
+                FindObjectOfType<DialogueManager>().FinishDialogue(this);
+            }
         }
     }
 
     void OnTriggerStay2D(Collider2D other){
         if (other.tag != "Player") return;
 
-        interactable = true;       
+        interactable = !FindObjectOfType<PlayerStateManager>().interacting;       
         FindObjectOfType<DialogueManager>().ShowOverlay();     
     }
 
@@ -53,5 +57,6 @@ public class DialogueTrigger : MonoBehaviour
     public void Reset(){
         interacting = false;
         done = true;
+        FindObjectOfType<PlayerStateManager>().interacting = false;
     }
 }

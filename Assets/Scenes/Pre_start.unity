@@ -1952,6 +1952,8 @@ MonoBehaviour:
   interactable: 0
   interacting: 0
   isMain: 1
+  disableDist: 1
+  done: 0
 --- !u!4 &1232914425
 Transform:
   m_ObjectHideFlags: 0
