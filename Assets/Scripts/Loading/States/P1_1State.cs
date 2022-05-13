@@ -7,8 +7,11 @@ using UnityEngine.SceneManagement;
 public class P1_1State : BaseStateScenes
 {
     Scene scene;
+    bool playSound = true;
     public override void EnterState(GameManager gameManager){
         Loader.Load(Loader.Scene.Phase1_1);
+        scene= SceneManager.GetActiveScene();
+        playSound = true;
     }
 
    public override void UpdateState(GameManager gameManager){
@@ -26,6 +29,13 @@ public class P1_1State : BaseStateScenes
             if(GameManager.player!=null){
                 gameManager.UpdatePlayer(old);
             };
+        }else if(scene.name!="Phase1_1"){
+            scene= SceneManager.GetActiveScene();
+        }
+        if(scene.name=="Phase1_1" && playSound){
+            playSound=false;
+            gameManager.audioSource.clip = gameManager.combateSound;
+            gameManager.audioSource.Play();
         }else if(scene.name!="Phase1_1"){
             scene= SceneManager.GetActiveScene();
         }

@@ -12,8 +12,8 @@ public class NuvemFakeParallax : MonoBehaviour
     {
         startpos = transform.position.x;
         length = GetComponent<SpriteRenderer>().bounds.size.x;
-        Debug.Log(startpos);
-        Debug.Log(length);
+        // Debug.Log(startpos);
+        // Debug.Log(length);
     }
     void Update()
     {
