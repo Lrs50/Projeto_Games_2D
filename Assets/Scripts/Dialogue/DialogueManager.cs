@@ -20,17 +20,19 @@ public class DialogueManager : MonoBehaviour
     public DialogueTrigger trigger;
     public bool dialogueIsOver;
     public int counter;
+    public bool bloquearDialogo;
 
     void Start()
     {
         counter = 0;
         dialogueIsOver = false;
         sentences = new Queue<string>();
+        bloquearDialogo = false;
     }
 
     void Update()
     {
-         if (Input.GetButtonDown("Fire3")) {
+         if (Input.GetButtonDown("Fire3") && !bloquearDialogo) {
             DisplayNextSentence(); 
          }
     }

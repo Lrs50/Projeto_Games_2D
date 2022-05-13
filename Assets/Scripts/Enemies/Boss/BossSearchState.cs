@@ -75,6 +75,7 @@ public class BossSearchState: BaseStateBoss {
                 if(!enemy.rageMode){
                     enemy.minAttackInterval = 0.75f;
                     enemy.maxAttackInterval = 1.25f;
+                    enemy.baseSpeed += 5;
                     enemy.rageMode = true;
                 }
                 //boss mais rápido

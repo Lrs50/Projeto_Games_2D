@@ -5,6 +5,8 @@ public class BossDrillAttackState: BaseStateBoss {
     bool prepare=true;
     bool attack = false;
     bool isDone = false;
+    bool firstRot;
+    bool firstPrepare;
     public override void EnterState(BossStateManager enemy){
         if(enemy.dashCounter == enemy.qtdDashDrillAttack){
             if(!isDone){
@@ -13,6 +15,8 @@ public class BossDrillAttackState: BaseStateBoss {
             }
         }
         dashed = false;
+        firstRot = true;
+        firstPrepare= true;
         enemy.followingTime = 3;
     }
 
@@ -38,9 +42,9 @@ public class BossDrillAttackState: BaseStateBoss {
                     enemy.StartCoroutine(Dash(enemy,forward));
                 }
             }        
-        }else{
+        }else if(enemy.followingTime > 0){
             enemy.followingTime -= Time.deltaTime;
-            if(!prepare){
+            if(!prepare && !isDone){
                 enemy.spriteRenderer.sprite = enemy.attackAnimation[0];
                 rotateTowardsPlayer(enemy);
             }
@@ -48,31 +52,37 @@ public class BossDrillAttackState: BaseStateBoss {
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
-        if(prepare){
-            //Debug.Log(enemy.index);
-            if(enemy.index >= enemy.transformAnimation.Length){
-                enemy.index=0;
-                prepare=false;
-                enemy.spriteRenderer.sprite = enemy.attackAnimation[0];
-            }
-            if(enemy.indexWings>=enemy.transformWingsAnimation.Length){
-                enemy.indexWings = 0;
-                if(!isDone && enemy.wings_object.activeSelf){
-                    enemy.wings_object.SetActive(false);
+        if(!isDone){
+            if(prepare){
+                //Debug.Log(enemy.index);
+                if(enemy.index >= enemy.transformAnimation.Length){
+                    enemy.index=0;
+                    prepare=false;
+                    enemy.spriteRenderer.sprite = enemy.attackAnimation[0];
                 }
-            }
-            enemy.wingsSR.sprite = enemy.transformWingsAnimation[enemy.indexWings];
+                if(enemy.indexWings>=enemy.transformWingsAnimation.Length){
+                    enemy.indexWings = 0;
+                    if(!isDone && enemy.wings_object.activeSelf){
+                        enemy.wings_object.SetActive(false);
+                    }
+                }
+                enemy.wingsSR.sprite = enemy.transformWingsAnimation[enemy.indexWings];
 
-            enemy.spriteRenderer.sprite = enemy.transformAnimation[enemy.index];
-
-        }else if(attack){
-            if(enemy.index >= enemy.attackAnimation.Length){
-                enemy.index=0;
+                enemy.spriteRenderer.sprite = enemy.transformAnimation[enemy.index];
+                if(firstPrepare){
+                    rotateTowardsPlayer(enemy);
+                    firstPrepare = false;
+                }
+            }else if(attack){
+                if(enemy.index >= enemy.attackAnimation.Length){
+                    enemy.index=0;
+                }
+                if(enemy.rb.velocity == Vector2.zero || firstRot){
+                    rotateTowardsPlayer(enemy);
+                    firstRot = false;
+                }
+                enemy.spriteRenderer.sprite = enemy.attackAnimation[enemy.index];
             }
-            if(enemy.rb.velocity == Vector2.zero){
-                rotateTowardsPlayer(enemy);
-            }
-            enemy.spriteRenderer.sprite = enemy.attackAnimation[enemy.index];
         }
     }
 
