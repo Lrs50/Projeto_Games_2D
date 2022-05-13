@@ -156,3 +156,5 @@ MonoBehaviour:
     - 
   interactable: 0
   interacting: 0
+  isMain: 0
+  done: 0
