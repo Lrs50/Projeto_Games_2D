@@ -31,7 +31,7 @@ public class openTrigger : MonoBehaviour
     void Update()
     {
         //Debug.Log(checking.triggered);
-        if(dManager && dManager.counter >= 3){
+        if(dManager && dManager.counter >= 1){
             canMove = true;
             dManager.bloquearDialogo = true;
             dManager.gameObject.transform.parent.transform.localScale = new Vector3(0,0,0);

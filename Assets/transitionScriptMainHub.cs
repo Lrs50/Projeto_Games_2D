@@ -9,6 +9,7 @@ public class transitionScriptMainHub : MonoBehaviour
     public GameObject folhas;
     public MovUpFolhas folhasScript;
     // Start is called before the first frame update
+    public bool end = false;
     void Start()
     {
         folhasScript = folhas.GetComponent<MovUpFolhas>();
@@ -30,7 +31,7 @@ public class transitionScriptMainHub : MonoBehaviour
     }
 
     public void onFadeCompleteFirst(){
-        SceneManager.LoadScene("MainHub",LoadSceneMode.Single);
         fadeIn();
+        GameManager.preStart.Exit();
     }
 }

@@ -28,7 +28,7 @@ public class transitionScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dManager.counter >= 3){
+        if(dManager.counter >= 2){
             //Change
             //Debug.Log("once");
             fadeOut();

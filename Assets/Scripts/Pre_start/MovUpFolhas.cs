@@ -32,7 +32,7 @@ public class MovUpFolhas : MonoBehaviour
             bg.transform.position = new Vector3(cam.transform.position.x, cam.transform.position.y);
         }
 
-        if(dManager && dManager.counter >= 3){
+        if(dManager && dManager.counter >= 2){
             canMove = true;
             dManager.bloquearDialogo = true;
             dManager.gameObject.transform.parent.transform.localScale = new Vector3(0,0,0);
