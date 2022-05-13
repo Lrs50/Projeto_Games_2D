@@ -45,6 +45,8 @@ public class WolfStateManager : EnemiesStateManager
                 index=0;
                 animationState="idle";
             }
+            audioSource.clip = attackSound;
+            audioSource.Play();
             spriteRenderer.sprite = attack[index*4+direction];   
         }
         

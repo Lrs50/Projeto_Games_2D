@@ -32,6 +32,8 @@ public class DeformedStateManager : EnemiesStateManager
             spriteRenderer.sprite = idle[direction];
 
         }else if(animationState.Equals("attack")){
+            audioSource.clip = attackSound;
+            audioSource.Play();
             count = aggressiveState.count;
             float timePerFrame = aggressiveState.shootAnimationTime/4;
             int index = Mathf.FloorToInt(count/timePerFrame)*4 + direction;

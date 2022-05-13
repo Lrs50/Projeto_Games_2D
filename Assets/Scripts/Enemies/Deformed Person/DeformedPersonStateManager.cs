@@ -14,10 +14,13 @@ public class DeformedPersonStateManager : EnemiesStateManager
     public int count=0;
     public int index=0;
     int animationSpeed=10;
+    public AudioClip gruntSound;
+
 
     public override void BecomeAggresive()
     {
         animationState="run";
+        StartCoroutine(SoundGruntLoop());
         SwitchState(aggresiveState);
     }
 
@@ -48,6 +51,14 @@ public class DeformedPersonStateManager : EnemiesStateManager
         health = 3f;
         damage = 10f;
 
+    }
+
+    IEnumerator SoundGruntLoop(){
+        while(true){
+            audioSource.clip = gruntSound;
+            audioSource.Play();
+            yield return new WaitForSeconds(3f);
+        }
     }
 
 }
