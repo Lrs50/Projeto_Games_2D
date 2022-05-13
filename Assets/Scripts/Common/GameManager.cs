@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
         audioSource.volume=0.07f;
         audioSource.Pause();
         currentState = next;
+        Cursor.SetCursor(null, Vector3.zero, CursorMode.Auto);
         currentState.EnterState(this);
     }
 
