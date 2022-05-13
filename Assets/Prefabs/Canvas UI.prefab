@@ -290,6 +290,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3460580825565430009, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460580825565430009, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460580825565430009, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460580825565430009, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256586646689370755, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
+      propertyPath: m_Text
+      value: '[E] Interact'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1edada075ae79c46a268af98cf656d0, type: 3}
 --- !u!224 &8286783969497501913 stripped

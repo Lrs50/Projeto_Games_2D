@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public int counter;
     public bool bloquearDialogo;
 
+    public Image arrow;
+
     void Start()
     {
         counter = 0;
@@ -65,12 +67,15 @@ public class DialogueManager : MonoBehaviour
     }
 
     IEnumerator TypeSentence (string sentence){
+        arrow.enabled = false;
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray()) {
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.015f);
         }
+
+        arrow.enabled = true;
     }
 
     IEnumerator EndDialogue() {
