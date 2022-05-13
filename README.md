@@ -6,7 +6,7 @@
 
 <br>
 
-<h2><strong>Introdução</strong></<h2>
+<h2><strong>Introdução</strong></h2>
 
 Ybý-Mokoĩ (Duas Terras) é um jogo action RPG com temática indígena amazônica inspirado na mitologia tupi guarani, com itens colecionáveis (guaraná, açaí e erva-mate) que são usados para recuperar HP, mana e estâmina. Os embates com as criaturas minions e bosses que fazem parte da mitologia tupi guarani e a evolução do personagem ao vencer os bosses fazem o jogo ser divertido e educativo.
 
