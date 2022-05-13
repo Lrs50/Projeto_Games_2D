@@ -22,8 +22,12 @@ public class Sun : MonoBehaviour
 
     public Image overlay;
 
+    public AudioClip bigBreak;
+    public AudioSource audioSource;
+
     void Awake() {
 
+        audioSource = GetComponent<AudioSource>();
         initialPosition = transform.localPosition;
     }
 
@@ -59,6 +63,9 @@ public class Sun : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if (other.tag == "Player Attack"){
+            if(health<50){
+                audioSource.Play();
+            }
             health -= 10f;
             StartCoroutine(DamageAnimation());
             Destroy(other.gameObject);
@@ -72,6 +79,9 @@ public class Sun : MonoBehaviour
     }
 
     IEnumerator BreakSun(){
+        audioSource.Stop();
+        audioSource.clip = bigBreak;
+        audioSource.Play();
         yield return new WaitForSeconds(2f);
 
         for (var i = 0; i <= 100; i++){
