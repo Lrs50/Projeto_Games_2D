@@ -42,6 +42,10 @@ public class BossDashAttackState: BaseStateBoss {
     public override void FixedUpdateState(BossStateManager enemy){
         if(prepare){
             //Debug.Log(enemy.index);
+            if(!enemy.audioSource.isPlaying){
+                enemy.audioSource.clip = enemy.loading2Sound;
+                enemy.audioSource.Play();
+            }
             if(enemy.index >= enemy.transformAnimation.Length){
                 enemy.index=0;
                 prepare=false;
@@ -54,6 +58,7 @@ public class BossDashAttackState: BaseStateBoss {
             enemy.wingsSR.sprite = enemy.transformWingsAnimation[enemy.indexWings];
 
             enemy.spriteRenderer.sprite = enemy.transformAnimation[enemy.index];
+            
 
         }else if(attack){
             if(enemy.index >= enemy.attackAnimation.Length){
@@ -69,10 +74,16 @@ public class BossDashAttackState: BaseStateBoss {
                 enemy.indexWings = 0;
                 enemy.wings_object.SetActive(true);
             }
+            if(!enemy.audioSource.isPlaying){
+                enemy.audioSource.pitch = 1f;
+                enemy.audioSource.clip = enemy.loadingSound;
+                enemy.audioSource.Play();
+            }
             enemy.wingsSR.sprite = enemy.undoTransWingsformAnimation[enemy.indexWings];
 
             if(enemy.index >= enemy.undoTransformAnimation.Length){
                 enemy.index=0;
+                //enemy.audioSource.pitch = 1f;
                 enemy.SwitchState(enemy.searchState);
             }
             enemy.spriteRenderer.sprite = enemy.undoTransformAnimation[enemy.index];
@@ -82,11 +93,13 @@ public class BossDashAttackState: BaseStateBoss {
     public override void OnCollisionEnter(BossStateManager enemy){
 
     }
-    private IEnumerator Dash(BossStateManager enemy){
+    private IEnumerator Dash(BossStateManager enemy){        
         //for (int i = 0; i < enemy.qtdDash; i++)
         for (int i = 0; i < Random.Range(2,6); i++)
         {
-            
+            enemy.audioSource.clip = enemy.dashForteSound;
+            enemy.audioSource.pitch = 5f;
+            enemy.audioSource.Play();
             Vector3 fromPosition = enemy.transform.position;
             Vector3 toPosition = enemy.target.transform.position;
             Vector3 direction = toPosition - fromPosition;

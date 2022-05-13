@@ -10915,6 +10915,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_Name
+      value: Player Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1177654876186804194, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -10999,26 +11019,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1820388845}
-    - target: {fileID: 4682841926619926196, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Follow
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_Name
-      value: Player Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926197, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4682841926619926199, guid: 175658795ce14f449980626e4b3b6b21, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d9f3c8967d29894c95543b70b53eba0, type: 3}
 --- !u!1 &424513102 stripped
@@ -11113,17 +11113,45 @@ PrefabInstance:
       value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 70bab286c20703343ab487b35098b16d, type: 3}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: dashCounter
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: loadingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7b81d6e6a0b8a2144ba81569bf47ea31, type: 3}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: loading2Sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 88442e7f99592c346a53e457be543d23, type: 3}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: dashForteSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c16746550a9170846ab8394a1af7d8cd, type: 3}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: instanceOfShadow
       value: 
       objectReference: {fileID: 1827728593}
     - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: rangedAttackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4ed0484d50a86f94eb8c8a9dc6ef6b54, type: 3}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: qtdDashDrillAttack
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: asabatendoMenosSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f41ed08d431f9f47b86cb321743b401, type: 3}
+    - target: {fileID: -653852699523030721, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: assabatendoMenosSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f41ed08d431f9f47b86cb321743b401, type: 3}
     - target: {fileID: 149252928157050249, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

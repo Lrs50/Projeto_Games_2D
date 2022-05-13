@@ -9,6 +9,9 @@ public class BossSearchState: BaseStateBoss {
         enemy.rb.velocity = Vector2.zero;
         enemy.timerForAttacks = 0;
         enemy.transform.rotation = Quaternion.identity;
+        if(enemy.audioSource.isPlaying){
+            enemy.audioSource.Stop();
+        }
     }
 
     public override void UpdateState(BossStateManager enemy){
@@ -17,7 +20,7 @@ public class BossSearchState: BaseStateBoss {
         if(dist > enemy.followingDistance){
             followPlayer(enemy);
             //enemy.agent.SetDestination(enemy.target.position);
-        }else if(dist < enemy.followingDistance - 0.05f){
+        }else if(dist < enemy.followingDistance - 0.09f){
             Vector3 flee = (enemy.target.transform.position - enemy.transform.position).normalized;
             if(flee == Vector3.zero){
                 flee = Vector3.up;

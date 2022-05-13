@@ -55,6 +55,11 @@ public class BossDrillAttackState: BaseStateBoss {
         if(!isDone){
             if(prepare){
                 //Debug.Log(enemy.index);
+                if(!enemy.audioSource.isPlaying){
+                    //loading2Sound(enemy);
+                    enemy.audioSource.clip = enemy.loading2Sound;
+                    enemy.audioSource.Play();
+                }
                 if(enemy.index >= enemy.transformAnimation.Length){
                     enemy.index=0;
                     prepare=false;
@@ -101,7 +106,10 @@ public class BossDrillAttackState: BaseStateBoss {
         enemy.transform.position = Vector3.MoveTowards(enemy.transform.position,dest, enemy.baseSpeed * Time.deltaTime);
     }
 
-    private IEnumerator Dash(BossStateManager enemy, Vector3 forward){  
+    private IEnumerator Dash(BossStateManager enemy, Vector3 forward){
+        enemy.audioSource.clip = enemy.dashForteSound;
+        enemy.audioSource.pitch = 5f;
+        enemy.audioSource.Play();  
         Vector3 fromPosition = enemy.transform.position;
         Vector3 toPosition = enemy.target.transform.position;
         Vector3 direction = toPosition - fromPosition;
@@ -118,6 +126,11 @@ public class BossDrillAttackState: BaseStateBoss {
         if(!isDone){
             attack = false;
             isDone = true;
+            if(!enemy.audioSource.isPlaying){
+                enemy.audioSource.pitch = 1f;
+                enemy.audioSource.clip = enemy.loadingSound;
+                enemy.audioSource.Play();
+            }
             enemy.transform.rotation = Quaternion.identity;
             for(int i=0;i<enemy.undoTransformAnimation.Length;i++){
                 if(i<enemy.undoTransWingsformAnimation.Length) enemy.wingsSR.sprite = enemy.undoTransWingsformAnimation[i];
@@ -132,5 +145,11 @@ public class BossDrillAttackState: BaseStateBoss {
             enemy.SwitchState(enemy.searchState);
         }
         
+    }
+
+    private IEnumerator loading2Sound(BossStateManager enemy){
+        enemy.audioSource.Play();
+        yield return new WaitForSeconds(2f);
+        enemy.audioSource.Stop();
     }
 }

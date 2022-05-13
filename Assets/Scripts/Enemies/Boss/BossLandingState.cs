@@ -34,6 +34,9 @@ public class BossLandingState: BaseStateBoss {
         enemy.wings_object.transform.position = aux;
         //enemy.wings_object.transform.position = new Vector3(0,0.085f*6,0);
         yield return new WaitForSeconds(0.5f);
+        if(enemy.audioSource.isPlaying){
+            enemy.audioSource.Stop();
+        }
         enemy.SwitchState(enemy.searchState);
     } 
 }

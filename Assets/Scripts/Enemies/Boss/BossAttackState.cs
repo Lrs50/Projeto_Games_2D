@@ -14,8 +14,12 @@ public class BossAttackState: BaseStateBoss {
 
     public override void FixedUpdateState(BossStateManager enemy){
         if(enemy.index>=enemy.Animation360.Length){
-            enemy.index=0;
+            enemy.index=0;            
             SpawnProjectiles(data,enemy);
+        }
+        if(!enemy.audioSource.isPlaying){
+            enemy.audioSource.clip = enemy.loadingSound;
+            enemy.audioSource.Play();
         }
         if(enemy.indexWings>=enemy.Animation360Wings.Length){
             enemy.indexWings = 0;
@@ -30,6 +34,8 @@ public class BossAttackState: BaseStateBoss {
     }
 
     public void SpawnProjectiles(ProjectileAttackTemplate shotData,BossStateManager enemy){
+        enemy.audioSource.clip = enemy.rangedAttackSound;
+        enemy.audioSource.Play();
         float angleStep = 360f / shotData.Number;
         float angle = 0f;
         float transformUpAngle = Mathf.Atan2(enemy.transform.up.x, enemy.transform.up.y);
@@ -48,7 +54,7 @@ public class BossAttackState: BaseStateBoss {
             tempBullet.GetComponent<Rigidbody2D>().velocity = shotMovementVector;
 
             angle += angleStep;
-        }
+        }        
         enemy.SwitchState(enemy.searchState);
     }
 }
