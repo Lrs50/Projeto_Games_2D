@@ -32,8 +32,6 @@ public class DeformedStateManager : EnemiesStateManager
             spriteRenderer.sprite = idle[direction];
 
         }else if(animationState.Equals("attack")){
-            audioSource.clip = attackSound;
-            audioSource.Play();
             count = aggressiveState.count;
             float timePerFrame = aggressiveState.shootAnimationTime/4;
             int index = Mathf.FloorToInt(count/timePerFrame)*4 + direction;
@@ -47,6 +45,8 @@ public class DeformedStateManager : EnemiesStateManager
         GameObject bulletTemp =Instantiate(Projectile,shootingOrigin.position,Quaternion.identity);
         BulletEnemy scriptTemp = bulletTemp.GetComponent<BulletEnemy>();
         scriptTemp.setDestination((Vector2) direction);
+        audioSource.clip = attackSound;
+        audioSource.Play();
 
     }
 

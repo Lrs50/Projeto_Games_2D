@@ -42,7 +42,9 @@ public class SheepTackleState : BaseStateEnemies
         Vector3 toPosition = enemy.target.transform.position;
         Vector3 direction = toPosition - fromPosition;
         direction.Normalize();
-        enemy.rb.AddForce(direction * dashMag, ForceMode2D.Impulse);
+        enemy.rb.AddForce(-1 * direction * (dashMag-10f), ForceMode2D.Impulse);
+        yield return new WaitForSeconds(0.1f);
+        enemy.rb.AddForce(1.7f * direction * dashMag, ForceMode2D.Impulse);
         yield return new WaitForSeconds(dashTimer);
     } 
 

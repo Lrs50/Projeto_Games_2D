@@ -616,6 +616,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   attackSound: {fileID: 8300000, guid: aad485e0228f8814ea3d379f6a2d36d6, type: 3}
   deathSound: {fileID: 8300000, guid: ba9bcf279ed8b1d4ba804ffc2bc64482, type: 3}
+  isDead: 0
   Projectile: {fileID: 5737861312730213513, guid: bcf8cfde60b97a84391bcc5e4820d0ea, type: 3}
   idle:
   - {fileID: 8787155026468732370, guid: d9baf069f674f5446a7bc06ded684892, type: 3}
@@ -674,7 +675,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

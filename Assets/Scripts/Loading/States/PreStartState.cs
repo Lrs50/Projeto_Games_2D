@@ -25,7 +25,7 @@ public class PreStartState : BaseStateScenes
         if(scene.name=="Pre_start" && playSound){
             playSound=false;
             gameManager.audioSource.clip = gameManager.fasesSound;
-            gameManager.audioSource.volume=0.04f;
+            gameManager.audioSource.volume=0.3f;
             gameManager.audioSource.Play();
         }else if(scene.name!="Pre_start"){
             scene= SceneManager.GetActiveScene();

@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour
 
 
     public void SwitchState(BaseStateScenes next){
-        audioSource.volume=0.07f;
+        audioSource.volume=0.3f;
         audioSource.Pause();
         currentState = next;
         Cursor.SetCursor(null, Vector3.zero, CursorMode.Auto);
