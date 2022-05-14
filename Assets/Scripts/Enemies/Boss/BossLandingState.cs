@@ -1,26 +1,38 @@
 using UnityEngine;
 using System.Collections;
 public class BossLandingState: BaseStateBoss {
+
+    private bool started = false;
+
     public override void EnterState(BossStateManager enemy){
         enemy.shadow.gameObject.SetActive(false);
         // enemy.shadow.spriteRenderer.sprite = enemy.shadowSprite;
         // enemy.spriteRenderer.sprite = enemy.idleAnimation[0];
         enemy.rb.isKinematic = false;
         enemy.cd.enabled = true;
+        started = false;
         // enemy.transform.localScale = new Vector3(6f,6f,6f);
         // enemy.shadow.transform.localScale = new Vector3(1f,1f,1f);
-        enemy.transform.position = enemy.shadow.transform.position;
+        // enemy.transform.position = enemy.shadow.transform.position;
         //enemy.shadow.transform.position = enemy.transform.position;
         //enemy.spriteRenderer.sprite = enemy.bossSprite;
         //rotateTowardsPlayer(enemy);
-        enemy.StartCoroutine(aoeDamage(enemy));
     }
 
     public override void UpdateState(BossStateManager enemy){        
     }
 
     public override void FixedUpdateState(BossStateManager enemy){
-
+        if (Vector3.Distance(enemy.transform.position, enemy.shadow.transform.position) >= 1f) {
+            enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, enemy.shadow.transform.position, 30 * Time.deltaTime);
+        }
+        else {
+            if (!started) {
+                enemy.StartCoroutine(aoeDamage(enemy));
+                started = true;
+            }
+        }
+            
     }
 
     public override void OnCollisionEnter(BossStateManager enemy){

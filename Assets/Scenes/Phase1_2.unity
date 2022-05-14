@@ -11184,11 +11184,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.43
+      value: 11.7
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.45
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11221,6 +11221,10 @@ PrefabInstance:
     - target: {fileID: 2175102030670899482, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5755396399789894372, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6496007986220759110, guid: 81d813d267973654eb65b94e364ae62f, type: 3}
       propertyPath: m_SortingOrder
@@ -32778,73 +32782,6 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
---- !u!1 &1387412549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387412551}
-  - component: {fileID: 1387412550}
-  - component: {fileID: 1387412552}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1387412550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387412549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e50d2af1e7af58e42ba00c9a925a2673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-    npcName: asasf
-    sentences:
-    - asfasff
-    - sfffff
-  interactable: 0
-  interacting: 0
-  isMain: 0
-  disableDist: 0
-  done: 0
---- !u!4 &1387412551
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387412549}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.918497, y: -22.101896, z: -87.113556}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1387412552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387412549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9834cc18a835142a1c3def7d1a1172, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dTrigger: {fileID: 0}
 --- !u!1 &1388479247
 GameObject:
   m_ObjectHideFlags: 0
