@@ -23,6 +23,7 @@ public class DialogueManager : MonoBehaviour
     public bool bloquearDialogo;
 
     public Image arrow;
+    public Text pressE;
 
     void Start()
     {
@@ -68,6 +69,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence (string sentence){
         arrow.enabled = false;
+        pressE.enabled = false;
         dialogueText.text = "";
 
         foreach (char letter in sentence.ToCharArray()) {
@@ -76,6 +78,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         arrow.enabled = true;
+        pressE.enabled = true;
     }
 
     public void FinishDialogue(DialogueTrigger trigger) {

@@ -1049,6 +1049,7 @@ GameObject:
   - component: {fileID: 562596678}
   - component: {fileID: 562596677}
   - component: {fileID: 562596679}
+  - component: {fileID: 562596680}
   m_Layer: 0
   m_Name: verde
   m_TagString: Untagged
@@ -1136,6 +1137,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 2106038528}
   triggered: 0
+--- !u!95 &562596680
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562596676}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61deedb4678d5d9448a3aa00927c9cd1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &630012136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +1303,7 @@ MonoBehaviour:
   parallax: {fileID: 630012136}
   nextObj: {fileID: 562596676}
   cam: {fileID: 2106038528}
+  verdeMov: 0
   triggered: 0
 --- !u!1 &802586913
 GameObject:

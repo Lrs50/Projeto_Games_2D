@@ -9,8 +9,8 @@ public class transitionScript : MonoBehaviour
     public GameObject nextObj;
     public GameObject cam;
     private CameraMov camScript;
-    private bool verdeMov;
     private DialogueManager dManager;
+    public bool verdeMov;
     public bool triggered;
 
     /// <summary>
@@ -66,7 +66,6 @@ public class transitionScript : MonoBehaviour
         //camScript.velV = -0.1f;
         nextObj.SetActive(true);
         gameObject.SetActive(false);
-        fadeIn();
         dManager.bloquearDialogo = false;
         dManager.gameObject.transform.parent.transform.localScale = new Vector3(10,10,1);
         dManager.counter = 0;

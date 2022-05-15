@@ -15,7 +15,7 @@ public class OpenGithub : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
     }
 
     public void OnPointerEnter(PointerEventData eventData){
-        Cursor.SetCursor(cursorTexture, Vector3.zero, CursorMode.ForceSoftware);
+        Cursor.SetCursor(cursorTexture, Vector3.zero, CursorMode.Auto);
         this.gameObject.GetComponent<Outline>().effectColor = Color.red;
     }
 

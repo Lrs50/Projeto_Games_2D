@@ -15,9 +15,7 @@ public class openTrigger : MonoBehaviour
     public bool canMove;
     public bool toSky;
     public GameObject fadeCanvas;
-    
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         verde = transform.parent.gameObject;
@@ -27,7 +25,6 @@ public class openTrigger : MonoBehaviour
         canMove =false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         //Debug.Log(checking.triggered);

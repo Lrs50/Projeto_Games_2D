@@ -8,7 +8,7 @@ public class VerdeMov : MonoBehaviour
     public bool triggered;
     void Start()
     {
-
+        
         triggered = false;
     }
 
