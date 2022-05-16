@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-         if (Input.GetButtonDown("Fire3") && !bloquearDialogo && canPass) {
+         if (Input.GetButtonDown("Dialog") && !bloquearDialogo && canPass) {
             DisplayNextSentence(); 
          }
     }

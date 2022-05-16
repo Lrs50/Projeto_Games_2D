@@ -56,7 +56,12 @@ public class transitionScript : MonoBehaviour
         animator.SetTrigger("fadeIn");
     }
 
-    public void onFadeCompleteFirst(){
+    public void onFadeInComplete(){
+        Debug.Log("ha");
+    }
+
+    public void onFadeOutComplete(){
+        fadeIn();
         verdeMov = true;
         Vector3 temp = new Vector3(cam.transform.position.x, cam.transform.position.y-1.57f);
         nextObj.transform.position = temp;
@@ -65,8 +70,7 @@ public class transitionScript : MonoBehaviour
         camScript.velV = 0;
         //camScript.velV = -0.1f;
         nextObj.SetActive(true);
-        gameObject.SetActive(false);
-        fadeIn();
+        //ameObject.SetActive(false);
         dManager.bloquearDialogo = false;
         dManager.gameObject.transform.parent.transform.localScale = new Vector3(10,10,1);
         dManager.counter = 0;

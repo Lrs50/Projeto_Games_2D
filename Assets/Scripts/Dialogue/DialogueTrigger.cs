@@ -27,7 +27,7 @@ public class DialogueTrigger : MonoBehaviour
             done = true;           
         }
         if (interactable && !interacting && !isMain) {
-            if (Input.GetButtonDown("Fire3")){
+            if (Input.GetButtonDown("Dialog")){
                 FindObjectOfType<PlayerStateManager>().interacting = true;
                 TriggerDialogue();
             }  
