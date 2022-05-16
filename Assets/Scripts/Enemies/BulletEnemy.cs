@@ -66,7 +66,9 @@ public class BulletEnemy : MonoBehaviour
             
             yield return new WaitForSeconds(0.05f);
             Destroy(spriteRenderer);
-            audioSource.Play();
+            if(GetComponent<SpriteRenderer>().isVisible){
+                audioSource.Play();
+            }
             GameObject explosionAnimation = (GameObject) Instantiate(explosion,transform.position,Quaternion.identity);
             yield return new WaitForSeconds(1f);
             Destroy(explosionAnimation);

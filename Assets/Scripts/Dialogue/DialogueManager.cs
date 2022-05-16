@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     public int counter;
     public bool bloquearDialogo;
 
+    public bool canPass = false;
+
     public Image arrow;
     public Text pressE;
 
@@ -35,7 +37,7 @@ public class DialogueManager : MonoBehaviour
 
     void Update()
     {
-         if (Input.GetButtonDown("Fire3") && !bloquearDialogo) {
+         if (Input.GetButtonDown("Dialog") && !bloquearDialogo && canPass) {
             DisplayNextSentence(); 
          }
     }
@@ -56,6 +58,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayNextSentence() {
+        canPass = false;
         counter++;
         if (sentences.Count == 0){
             StartCoroutine(EndDialogue());
@@ -79,6 +82,7 @@ public class DialogueManager : MonoBehaviour
 
         arrow.enabled = true;
         pressE.enabled = true;
+        canPass = true;
     }
 
     public void FinishDialogue(DialogueTrigger trigger) {

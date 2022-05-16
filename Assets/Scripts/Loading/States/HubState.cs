@@ -32,7 +32,7 @@ public class HubState : BaseStateScenes
         if(scene.name=="MainHub" && playSound){
             playSound=false;
             gameManager.audioSource.clip = gameManager.fasesSound;
-            gameManager.audioSource.volume=0.04f;
+            gameManager.audioSource.volume=0.3f;
             gameManager.audioSource.Play();
         }else if(scene.name!="MainHub"){
             scene= SceneManager.GetActiveScene();

@@ -59,7 +59,9 @@ public class Bullet : MonoBehaviour
 
     virtual public IEnumerator Break(){
         if(!done){
-            audioSource.Play();
+            if(GetComponent<SpriteRenderer>().isVisible){
+                audioSource.Play();
+            }
             Collider2D temp= GetComponent<Collider2D>();
             Destroy(temp);
             done = true;

@@ -45,8 +45,6 @@ public class WolfStateManager : EnemiesStateManager
                 index=0;
                 animationState="idle";
             }
-            audioSource.clip = attackSound;
-            audioSource.Play();
             spriteRenderer.sprite = attack[index*4+direction];   
         }
         
@@ -73,5 +71,7 @@ public class WolfStateManager : EnemiesStateManager
         GameObject bulletTemp =Instantiate(Projectile,shootingOrigin.position,Quaternion.identity);
         BulletEnemy scriptTemp = bulletTemp.GetComponent<BulletEnemy>();
         scriptTemp.setDestination((Vector2) direction);
+        audioSource.clip = attackSound;
+        audioSource.Play();
     }
 }

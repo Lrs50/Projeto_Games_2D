@@ -35,7 +35,7 @@ public class BossDashAttackState: BaseStateBoss {
             //enemy.SwitchState(enemy.searchState);
         }else{
             
-            enemy.transform.position -= (enemy.target.position - enemy.transform.position).normalized * 5 * Time.deltaTime; 
+            // enemy.transform.position -= (enemy.target.position - enemy.transform.position).normalized * 5 * Time.deltaTime; 
         }
     }
 
@@ -103,8 +103,8 @@ public class BossDashAttackState: BaseStateBoss {
             Vector3 fromPosition = enemy.transform.position;
             Vector3 toPosition = enemy.target.transform.position;
             Vector3 direction = toPosition - fromPosition;
-            //direction.Normalize();        
-            enemy.rb.AddForce(direction * (enemy.dashMag+2f), ForceMode2D.Impulse);
+            direction.Normalize();
+            enemy.rb.AddForce(direction * (enemy.dashMag * 40), ForceMode2D.Impulse);
             yield return new WaitForSeconds(0.5f);
             enemy.rb.velocity = Vector2.zero;
             yield return new WaitForSeconds(1.0f);
