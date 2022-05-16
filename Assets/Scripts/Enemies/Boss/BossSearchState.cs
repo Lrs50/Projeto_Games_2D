@@ -74,6 +74,15 @@ public class BossSearchState: BaseStateBoss {
                 }else{
                     enemy.SwitchState(enemy.dashAttack);//random 2 e 5
                 }
+            }else if(enemy.maxHealth*0.1 <= enemy.currHealth && enemy.currHealth < enemy.maxHealth *0.2){
+                float whichAttack = Random.Range(0f,1f);
+                if(whichAttack<=0.40f){
+                    enemy.SwitchState(enemy.attackState);
+                }else if(0.40f < whichAttack && whichAttack <= 0.80f){
+                    enemy.SwitchState(enemy.dashAttack);                
+                }else{
+                    enemy.SwitchState(enemy.drillAttack);
+                }
             }else{
                 if(!enemy.rageMode){
                     enemy.minAttackInterval = 0.75f;
